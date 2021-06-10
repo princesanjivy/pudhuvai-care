@@ -1,0 +1,140 @@
+
+.body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.curved {
+    background-color: rgb(37, 37, 134);
+    color: white;
+    text-align: center;
+}
+.curved svg{
+    display: block;
+}
+.curved h1{
+    margin-top: 0px;
+}
+.header{
+    height: auto;
+    margin-left: 10%;
+    display: block;
+}
+.header h4{
+    padding: 5px;
+    position: fixed;
+    
+}
+.header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 50%;
+}
+.page_title{
+    border-bottom-right-radius: 500px;
+    background-color: rgb(37, 37, 134);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.page_title h4{
+	font-size: 30px;
+}
+.hero{
+	background: #fff;
+	width: 100%;
+	min-height: 100vh;
+	padding-left: 12%;
+	padding-right: 12%;
+	padding-top: 80px;
+	box-sizing: border-box;
+	text-align: center;
+	color: black;
+}
+.row{
+	margin-top: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.col{
+	flex-basis: 28%;
+	box-sizing: border-box;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+	min-width: 230px;
+	margin-bottom: 20px;
+	border: 1px solid #0B56C5;
+	background: #DFE4F7;
+}
+
+.profile{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background: #DFE4F6;
+	padding: 12px;	
+}
+
+.profile img{
+	width: 100%;
+}
+
+.profile h3{
+	color: #0B56C5;
+	margin: 0px 0 10px;
+	font-weight: 500;
+}
+.profile p{
+	margin-bottom:10px;
+	color: black;
+}
+
+.fa{
+	position:relative; left:110px; top:17px; color:#EA4335 ;
+}
+
+.icon .fa{
+	position:relative; left:110px; top:110px; color:#EA4335 ;
+}
+
+.button {
+  background-color: lightgrey; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .hero {
+    width: 100%;
+  }
+  .fa{
+  	left:100px; top:17px;
+  }
+  .icon .fa{
+  	left: 100px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+	.fa{
+		left:100px; top:17px;
+	}
+	.icon .fa{
+  	left: 100px;
+  }
+}
