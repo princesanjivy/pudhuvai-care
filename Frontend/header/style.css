@@ -1,0 +1,91 @@
+
+.body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.curved {
+    background-color: rgb(37, 37, 134);
+    color: white;
+    text-align: center;
+}
+.curved svg{
+    display: block;
+}
+.curved h1{
+    margin-top: 0px;
+}
+.header{
+    height: auto;
+    margin-left: 10%;
+    display: block;
+}
+.header h{
+    padding: 5px;
+    position: fixed;
+    
+    
+}
+.header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 50%;
+}
+.page_title{
+    border-bottom-right-radius: 500px;
+    background-color: rgb(37, 37, 134);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.tab1{
+    
+    background-color: rgb(37, 37, 134);
+    height: 140px;
+    width: 350px;
+    margin-left: 200px;
+    margin-bottom: 70px;
+    
+    border-radius: 20px;
+    color: white;
+    text-align:center;
+   
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 10px;
+   
+    float: left;
+}
+.image{
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 20px;
+   
+}
+.tab1 h1{
+    color: white;
+    text-decoration: nonex  x;
+}*/
+.text{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.title{
+    text-align: left;
+    padding-left: 410px;
+    padding-top: 20px;
+    
+}
+#logo{
+    padding-left: 300px;
+   
+}
