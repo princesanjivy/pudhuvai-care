@@ -135,3 +135,11 @@ th,td,table{
 
 
 }
+
+@media(max-width: 768px){
+    .container table{
+
+    
+    width: 20%;
+}
+}

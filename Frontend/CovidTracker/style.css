@@ -110,4 +110,10 @@ margin-right: auto;
     margin: 5px;
     border: 1px solid rgba(0, 0, 0, .2);
   }
-  
+
+@media(mix-width: 600px){
+    .chart{
+        margin-left:10px;
+        margin-right: 10px;
+    }
+  }

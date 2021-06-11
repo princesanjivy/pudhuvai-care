@@ -104,8 +104,8 @@
 .icon .fa{
 	position:relative; left:110px; top:110px; color:#EA4335 ;
 }
-.age{
-    color: red;
+p.age{
+    color: #FB2E3A;
     font-family: arial;
 }
 
