@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" ></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <title>Covid_19 Tracker</title>
+</head>
+
+<body onload="display_ct()">
+
+   <div class="header">
+       <img src="images/header.png" alt="">
+   </div>
+
+   <div class="curved">
+          <div class="page_title" >
+             <h4> COVID-19 TRACKER </h4>
+         </div>
+             <svg viewBox="0 0 500 50" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-19.19,161.15 C-171.56,-116.17 604.96,111.80 503.95,-43.13 L560.38,237.13 L-159.71,313.12 Z" style="stroke: none; fill: #fff;"></path></svg>
+
+    </div>
+    <div class="time_container">
+        <span  id='ct_d' ></span><br>
+        <span id="ct_t" > </span>
+    </div>
+
+<center>
+    
+        <div id="chart">
+            <div id="piechart"></div>
+            
+        </div>
+
+        <table id="pie-color">
+            <tr>
+                <th>
+                  <u> Total Death </u>  
+                </th>
+                <th>
+                    <u> Total Cured</u>
+                   
+                </th>
+                <th>
+                    <u>  Active Cases</u>
+                  
+                </th>
+                <th>
+                    <u>Total Death</u>
+                    
+                </th>
+            </tr>
+            <tr>
+                <td>    <div class="color-box total-cases"></div> <span id="total_cases">199942</span></td>
+                <td>
+                    <div class="color-box total-cured"></div><span id="total_cured">48882</span></td>
+                    <td><div class="color-box active-cases"></div><span id="active_cases">4223</span></td>
+                    <td><div class="color-box death"></div><span id="total_death">12233</span></td>
+    
+                
+            </tr>
+        </table>
+    </center>
+
+
+  
+
+<br><br>
+
+<h3>Data last updated: {{}} </h3>
+
+
+<!-- pie chart -->
+<script type="text/javascript">
+// Load google charts
+var total_cases = parseInt(document.getElementById('total_cases').textContent);
+var total_cured = parseInt(document.getElementById('total_cured').textContent);
+var active = parseInt(document.getElementById('active_cases').textContent);;
+var total_death = parseInt(document.getElementById('total_death').textContent);;
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['status', 'Number of Cases'],
+  ['Total Case', total_cases],
+  ['Total Cured', total_cured],
+  ['Active Cases', active],
+  ['Total Death', total_death]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'', 'width':950, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+
+
+    
+
+</body>
+</html>
