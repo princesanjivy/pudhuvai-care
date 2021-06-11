@@ -1,0 +1,137 @@
+
+.body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.curved {
+    background-color: #2C4897;
+    color: white;
+    text-align: center;
+}
+.curved svg{
+    display: block;
+}
+.curved h1{
+    margin-top: 0px;
+}
+
+
+.header{
+    height: auto;
+    margin-left: 10%;
+    display: block;
+}
+.header h{
+    padding: 5px;
+    position: fixed;
+    
+}
+.header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.page_title{
+    border-bottom-right-radius: 500px;
+    background-color: #2C4897;
+    /* margin-top: 50px; */
+    color: white;
+    text-align: center;
+    padding-top: 3px;
+    /* margin-bottom: 1px; */
+    
+}
+.container{   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    align-items: center;
+
+}
+.container input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 20px;
+    width: 50%;
+    background-color: rgb(152, 209, 247);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container input:active{
+    background-color: rgb(205, 228, 243);
+}
+
+.container button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px;
+    background-color:rgb(0, 232, 0) ;
+    color: black;
+    border-radius: 10px;
+}
+
+.container button:hover{
+    background-color: rgb(165, 246, 165);
+}
+
+.container table{
+
+    display:table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+th,td,table{
+    /* border: 1px solid black; */
+    /* border-collapse: collapse; */
+    text-align: center;
+    padding:  5px;  
+}
+#hospital-name{
+    background-color:#6ddfee;
+}
+
+#updated-date{
+    background-color:#ecdd6f;
+}
+
+#available_beds{
+    background-color: #52f1f1;
+}
+
+#institution{
+    background-color: #C5E3FF;
+}
+
+#isolation{
+    background-color: #f472f6;
+}
+#oxygen{
+    background-color: #68f5a9;
+}
+#ventilator{
+    background-color: #C5E3FF;
+}
+#not_found_gov{
+        background-color: rgb(255, 138, 138);
+
+}
+#not_found_private{
+    background-color: rgb(255, 138, 138);
+
+}
+#not_found_nursing{
+    background-color: rgb(255, 138, 138);
+
+
+}

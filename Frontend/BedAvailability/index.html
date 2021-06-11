@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pudhuvai care">
+    <meta name="keywords" content="puducherry, pudhuvai care" >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" ></script>
+    <title>BED AVAILABILITY</title>
+    <style>
+
+    </style>
+</head>
+<body>
+   <div class="header">
+       <img src="images/header.png" alt="">
+   </div>
+
+   <div class="curved">
+    <div class="page_title" >
+        <h3>BED AVAILABILITY</h3>
+    </div>
+    <svg viewBox="0 0 500 50" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-19.19,161.15 C-171.56,-116.17 604.96,111.80 503.95,-43.13 L560.38,237.13 L-159.71,313.12 Z" style="stroke: none; fill: #fff;"></path></svg>
+    </div>
+
+    <div class="container">
+        <input type="search" id="search" name="search" placeholder="Search" value="" onkeyup="gov(), private(),private_nursing()" >
+    </div>
+
+
+    <div class="container">
+        <table id="content_table">
+            <thead>
+                <tr>
+                    <th rowspan="2" id="hospital-name">HOSPITAL NAME </th>
+                    <th rowspan="2" id="updated-date">UPDATED AS ON</th>
+                    <th colspan="3" id="available_beds" >AVAILABLE BEDS</th>
+                </tr>
+                <tr> 
+                    <th id="isolation">
+                        ISOLATION
+                    </th>
+                    <th id="oxygen" >
+                        OXYGEN
+                    </th>
+                    <th id="ventilator">
+                        VENTILATOR
+                    </th>
+                </tr>
+        
+        
+            </thead>
+        
+            <tbody>
+                <thead>
+                    <tr>
+                        <th colspan="5" id="institution" >Government Instituion</th>
+                    </tr>
+                </thead>
+                <!-- <tr id="not_available" style="display: none;" >  <td>NOT AVAILABLE </td> </tr> -->
+                <tr  class="content gov_institue" >
+                    <td id="hospital-name">PIMS</td>
+                    <td  id="updated-date" >08-06-2021 22:48:44</td>
+        
+                    <td id="isolation" >3</td>
+                    <td id="oxygen" >4</td>
+                    <td id="ventilator" >7</td>
+                </tr>
+                <tr class="content gov_institue" >
+                    <td id="hospital-name" >IGGGH & PGI</td>
+                    <td  id="updated-date" >08-06-2021 22:48:44</td>
+                    <td id="isolation" >3</td>
+                    <td id="oxygen" >4</td>
+                    <td id="ventilator" >7</td>
+                </tr>
+                <tr class="content gov_institue" >
+                    <td id="hospital-name" >IGGGH & PGI</td>
+                    <td  id="updated-date" >08-06-2021 22:48:44</td>
+        
+                    <td id="isolation" >3</td>
+                    <td id="oxygen" >4</td>
+                    <td id="ventilator" >7</td>
+                </tr>
+                <tr id="not_found_gov" style="display: none;" >
+                  <td colspan="5" >END OF THE LIST</td>
+                </tr>
+                <thead>
+                    <tr>
+                    <th colspan="5" id="institution">
+                        Private Medical Institution
+                    </th>
+                    </tr>
+                </thead>
+                <tr  class="content private_institute "  >
+        
+                    <td id="hospital-name"s >GOVERNMENT HOSPITAL</td>
+                    <td  id="updated-date" >08-06-2021 22:48:44</td>
+        
+                    <td  id="isolation" >3</td>
+                    <td id="oxygen" >4</td>
+                    <td id="ventilator" >7</td>
+                </tr>
+            <tr  class="content private_institute"  >
+                <td id="hospital-name" >IGGGH & PGI</td>
+                <td  id="updated-date" >08-06-2021 22:48:44</td>
+                <td  id="isolation" >3</td>
+                <td id="oxygen" >4</td>
+                <td id="ventilator" >7</td>
+            </tr>
+            <tr  class="content private_institute"  >
+                <td id="hospital-name" >IGGGH & PGI</td>
+                <td  id="updated-date" >08-06-2021 22:48:44</td>
+                <td  id="isolation" >3</td>
+                <td id="oxygen" >4</td>
+                <td id="ventilator" >7</td>
+            </tr>
+            <tr id="not_found_private" style="display: none;" >
+              <td colspan="5" >END OF THE LIST</td>
+            </tr>
+            <br>
+            <thead>
+                <tr>
+                    <th colspan="5" id="institution">
+                        Private Nursing Home
+                    </th>
+                </tr>
+            </thead>
+                <tr  class="content private_nursing "  >
+                    <td id="hospital-name" >JIPMER</td>
+                    <td  id="updated-date" >08-06-2021 22:48:44</td>
+                    <td  id="isolation" >3</td>
+                    <td id="oxygen" >4</td>
+                    <td id="ventilator" >7</td>
+                </tr>
+                <tr  class="content private_nursing "  >
+                    <td id="hospital-name" >SMVC</td>
+                    <td  id="updated-date" >08-06-2021 22:48:44</td>
+                    <td  id="isolation" >3</td>
+                    <td id="oxygen" >4</td>
+                    <td id="ventilator" >7</td>
+                </tr>
+                <tr  class="content private_nursing "  >
+                    <td id="hospital-name" >JIPMER</td>
+                    <td  id="updated-date" >08-06-2021 22:48:44</td>
+        
+                    <td id="isolation" >3</td>
+                    <td id="oxygen" >4</td>
+                    <td id="ventilator" >7</td>
+                </tr>
+        
+                <tr id="not_found_nursing"style="display: none;">
+                  <td colspan="5" >END OF THE LIST</td>
+                </tr>
+        
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script>
+
+    </script>
+
+ 
+
+  
+
+</body>
+</html>
