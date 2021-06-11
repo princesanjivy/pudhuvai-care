@@ -1,0 +1,113 @@
+
+.body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.curved {
+    background-color: rgb(37, 37, 134);
+    color: white;
+    text-align: center;
+}
+.curved svg{
+    display: block;
+}
+.curved h1{
+    margin-top: 0px;
+}
+
+
+.header{
+    height: auto;
+    margin-left: 10%;
+    display: block;
+}
+.header h{
+    padding: 5px;
+    position: fixed;
+    
+}
+.header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.page_title{
+    border-bottom-right-radius: 500px;
+    background-color: rgb(37, 37, 134);
+    /* margin-top: 50px; */
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    /* margin-bottom: 1px; */
+    
+}
+
+#piechart{
+    margin-top: 10%;
+    width:900;
+    height:1500;
+}
+h3{
+    display: block;
+margin-left: auto;
+margin-right: auto;
+    text-align: center;
+}
+
+.time_container{
+    float: right;
+    width:auto; 
+    height:auto;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgb(37, 37, 134);
+    color: white;
+}
+
+#chart{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+.pie-color table{
+margin-left: auto;
+margin-right: auto;
+}
+
+.pie-color table, th,td{
+    padding: 30px;
+}
+
+.total-cases {
+    background: #1352ff;
+  }
+  
+  .active-cases {
+    background: #c2a31c;
+  }
+  
+  .total-cured {
+    background: #ae163e;
+  }
+  .death{
+  background-color: green;
+  }
+  .color-box {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+  }
+  
