@@ -1,10 +1,15 @@
-
-.body{
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
     width: 100vw;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    box-sizing: border-box;
+   
+   
 }
+
 
 .curved {
     background-color: rgb(37, 37, 134);
@@ -50,6 +55,7 @@
     width: 350px;
     margin-left: 200px;
     margin-bottom: 70px;
+   
     
     border-radius: 20px;
     color: white;
@@ -71,8 +77,8 @@
 }
 .tab1 h1{
     color: white;
-    text-decoration: nonex  x;
-}*/
+   
+}
 .text{
     color: white;
 }
@@ -81,11 +87,51 @@ a{
 }
 .title{
     text-align: left;
-    padding-left: 410px;
+    padding-left: 230px;
     padding-top: 20px;
+    
     
 }
 #logo{
-    padding-left: 300px;
+    margin-left: 80px;
+    width: 120px;
+    height: 120px;
+    float: left;
    
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   .title{
+       font-size: 9px;
+      padding-left: 0px;
+      text-align: left;
+   }
+     #logo{
+         margin-left: 0px;
+     } 
+     .tab1{
+         width: 10px;
+      
+         margin-left: 10px;
+         padding-left: 0;
+        
+        
+         margin-bottom: 20px;
+         width: 280px;
+     }
+    
+    .text{
+        margin-bottom: 0px;
+    }
+  }
+  /*@media only screen and (min-width: 600px) {
+      .tab1{
+          margin-left: 40px;
+      }
+      .title{
+          font-size: 11px;
+      }
+
+  }*/
+ 
