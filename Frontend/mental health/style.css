@@ -1,0 +1,44 @@
+
+.body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.curved {
+    background-color: rgb(37, 37, 134);
+    color: white;
+    text-align: center;
+}
+.curved svg{
+    display: block;
+}
+.curved h1{
+    margin-top: 0px;
+}
+.header{
+    height: auto;
+    margin-left: 10%;
+    display: block;
+}
+.header h{
+    padding: 5px;
+    position: fixed;
+    
+}
+.header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 50%;
+}
+.page_title{
+    border-bottom-right-radius: 500px;
+    background-color: rgb(37, 37, 134);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    
+}
