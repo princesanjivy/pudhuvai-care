@@ -9,17 +9,17 @@ body,html{
 
 /* header */
 
-.top-bar{
+.topbar{
     background-color: #F0F0F0;
 }
-.top-bar small{
+.topbar small{
     margin-left: 10%;
 }
-.top-bar a{
+.topbar a{
     float: right;
     padding: 3px;
 }
-.top-bar i{
+.topbar i{
     float: right;
     padding: 2px;
 }
@@ -104,6 +104,14 @@ body,html{
     font-size: 20px;
 }
 /*-----div--*/
+.hom img{
+  margin-left: 50px;
+  width: 60px;
+  height: 50px;
+  float: left;
+  
+}
+
 .hero{
 	background: #fff;
 	width: 100%;
@@ -193,7 +201,7 @@ p.age{
   .icon .fa{
   	left: 100px;
   }
-  .top-bar i{
+  .topbar i{
     margin-top: -40px;
   }
 }
@@ -205,7 +213,7 @@ p.age{
 	.icon .fa{
   	left: 100px;
   }
-  .top-bar i{
+  .topbar i{
     margin-top: -20px;
   }
 }
