@@ -1,52 +1,74 @@
 
-.body{
+body,html{
     width: 100vw;
     height: 100vh;
-    margin: 0;
-    overflow: hidden;
+    /* overflow: scroll; */
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.curved {
-    background-color: #2C4897;
-    color: white;
-    text-align: center;
-}
-.curved svg{
-    display: block;
-}
-.curved h1{
-    margin-top: 0px;
-}
+/* header */
 
+.top-bar{
+    background-color: #F0F0F0;
+}
+.top-bar small{
+    margin-left: 10%;
+}
+.top-bar a{
+
+    float: right;
+    padding: 3px;
+}
+i{
+    float: right;
+    padding: 5px;
+}
 
 .header{
-    height: auto;
-    margin-left: 10%;
-    display: block;
-}
-.header h{
-    padding: 5px;
-    position: fixed;
-    
-}
-.header img{
-    display: block;
+    /* position: relative; */
+    display:block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+}
+.header img{
+    margin-left:25%;
+    float: left;
+    padding: 3px;
+    max-height: 100px;
+    max-width: 50%;
+}
+.header p{
+    display: inline-block;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size:1.5vw;
+}
+.title-card{
+    /* max-height: 10%; */
+    position: relative;
+}
+.title-card img{
+    
+    max-height: 5%;
+    max-width: 100% ;
+}
+.title-card h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vmax;
+    margin-top: 2px;
+    padding-bottom: 10px;
+    color: white;
+
 }
 
-.page_title{
-    border-bottom-right-radius: 500px;
-    background-color: #2C4897;
-    /* margin-top: 50px; */
-    color: white;
-    text-align: center;
-    padding-top: 3px;
-    /* margin-bottom: 1px; */
-    
-}
-.container{   
+/* body */
+
+.container-ash{   
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -54,7 +76,7 @@
     align-items: center;
 
 }
-.container input{
+.container-ash input{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -65,11 +87,11 @@
     border-radius: 10px;
 }
 
-.container input:active{
+.container-ash input:active{
     background-color: rgb(205, 228, 243);
 }
 
-.container button{
+.container-ash button{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -79,11 +101,11 @@
     border-radius: 10px;
 }
 
-.container button:hover{
+.container-ash button:hover{
     background-color: rgb(165, 246, 165);
 }
 
-.container table{
+.container-ash table{
 
     display:table;
     margin-left: auto;
@@ -91,55 +113,88 @@
     width: 70%;
 }
 
-th,td,table{
+.container-ash th,td,table{
     /* border: 1px solid black; */
     /* border-collapse: collapse; */
     text-align: center;
     padding:  5px;  
 }
-#hospital-name{
-    background-color:#6ddfee;
+#hospital-name-ash{
+    background-color:#00E0FF;
 }
 
-#updated-date{
-    background-color:#ecdd6f;
+#updated-date-ash{
+    background-color:#FEE202;
 }
 
-#available_beds{
-    background-color: #52f1f1;
+#available_beds-ash{
+    background-color: #00EEEE;
 }
 
-#institution{
+#institution-ash{
     background-color: #C5E3FF;
 }
 
-#isolation{
-    background-color: #f472f6;
+#isolation-ash{
+    background-color: #FA00FF;
 }
-#oxygen{
-    background-color: #68f5a9;
+#oxygen-ash{
+    background-color: #02FE76;
 }
-#ventilator{
+#ventilator-ash{
     background-color: #C5E3FF;
 }
-#not_found_gov{
-        background-color: rgb(255, 138, 138);
+#not_found_gov-ash{
+        background-color: rgb(250, 85, 85);
 
 }
-#not_found_private{
-    background-color: rgb(255, 138, 138);
+#not_found_private-ash{
+    background-color: rgb(250, 85, 85);
 
 }
-#not_found_nursing{
-    background-color: rgb(255, 138, 138);
+#not_found_nursing-ash{
+    background-color: rgb(250, 85, 85);
 
 
 }
 
-@media(max-width: 768px){
-    .container table{
+/* footer */
+body,html{
+    margin-left: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.footertitle{
+    text-align: center;
+    margin-top: 0px;
+    font-weight: lighter;
 
+    margin-bottom: 0;
+}
+.aboutus{
+    height: 40px;
+    background-color: rgb(37, 37, 137);
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 8px;
     
-    width: 20%;
 }
+
+
+.footerlink{
+    
+   
+    text-decoration: none;
+    color: white;
+   
+   
+}
+
+
+.spanhr{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
 }

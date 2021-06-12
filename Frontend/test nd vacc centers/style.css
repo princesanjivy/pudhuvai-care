@@ -15,24 +15,13 @@ body,html{
 .top-bar small{
     margin-left: 10%;
 }
-.top-bar img{
-    max-height: 15px;
-    max-width: 20px;
+.top-bar a{
     float: right;
     padding: 3px;
 }
-.top-bar ul{
-    padding: 0px;
-    margin: 0px;
+.top-bar i{
     float: right;
-    margin-right: 150px;
-    margin-top: -14px;
-}
-.top-bar ul li{
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 1px;
-    color: black;
+    padding: 2px;
 }
 
 .header{
@@ -41,7 +30,7 @@ body,html{
     margin-right: auto;
 }
 .header img{
-    margin-left:30%;
+    margin-left:25%;
     float: left;
     padding: 3px;
     max-height: 100px;
@@ -93,6 +82,7 @@ body,html{
     text-align: center;
     padding-top: 8px;
     margin-top: 8px;
+    
 }
 
 
@@ -192,7 +182,7 @@ p.age{
 }
 
 /*-----media query------*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 700px) {
   /* For mobile phones: */
   .hero {
     width: 100%;
@@ -203,6 +193,9 @@ p.age{
   .icon .fa{
   	left: 100px;
   }
+  .top-bar i{
+    margin-top: -40px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -212,33 +205,29 @@ p.age{
 	.icon .fa{
   	left: 100px;
   }
-
+  .top-bar i{
+    margin-top: -20px;
+  }
 }
 
 /*-----search------*/
 
-.search{
-   
-    border: black;
-    margin-left: 40px;
+.container{   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    align-items: center;
+
+}
+.container input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 50%;
+    background-color: skyblue;
+    padding: 10px;
     border-radius: 10px;
 }
-.searchbar{
-  margin-left: 320px;
-  
-}
-#myInput {
-   /* background-image: url('/css/searchicon.png');*/ /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; 
-    padding-left: 40px;
-    background-color: rgb(197,227,251);
-    
-    width: 820px;/* Add some space below the input */
-  }
 

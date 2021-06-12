@@ -1,6 +1,6 @@
 
 function myFunction() {
-    var search_input = document.getElementById('myInput').value;
+    var search_input = document.getElementById('searchInput').value;
     var input = search_input.toUpperCase();
     // console.log(input);
     var contents = document.getElementsByClassName('col');
