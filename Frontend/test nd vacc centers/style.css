@@ -10,7 +10,7 @@ body,html{
 /* header */
 
 .top-bar{
-    background-color: lavender;
+    background-color: #F0F0F0;
 }
 .top-bar small{
     margin-left: 10%;
@@ -20,6 +20,19 @@ body,html{
     max-width: 20px;
     float: right;
     padding: 3px;
+}
+.top-bar ul{
+    padding: 0px;
+    margin: 0px;
+    float: right;
+    margin-right: 150px;
+    margin-top: -14px;
+}
+.top-bar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 1px;
+    color: black;
 }
 
 .header{
@@ -80,7 +93,6 @@ body,html{
     text-align: center;
     padding-top: 8px;
     margin-top: 8px;
-    
 }
 
 
@@ -200,6 +212,7 @@ p.age{
 	.icon .fa{
   	left: 100px;
   }
+
 }
 
 /*-----search------*/
@@ -209,12 +222,10 @@ p.age{
     border: black;
     margin-left: 40px;
     border-radius: 10px;
-     
 }
 .searchbar{
-  margin-left: 310px;
+  margin-left: 320px;
   
- 
 }
 #myInput {
    /* background-image: url('/css/searchicon.png');*/ /* Add a search icon to input */
@@ -230,3 +241,4 @@ p.age{
     
     width: 820px;/* Add some space below the input */
   }
+
