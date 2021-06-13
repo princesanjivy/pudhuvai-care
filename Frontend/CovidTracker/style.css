@@ -3,7 +3,6 @@ body,html{
     height: 100vh;
     margin: 0px;
     width: 100%;
-    overflow: hidden;
     box-sizing: border-box;
 }
 

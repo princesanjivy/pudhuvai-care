@@ -21,9 +21,10 @@ body,html{
     float: right;
     padding: 3px;
 }
-i{
+.top-bar i{
     float: right;
     padding: 5px;
+    margin-top: -3px;
 }
 
 .header{
@@ -80,7 +81,7 @@ i{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 20px;
+    height: 40px;
     width: 50%;
     background-color: rgb(152, 209, 247);
     padding: 10px;
