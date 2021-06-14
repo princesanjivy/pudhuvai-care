@@ -164,7 +164,7 @@ body,html{
 	color: black;
 }
 
-.fa{
+.mani .fa{
 	position:relative; left:110px; top:17px; color:#EA4335 ;
 }
 
@@ -195,7 +195,7 @@ p.age{
   .hero {
     width: 100%;
   }
-  .fa{
+  .mani .fa{
   	left:100px; top:17px;
   }
   .icon .fa{
@@ -207,7 +207,7 @@ p.age{
 }
 
 @media only screen and (min-width: 600px) {
-	.fa{
+	.mani .fa{
 		left:100px; top:17px;
 	}
 	.icon .fa{
