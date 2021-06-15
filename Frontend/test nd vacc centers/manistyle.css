@@ -9,48 +9,47 @@ body,html{
 
 /* header */
 
-.topbar{
+.manitopbar{
     background-color: #F0F0F0;
 }
-.topbar small{
+.manitopbar small{
     margin-left: 10%;
 }
-.topbar a{
+.manitopbar a{
     float: right;
     padding: 3px;
 }
-.topbar i{
-    float: right;
-    padding: 2px;
+.manitopbar i{
+    style="font-size :15px;color:black;float: right; padding: 5px; margin-right:100px;margin-top: 1px;"
 }
 
-.header{
+.maniheader{
     display:block;
     margin-left: auto;
     margin-right: auto;
 }
-.header img{
+.maniheader img{
     margin-left:25%;
     float: left;
     padding: 3px;
     max-height: 100px;
     max-width: 50%;
 }
-.header p{
+.maniheader p{
     display: inline-block;
     margin-top: 10px;
     padding-top: 10px;
     font-size:1.5vw;
 }
-.title-card{
+.manititle-card{
     position: relative;
 }
-.title-card img{
+.manititle-card img{
     
     max-height: 5%;
     max-width: 100% ;
 }
-.title-card h2{
+.manititle-card h2{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,14 +68,14 @@ body,html{
     width: 100%;
     box-sizing: border-box;
 }
-.footertitle{
+.manifootertitle{
     text-align: center;
     margin-top: 0px;
     font-weight: lighter;
 
     margin-bottom: 0;
 }
-.aboutus{
+.maniaboutus{
     height: 40px;
     background-color: rgb(37, 37, 137);
     text-align: center;
@@ -86,7 +85,7 @@ body,html{
 }
 
 
-.footerlink{
+.manifooterlink{
     
    
     text-decoration: none;
@@ -96,7 +95,7 @@ body,html{
 }
 
 
-.spanhr{
+.manispanhr{
     margin-left: 10px;
     margin-right: 10px;
     color: white;
@@ -123,14 +122,14 @@ body,html{
 	text-align: center;
 	color: black;
 }
-.row{
+.manirow{
 	margin-top: 80px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-.col{
+.manicol{
 	flex-basis: 28%;
 	box-sizing: border-box;
 	text-align: center;
@@ -176,7 +175,7 @@ p.age{
     font-family: arial;
 }
 
-.button {
+.manibutton {
   background-color: lightgrey; 
   border: none;
   color: black;
@@ -201,9 +200,7 @@ p.age{
   .icon .fa{
   	left: 100px;
   }
-  .topbar i{
-    margin-top: -40px;
-  }
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -213,14 +210,14 @@ p.age{
 	.icon .fa{
   	left: 100px;
   }
-  .topbar i{
+  .manitopbar i{
     margin-top: -20px;
   }
 }
 
 /*-----search------*/
 
-.container{   
+.manicontainer{   
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -228,7 +225,7 @@ p.age{
     align-items: center;
 
 }
-.container input{
+.manicontainer input{
     display: block;
     margin-left: auto;
     margin-right: auto;
