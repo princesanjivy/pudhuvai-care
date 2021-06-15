@@ -1,0 +1,318 @@
+/*EMERGENCY CENTER*/
+/*Author: Yadhava Prasana.G
+*/
+/*.homeimage{
+  
+   width: 35px;
+   height: 35px;
+   margin-left: 40px;
+   
+}*/
+.hometext img {
+   display: inline;
+  
+   width: 25px;
+   height: 35px;
+   margin-left: 40px;
+  
+}
+
+.emergencytitle{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.callbold{
+    font-size: 50px;
+    
+}
+.emptydiv1{
+    height:60px;
+}
+.emptydiv2{
+    height:60px;
+}
+.phoneatag i{
+    padding-top: 20px;
+    
+    color: rgb(37, 37, 134);
+    width: 40px;
+    height: 0px;
+    
+}
+.emergencytitlediv{
+    display: inline;
+}
+
+
+
+   
+
+
+
+/* header */
+.homeicon{
+    margin-top: 0px;
+    margin-left: 60px;
+    height: 20px;
+    margin-bottom: 0px;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+    
+
+
+.top-bar{
+    background-color: lavender;
+}
+.top-bar small{
+    margin-left: 10%;
+}
+.top-bar img{
+    max-height: 15px;
+    max-width: 20px;
+    float: right;
+   
+    
+    padding: 3px;
+}
+.marginfortwitter{
+    margin-right: 30px;
+}
+.header{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header img{
+    margin-left:30%;
+    float: left;
+    padding: 3px;
+    max-height: 100px;
+    max-width: 50%;
+}
+.header p{
+    display: inline-block;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size:1.5vw;
+}
+.title-card{
+    position: relative;
+}
+.title-card img{
+    
+    max-height: 5%;
+    max-width: 100% ;
+}
+.title-card h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vmax;
+    margin-top: 2px;
+    padding-bottom: 10px;
+    color: white;
+
+}
+
+
+/* footer */
+
+.footertitle{
+    
+    text-align: center;
+    margin-top: 0px;
+    font-weight: lighter;
+
+    margin-bottom: 0;
+}
+.aboutus{
+    height: 40px;
+    background-color: rgb(37, 37, 134);
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 8px;
+    margin-left: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+
+.footerlink{
+    
+   width: 1000vw;
+    text-decoration: none;
+    color: white;
+   
+   
+}
+
+
+.spanhr{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*body*/
+/*Global*/
+
+
+
+/*Func*/
+
+.multi-levelemer, .itememer ul, .navemer input[type="checkbox"] {
+    display: none;
+}
+ .multi-levelemer, .itememer input:checked ~ ul {
+    display: block;
+}
+
+/*Arrow*/
+
+.arrowemer {
+    width: 22px;
+    height: 22px;
+    vertical-align:top ;
+    float: left;
+    
+    z-index: 0;
+    margin: 17px 1em 0 2em;
+    
+}
+.itememer input + .arrowemer {
+    transform: rotate(-90deg);
+    transition: 0.1s;
+}
+.itememer input:checked + .arrowemer {
+    transform: rotate(0deg);
+    transition: 0.1s;
+}
+
+
+
+/*Styles*/
+
+label:hover {
+    cursor: pointer;
+}
+label {
+    width: 100%;
+    display: block;
+    z-index: 3;
+    position: relative;
+}
+.navemer {
+    width: 100%;
+    background-color: white;
+    overflow-x: hidden;
+    border-bottom: 1px solid #CFD8DC;
+}
+
+#nav-icon {
+    font-size: 28px;
+    line-height: 50px;
+    padding-left: 1em;
+    color: white;
+    background-color: #F44336;
+}
+
+.navemer ul, .navemer li, label {
+    line-height: 50px;
+    margin: 0;
+    padding: 0 2em;
+    padding-top: 0px;
+    list-style: none;
+    text-decoration: none;
+   
+    font-weight: 100;
+    width: 100%;
+}
+.itememer ul {
+  /*  padding: 0 0.25em;*/
+}
+.navemer li a {
+    line-height: 20px;
+    margin: 0;
+    padding: 0 4em;
+    list-style: none;
+    text-decoration: none;
+    color: #90A4AE;
+    font-weight: 100;
+}
+.memer{
+    width: 1450px;
+    height: 40px;
+    background-color: rgb(37,37,134);
+    border-radius: 8px;
+    color: white;
+    padding-bottom: 8px;
+}
+.nnemer{
+    width: 1300px;
+    background-color: #B2d7FA;
+    border-radius: 10px;
+    color: black;
+    margin-top: 2px;
+    margin-bottom: 0;
+    
+}
+.y li{
+    padding-top: 0;
+    
+}
+
+
+
+.nemer{
+    
+    width: 1450px;
+    height: 40px;
+    background-color: rgb(37,37,134);
+    border-radius: 8px;
+    color: white;
+    padding-bottom: 8px;
+    background-color: rgb(37,37,134);
+    padding-bottom: 15px;
+    color: white;
+    margin-top: 5px;
+}
+.navemer{
+    padding-left: 30px;
+    margin-top: 0px;
+   
+}
+.hthree{
+    font-size: 20px;
+}
+.home{
+   margin-left: 50px;
+   font-weight: 100;
+   margin-top: 0;
+}
+/*@media only screen and (max-width: 768px) {
+   
+    .n{
+        width: 100px;
+    }
+    .curved svg{
+        width: 100px;
+    }
+  }*/
+
+  
+  
+.otherimportant{
+    text-decoration: none;
+}
