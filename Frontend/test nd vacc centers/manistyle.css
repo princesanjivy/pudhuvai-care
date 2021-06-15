@@ -20,9 +20,11 @@ body,html{
     padding: 3px;
 }
 .manitopbar i{
-    style="font-size :15px;color:black;float: right; padding: 5px; margin-right:100px;margin-top: 1px;"
+    margin-top: -5px;
 }
-
+.manii i{
+    margin-right: 50px;
+}
 .maniheader{
     display:block;
     margin-left: auto;
@@ -200,7 +202,9 @@ p.age{
   .icon .fa{
   	left: 100px;
   }
-
+  .manii i{
+    margin-right: 1px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -210,9 +214,7 @@ p.age{
 	.icon .fa{
   	left: 100px;
   }
-  .manitopbar i{
-    margin-top: -20px;
-  }
+
 }
 
 /*-----search------*/
