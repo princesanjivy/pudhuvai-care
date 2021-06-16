@@ -48,7 +48,7 @@ body,html{
 }
 .title-card img{
     
-    max-height:40%;
+    max-height:5%;
     max-width: 100% ;
 }
 .title-card h2{
@@ -78,8 +78,8 @@ body,html{
     font-size: 25px;
    
 }
-   .ccolumn {
-    float: left;
+  .ccolumn {
+      float: left;
     width: 50%;
     padding-bottom: 20px;
     height: auto;
@@ -94,21 +94,34 @@ body,html{
     display: table;
     clear: both;
   }
-@media screen and (min-width: 9000px){
+
+  @media screen and (min-width:900px) {
+    
     .ccolumn{
         padding-left: auto;
         padding-right: auto;
     }
-}
+  }
+
+
   @media screen and (max-width: 600px) {
     .ccolumn {
       width: 100%;
       display: block;
       margin-bottom: 20px;
-      padding-left: auto;
-      padding-right: auto;
+      
     }
   }
+
+  /* @media only screen and (max-width: 786px) {
+      .ccolumn{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+      padding-left: auto;
+      padding-right: auto;
+      }
+  } */
 
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

@@ -7,6 +7,7 @@ body,html{
     margin: 0px;
     width: 100%;
     box-sizing: border-box;
+    /*font-family:"Times New Roman",Times,serif;*/
    
 }
 
@@ -14,21 +15,25 @@ body,html{
 
 .top-bar{
     background-color: #F0F0F0;
+    font-family:"Times New Roman",Times,serif;
 }
 .top-bar small{
     margin-left: 10%;
+    font-family:"Times New Roman",Times,serif;
 }
 .top-bar img{
     max-height: 15px;
     max-width: 20px;
     float: right;
     padding: 3px;
+    font-family:"Times New Roman",Times,serif;
 }
 
 .header{
     display:block;
     margin-left: auto;
     margin-right: auto;
+    font-family:"Times New Roman",Times,serif;
 }
 .header img{
     margin-left:30%;
@@ -36,20 +41,24 @@ body,html{
     padding: 3px;
     max-height: 100px;
     max-width: 50%;
+    font-family:"Times New Roman",Times,serif;
 }
 .header p{
     display: inline-block;
     margin-top: 10px;
     padding-top: 10px;
     font-size:1.5vw;
+    font-family:"Times New Roman",Times,serif;
 }
 .title-card{
     position: relative;
+    font-family:"Times New Roman",Times,serif;
 }
 .title-card img{
     
     max-height: 5%;
     max-width: 100% ;
+    font-family:"Times New Roman",Times,serif;
 }
 .title-card h2{
     position: absolute;
@@ -60,7 +69,7 @@ body,html{
     margin-top: 2px;
     padding-bottom: 10px;
     color: white;
-
+    font-family:"Times New Roman",Times,serif;
 }
 
 
@@ -69,13 +78,14 @@ body,html{
     margin-left: 0px;
     width: 100%;
     box-sizing: border-box;
+    font-family:"Times New Roman",Times,serif;
 }
 .footertitle{
     text-align: center;
     margin-top: 0px;
     font-weight: lighter;
-
     margin-bottom: 0;
+    font-family:"Times New Roman",Times,serif;
 }
 .aboutus{
     height: 40px;
@@ -83,6 +93,7 @@ body,html{
     text-align: center;
     padding-top: 8px;
     margin-top: 8px;
+    font-family:"Times New Roman",Times,serif;
     
 }
 
@@ -92,6 +103,7 @@ body,html{
    
     text-decoration: none;
     color: white;
+    font-family:"Times New Roman",Times,serif;
    
    
 }
@@ -103,6 +115,7 @@ body,html{
     color: white;
     font-weight: bold;
     font-size: 20px;
+    font-family:"Times New Roman",Times,serif;
 }
 
 
@@ -110,18 +123,22 @@ body,html{
     font-size: 25px;
     font-weight: bolder;
     color: rgb(170, 170, 170);
+    font-family:"Times New Roman",Times,serif;
  }
  
  :-moz-placeholder { /* Firefox 18- */
        font-size: 25px;
+       font-family:"Times New Roman",Times,serif;
  }
  
  ::-moz-placeholder {  /* Firefox 19+ */
        font-size: 25px;
+       font-family:"Times New Roman",Times,serif;
  }
  
  :-ms-input-placeholder {
        font-size: 25px;
+       font-family:"Times New Roman",Times,serif;
  }
 
  
