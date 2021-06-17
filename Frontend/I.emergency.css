@@ -73,7 +73,7 @@ body,html{
     background-color: lavender;
 }
 .top-bar small{
-    margin-left: 10%;
+    margin-left: 8%;
 }
 .top-bar img{
     max-height: 15px;
@@ -92,7 +92,15 @@ body,html{
     margin-right: auto;
 }
 .header img{
-    margin-left:30%;
+    margin-left:5%;
+    float: left;
+    padding: 3px;
+    max-height: 100px;
+    max-width: 50%;
+}
+.header1 img{
+    margin-left:5%;
+    float: center;
     float: left;
     padding: 3px;
     max-height: 100px;
@@ -100,8 +108,9 @@ body,html{
 }
 .header p{
     display: inline-block;
-    margin-top: 10px;
-    padding-top: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    float: right;
     font-size:1.5vw;
 }
 .title-card{
@@ -118,7 +127,7 @@ body,html{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2vmax;
-    margin-top: 2px;
+    margin-top: 40px;
     padding-bottom: 10px;
     color: white;
 

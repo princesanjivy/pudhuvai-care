@@ -18,8 +18,7 @@ body,html{
     font-family:"Times New Roman",Times,serif;
 }
 .top-bar small{
-    margin-left: 10%;
-    font-family:"Times New Roman",Times,serif;
+    margin-left: 5%;
 }
 .top-bar img{
     max-height: 15px;
@@ -36,17 +35,27 @@ body,html{
     font-family:"Times New Roman",Times,serif;
 }
 .header img{
-    margin-left:30%;
+    margin-left:5%;
     float: left;
     padding: 3px;
     max-height: 100px;
     max-width: 50%;
     font-family:"Times New Roman",Times,serif;
 }
-.header p{
+.header1 img{
+    margin-left:5%;
+    float: center;
+    float: left;
+    padding: 3px;
+    max-height: 100px;
+    max-width: 50%;
+}
+.header p {
+
     display: inline-block;
-    margin-top: 10px;
-    padding-top: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    float: right;
     font-size:1.5vw;
     font-family:"Times New Roman",Times,serif;
 }
@@ -66,7 +75,7 @@ body,html{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2vmax;
-    margin-top: 2px;
+    margin-top: 40px;
     padding-bottom: 10px;
     color: white;
     font-family:"Times New Roman",Times,serif;
