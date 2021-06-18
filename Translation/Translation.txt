@@ -1,0 +1,453 @@
+HOME PAGE:
+
+Government of Puducherry - புதுச்சேரி அரசு
+Department of Health and Family Welfare Services - சுகாதாரம் மற்றும் குடும்ப நல சேவைகள் துறை
+Tamil - தமிழ்
+English - ஆங்கிலம்
+
+The puducherryCovid-19 portal is a one-stop platform for authenticated data and news regarding the novel coronavirus situation in puducherry covid-19 dashboard around the state.showing the latest state and information related to covid-19 advice for the publicawareners -
+ புதுச்சேரி கோவிட் -19 போர்ட்டல் என்பது மாநிலம் முழுவதும் உள்ள புதுச்சேரி கோவிட் -19 டாஷ்போர்டில் நாவல் கொரோனா வைரஸ் நிலைமை குறித்த அங்கீகரிக்கப்பட்ட தரவு மற்றும் செய்திகளுக்கான ஒரு நிறுத்த தளமாகும்.
+
+Date last update - தேதி கடைசியாக புதுப்பிக்கப்பட்டது
+Developed and Maintained by Pondicherry Engineering College - பாண்டிச்சேரி பொறியியல் கல்லூரியால் உருவாக்கப்பட்டது மற்றும் பராமரிக்கப்படுகிறது
+Feedback - கருத்து
+Covid Tracker - கோவிட் புள்ளிவிவரங்கள்
+Testing Center - சோதனை மையம்
+Vaccination Center - தடுப்பூசி மையம்
+Bed Availability - படுக்கை இருப்பு
+Mental Health- மன ஆரோக்கியம்
+Home Delivery - வீட்டு விநியோக சேவைகள்
+Isolation Center - தனிமை மையம்
+Hospital Bag Checklist - மருத்துவமனை பை சரிபார்ப்பு பட்டியல்
+
+COVID TRACKER:
+
+Total Reported -  மொத்த புகாரளிக்கப்பட்டது
+Total Death - மொத்த இறப்பு
+Total Cured - மொத்த குணமடைவு
+Active Cases - செயலில் நோயாளிகள் 
+Summary as on - என சுருக்கம்
+Date wise report - தேதி வாரியான அறிக்கை
+As on - தேதியின்படி
+District - மாவட்டம்
+Reported - புகாரளிக்கப்பட்டது
+Cured - குணமடைவு
+Active - செயலில்
+Death -இறப்பு 
+
+TESTING AND VACCINATION:
+
+9.00 AM To 10.30 AM - காலை 9.00 மணி முதல் காலை 10.30 மணி வரை
+Indira Gandhi Government General Hospital - இந்திரா காந்தி அரசு பொது மருத்துவமனை
+Rights Club Centre, Netaji Subhash Chandra Bose Salai ( Gingee Salai ), White Town, Puducherry - உரிமை கழக மையம், நேதாஜி சுபாஷ் சந்திர போஸ் சாலை (செஞ்சி சாலை), வெள்ளை நகரம், புதுச்சேரி
+
+9.00 AM To 4.30 PM - காலை 9.00 மணி முதல் மாலை 4.30 மணி வரை *
+Jawaharlal Institute of Post graduate Medical Education and Research - ஜவஹர்லால் இன்ஸ்டிடியூட் ஆப் போஸ்ட் கிராஜுவேட் மெடிக்கல் எஜுகேஷன் அண்ட் ரிசர்ச்
+Jipmer Campus Rd, Gorimedu, Puducherry - ஜிப்மர் வளாகம் சாலை, கோரிமேடு, புதுச்சேரி
+
+9.00 AM To 7.00 PM - காலை 9.00 மணி முதல் இரவு 7.00 மணி வரை
+Indira Gandhi Arts and Science - இந்திரா காந்தி கலை மற்றும் அறிவியல்
+ Vazhudavoor Rd, near ndira Gandhi Govt. General Hospital & Postgraduate Institute, Kathirkamam, Puducherry - வழுதாவூர் சாலை, நிந்திரா காந்தி அரசு பொது மருத்துவமனை மற்றும் முதுகலை நிறுவனம் அருகில், கதிர்கம், புதுச்சேரி.
+
+Aarupadai Veedu Medical Colleg - ஆறுபடை வீடு மருத்துவக் கல்லூரி
+Commune Panchayat, Pondy Cuddalore Main road Kirumampakkam Bahour, Kirumampakkam, Puducherry - கம்யூன் பஞ்சாயத்து, பாண்டி கடலூர் மெயின் ரோடு கீரமாம்பாக்கம் பகூர், கீரமாம்பாக்கம், புதுச்சேரி
+
+Sri Manakula Vinayagar Medical College - ஸ்ரீ மணக்குல விநாயகர் மருத்துவக் கல்லூரி
+Madagadipet, Kalitheerthalkuppam - மடகாடிபேட்டை, காளிதீர்த்தல்குப்பம்
+
+Kit Not Available - கிட் கிடைக்கவில்லை *
+Sri Venkateshwaraa Medical College Hospital & Research Centre - ஸ்ரீ வெங்கடேஸ்வரா மருத்துவக் கல்லூரி மருத்துவமனை மற்றும் ஆராய்ச்சி மையம்
+13-A, Pondy-Villupuram Main Road, Ariyur, Puducherry - 13-ஏ, பாண்டி-விழுப்புரம் மெயின் ரோடு, அரியூர், புதுச்சேரி
+
+8.30 AM To 4.00 PM - காலை 8.30 மணி முதல் மாலை 4.00 மணி வரை*
+Sri Lakshmi Narayana Institute of Medical Science Medical College & Hospital - ஸ்ரீ லக்ஷ்மி நாராயணா இன்ஸ்டிடியூட் ஆப் மெடிக்கல் சயின்ஸ் மெடிக்கல் காலேஜ் அண்ட் ஹாஸ்பிடல்
+Osudu Agaram Village, Villianur Commune, Kudapakkam Post, Puducherry - ஓசுடு அகரம் கிராமம், வில்லியனூர் கம்யூன், குடப்பாக்கம் அஞ்சல், புதுச்சேரி
+
+9.00 AM To 4.00 PM/IN EMERGENCY 24/7 - காலை 9.00 மணி முதல் மாலை 4.00 மணி வரை/அவசரநிலை 24/7
+Mahatma Gandhi Medical College and Research Institute - மகாத்மா காந்தி மருத்துவக் கல்லூரி மற்றும் ஆராய்ச்சி நிறுவனம்
+Pondicherry - Cuddalore Rd, ECR, Pillayarkuppam, Puducherry - பாண்டிச்சேரி - கடலூர் சாலை, ஈ.சி.ஆர், பிள்ளையார்குப்பம், புதுச்சேரி
+
+8.00 AM To 3.00 PM - காலை 8.00 மணி முதல் பிற்பகல் 3.00 மணி வரை*
+Pondicherry Institute of Medical Sciences - பாண்டிச்சேரி இன்ஸ்டிடியூட் ஆப் மெடிக்கல் சயின்சஸ்
+ Kalathumettupathai, Ganapathichettikulam Village No.20, Kalapet, Puducherry- களத்துமெட்டுப்பாத்தி, கணபதிசெட்டிகுளம் கிராமம் எண்.20, களப்பேட்டை, புதுச்சேரி
+
+10.00 AM TO 1.00 PM - காலை 10.00 மணி முதல் 1.00 மணி வரை
+Mahatma Gandhi Postgraduate Institute of Dental Sciences - மகாத்மா காந்தி பட்டப்பின்படிப்பு பல் அறிவியல் நிறுவனம்
+
+10.00 AM TO 1.00 PM - காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Abishegapakkam - ஆரம்ப சுகாதார நிலைய அபிஷேகவாக்கம்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Abhishekapakkam Main Rd, Abhishekapakkam, Puducherry - அபிஷேகப்பாக்கம் மெயின் ரோடு, அபிஷேகப்பாக்கம், புதுச்சேரி
+
+10.00 AM To 1.00 PM - காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Ariyur - ஆரம்ப சுகாதார நிலைய அரியூர்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Ariyur, Puducherry - அரியூர், புதுச்சேரி
+
+9.00 AM To 10.30 AM - காலை 9.00 மணி முதல் காலை 10.30 மணி வரை
+PHC Ariankuppam - ஆரம்ப சுகாதார நிலையம் அரியன்குப்பம்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Madha Koil St, Ariyankuppam, Puducherry - மாதா கோயில் செயின்ட், அரியாங்குப்பம், புதுச்சேரி
+
+10.00 AM To 1.00 PM - காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+West St, Bahour, Puducherry - West St, Bahour, Puducherry
+
+10.00 AM To 1.00 PM - காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Gorimedu - ஆரம்ப சுகாதார நிலைய கோரிமேடு
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Gorimedu, Priyadarshini Nagar, Puducherry - கோரிமேடு, பிரியதர்ஷினி நகர், புதுச்சேரி
+
+10.00 AM To 1.00 PM - காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Kalapet - ஆரம்ப சுகாதார நிலைய களப்பேட்டை
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Shop No.87, East Coast Rd, Chinna Kalapet, Puducherry - கடை எண்.87, கிழக்கு கடற்கரை சாலை, சின்ன களப்பேட்டை, புதுச்சேரி
+
+10.00 AM To 1.00 PM - காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Karayamputhur - ஆரம்ப சுகாதார நிலைய கரையம்புதூர்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Karayambuthur, Puducherry - கரையாம்புத்தூர், புதுச்சேரி
+
+10.00 AM To 1.00 PM - காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Katterikuppam - ஆரம்ப சுகாதார நிலைய கட்டேரிகுப்பம்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Katterikuppam, Puducherry - கட்டேரிகுப்பம், புதுச்சேரி
+
+10.00 AM To 1.00 PM - காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Kirumampakkam - ஆரம்ப சுகாதார நிலைய கீரம்பாக்கம்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Kirumampakkam, Puducherry - கீரம்பாக்கம், புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Koodapakkam - ஆரம்ப சுகாதார நிலைய கூடப்பாக்கம்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Koodappakkam, Puducherry -  கூடப்பாக்கம்,புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Kosapalayam - ஆரம்ப சுகாதார நிலையம் கொசபாளையம்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Naveena Garden, Brindavan Colony, Puducherry - நவீனா கார்டன், பிருந்தாவன் காலனி, புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Lawspet - ஆரம்ப சுகாதார நிலையம் லாஸ்பேட்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Lawspet Main Road, Pethuchettypet, Lawspet, Puducherry - லாஸ்பேட் மெயின் ரோடு, பெத்துசெட்டைப், லாஸ்பேட், புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Madukarai - ஆரம்ப சுகாதார நிலைய மடுக்கரை
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Valavanur, main road, Madukarai, Puducherry  - வளவனூர், பிரதான சாலை, மடுக்கரை, புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Mettupalayam - ஆரம்ப சுகாதார நிலையம்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Vazhudavoor Rd, Shanmugapuram, Puducherry - வழுதாவூர் வீதி, சண்முகபுரம், புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Mudaliarpet -ஆரம்ப சுகாதார நிலைய முதலியார்பேட்டை
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Thiru Vi Ka Nagar, Bharathidasan Nagar, Mudaliarpet, Puducherry - திரு வி கா நகர், பாரதிதாசன் நகர், முதலியார்பேட்டை, புதுச்சேரி 
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Murungapakkam - ஆரம்ப சுகாதார நிலைய முருங்கப்பாக்கம்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Selva Vinayagar Koil Street, Velrampet - செல்வ விநாயகர் கோயில் தெரு, வேல்ராம்பேட்டை
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Muthialpet - ஆரம்ப சுகாதார நிலைய முதியால்பேட்டை
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Depasimpet, Puducherry - டெபசிம்பேட், புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Nettapakkam - ஆரம்ப சுகாதார நிலைய நெட்டப்பாக்கம்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Nettapakkam - Pandachozhanallur Road, Nettapakkam, Puducherry - நெட்டப்பாக்கம் - பாண்டசோழநல்லூர் சாலை, நெட்டப்பாக்கம், புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Odiansalai - ஆரம்ப சுகாதார நிலைய ஒடியன்சாலை
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Anna Statue, Old Bus Stand, Odiansalai, Puducherry - அண்ணா சிலை, பழைய பேருந்து நிலையம், ஒடியான்சாலை, புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Reddiarpalayam - ஆரம்ப சுகாதார நிலையம் ரெட்டியார்பாளையம்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Kamban Nagar, Reddiarpalayam, Puducherry - கம்பர் நகர், ரெட்டியார்பாளையம், புதுச்சேரி 
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Sedarapet - ஆரம்ப சுகாதார நிலைய செடராபெட்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+42/9, Sedarapet, Puducherry - 42/9, சிடராபெட், புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Sooramangalam - ஆரம்ப சுகாதார நிலைய சூராமங்கலம்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Sooramangalam, Puducherry - சூராமங்கலம், புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Sorapet - ஆரம்ப சுகாதார நிலைய சோராபெட்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+near Vinayaga koil, Sorapet, Puducherry - அருகில் உள்ள விநாயகர் கோயில், சோரபெட், புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Thavalakuppam - ஆரம்ப சுகாதார நிலைய தவலகுப்பம்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Cuddalore Main Rd, Thavalakuppam, Puducherry - கடலூர் மெயின் ரோடு, தவலகுப்பம், புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Thirubuvanai - ஆரம்ப சுகாதார நிலைய திருபுவனை
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+No.97, Thirubhuvanai Main Rd, Thirubhuvanai, Puducherry - எண்.97, திருபுவனை பிரதான வீதி, திருபுவனை, புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+PHC Thirukanur - ஆரம்ப சுகாதார நிலையம் திருக்கானூர்
+Primary Health Centre - ஆரம்ப சுகாதார நிலையம்
+Thirukkanur, Tamil Nadu - திருக்கானூர், தமிழ்நாடு
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+CHC Karikalampakkam - சி.எச்.சி கரிகலம்பாக்கம்
+Community Health Centre - சமூக சுகாதார நிலையம்
+Madugarai Main Road, Karikalampakkam, Puducherry - மடுக்கரை பிரதான வீதி, கரிக்கலம்பாக்கம், புதுச்சேரி
+
+10.00 AM To 1.00 PM -  காலை 10.00 மணி முதல் பிற்பகல் 1.00 மணி வரை
+CHC Mannadipet - சி.எச்.சி. மண்ணடிபேட்டை
+Community Health Centre - சமூக சுகாதார நிலையம்
+Mannadipet, Puducherry - மண்ணடிபேட்டை, புதுச்சேரி
+
+ESI Main Hospital - இஎஸ்ஐ பிரதான வைத்தியசாலை
+Government Hospital for Chest Disease - மார்பு நோய் அரசு மருத்துவமனை
+Perunthalaivar Kamaraj College of Education,Karaikal - பெருந்தலைவர் காமராஜ் கல்வியியல் கல்லூரி காரைக்கால்
+Government Hospital Mahe - அரசு மருத்துவமனை மாஹே
+Government Hospital Yanam - அரசு மருத்துவமனை யானம்
+Age - வயது
+And Above - மற்றும் அதற்கு மேல்
+Register - பதிவுசெய்
+
+BED AVAILABILITY:
+
+Hospital Names - மருத்துவமனை பெயர்கள்
+Updates as on - புதுப்பித்தல்கள்
+Available Beds - கிடைக்கும் படுக்கைகள்
+Isolation - தனிமை
+Oxygen - உயிரகம்
+Ventilator - பலகணி
+Government Institution - அரசு நிறுவனம்
+Private Medical Institution - தனியார் மருத்துவ நிறுவனம்
+Private Nursing Home - செவிலியர் தனியார் விடுதி
+
+MENTAL HEALTH:
+
+Nanbaridam Pesungal - நன்பரிதம் பெசுங்கல்
+Pahirvoma - பஹிர்வோமா
+Manasathali's - மனச்சந்தலி
+Mental health support system - மனநல ஆதரவு அமைப்பு
+NMHP - Department of Psychiatry - என்.எம்.எச்.பி - உளவியல் துறை
+Velicham - வெளிச்சம்
+Headspace - தலைவெளி
+Mini meditation - சிறு தியானம்
+Unwind - பிரி
+
+	1. Create time and Space: நேரத்தையும் இடத்தையும் உருவாக்கவும்
+Choose a regular time each day for mindfulness meditation practice, ideally a quiet place free from distraction - நினைவாற்றல் தியான பயிற்சிக்கு ஒவ்வொரு நாளும் ஒரு வழக்கமான நேரத்தைத் தேர்வுசெய்க, கவனச்சிதறல் இல்லாத அமைதியான இடம்.
+
+	2. Set a time - ஒரு நேரத்தை அமைக்கவும்
+Start with just 5 minutes and ease your way up to 15-40 mins. - வெறும் 5 நிமிடங்களில் தொடங்கி 15-40 நிமிடங்கள் வரை உங்கள் வழியை எளிதாக்குங்கள்.
+
+	3. Find a comfortable sitting position - வசதியான உட்கார்ந்த நிலையைக் கண்டறியவும்
+Sit cross-legged on the floor, on the grass, or in a chair your feet flat on the ground - தரையில், புல் மீது, அல்லது ஒரு நாற்காலியில் உங்கள் கால்கள் தரையில் தட்டையாக உட்கார்ந்து கொள்ளுங்கள்.
+
+	4.Check your posture -  உங்கள் தோரணையை சரிபார்க்கவும்
+Sit up straight, hands in a comfortable position. Keep neck long, chin tilted slightly downward, tongue resting on roof of mouth. Relax shoulders. Close eyes or gaze downward 5-10 feet in front of you - நேராக உட்கார்ந்து, வசதியான நிலையில் கைகள். கழுத்தை நீளமாக வைத்திருங்கள், கன்னம் சற்று கீழ்நோக்கி சாய்ந்து, நாக்கு வாயின் கூரையில் ஓய்வெடுக்கும். தோள்களில் ஓய்வெடுங்கள். கண்களை மூடு அல்லது உங்களுக்கு முன்னால் 5-10 அடி கீழ்நோக்கிப் பாருங்கள்.
+
+	5.Take deep breaths - ஆழ்ந்த சுவாசத்தை எடுத்துக் கொள்ளுங்கள்
+Deep breathing helps settle the body and establish your presence in the space - ஆழ்ந்த சுவாசம் உடலை குடியேறவும், விண்வெளியில் உங்கள் இருப்பை உறுதிப்படுத்தவும் உதவுகிறது.
+
+	6.Direct attention to your breath - உங்கள் சுவாசத்திற்கு நேரடி கவனம்
+Focus on a part of the body where the breath feels prominent: nostrils; back of throat; or diaphragm. Try not to switch focus - உடலின் ஒரு பகுதியில் கவனம் செலுத்துங்கள், அங்கு சுவாசம் முக்கியமாக உணர்கிறது: நாசி; தொண்டையின் பின்புறம்; அல்லது உதரவிதானம். கவனம் மாற வேண்டாம்.
+
+	7.Maintain attention to your breath - உங்கள் சுவாசத்தில் கவனத்தை பராமரிக்கவும்
+As you inhale and exhale, focus on your breath. If attention wanders, return to the breath. Let go of thoughts, feelings or distractions - நீங்கள் உள்ளிழுத்து சுவாசிக்கும்போது, ​​உங்கள் சுவாசத்தில் கவனம் செலுத்துங்கள். கவனம் அலைந்தால், சுவாசத்திற்குத் திரும்புங்கள். எண்ணங்கள், உணர்வுகள் அல்லது கவனச்சிதறல்கள் போகட்டும்.
+
+	8.Repeat steps 6-7 - 6-7 படிகளை மீண்டும் செய்யவும்
+For the duration of meditation session, the mind will wander. Simply acknowledge this and return to your breath. - தியான அமர்வின் காலத்திற்கு, மனம் அலையும். இதை ஒப்புக் கொண்டு உங்கள் மூச்சுக்குத் திரும்புங்கள்.
+
+	9.Be kind to yourself - உனக்கு நீ இரக்கமானவனாய் இரு
+Don't be upset if focus occasionally drifts or if you fall asleep. If very tired, meditate with eyes open and rearrange posture to more erect (but still relaxed) positionகவனம் எப்போதாவது நகர்ந்தால் அல்லது நீங்கள் தூங்கினால் வருத்தப்பட வேண்டாம். மிகவும் சோர்வாக இருந்தால், கண்களைத் திறந்து தியானியுங்கள் மற்றும் தோரணையை இன்னும் நிமிர்ந்த (ஆனால் இன்னும் நிதானமான) நிலைக்கு மறுசீரமைக்கவும்.
+
+	10.Prepare for a soft landing - மென்மையான தரையிறக்க தயாராகுங்கள்.
+When the timer goes off, keep eyes closed until you are ready to open them. Be thankful. Acknowledge your practice with gratitude -
+ டைமர் அணைக்கப்படும் போது, ​​அவற்றைத் திறக்க நீங்கள் தயாராகும் வரை கண்களை மூடிக்கொண்டு இருங்கள். நன்றி செலுத்துங்கள். உங்கள் நடைமுறையை நன்றியுடன் ஒப்புக் கொள்ளுங்கள்.
+
+	
+
+HOME DELIVERY:
+Contact - தொடுநிலை
+Area - பகுதி
+Groceries - மளிகை
+Fresh Vegetables - புதிய காய்கறிகள்
+Timing - காலத்திட்ட அமைப்பு
+Payment - பண வழங்கீடு
+Organic Vegetables Fruits & Groceries - கரிம காய்கறிகள் பழங்கள் மற்றும் மளிகைப் பொருட்கள்
+	Samarpanam Framer's Market - சமர்ப்பனம் உழவர் சந்தை
+	Krishnaa's Organic Farms - கிருஷ்ணரின் கரிம  பண்ணை
+Eco-India Zero Waste Oraganic Store - ஈக்கோ-இந்தியா ஸிரோ வேஸ்ட் ஓர்கன் ஸ்டார்
+Gratitude Farms - க்ராடிடுதே பண்ணை
+All areas in Pondicherry & Aurovile - பாண்டிச்சேரி மற்றும் ஆரோவிலே அனைத்து பகுதிகளிலும்.
+Same-day delivery from Monday to Saturday - திங்கள் முதல் சனிக்கிழமை வரை அதே நாள் விநியோகம். 
+Tuesday & Friday only - செவ்வாய் & வெள்ளி மட்டும்
+Cash on Delivery - ஓப்படைக்கும் பொது செலுத்தும் ரொக்கம்
+All areas in Pondicherry - பாண்டிச்சேரியில் உள்ள அனைத்து பகுதிகளும்.
+ Place order in advance.Door deliveries on Tuesday and Friday between 10 am -8 pm -  முன்கூட்டியே ஆர்டர் வைக்கவும். செவ்வாய் மற்றும் வெள்ளிக்கிழமைகளில் காலை 10 மணி முதல் இரவு 8 மணி வரை கதவு விநியோகங்கள்.
+3 km Radius from Reddiarpalayam. - ரெட்டியார்பாளையம் முதல் 3 கி.மீ.
+Home delivery between 8 am and 8 pm - காலை 8 மணி முதல் இரவு 8 மணி வரை வீட்டில் விநியோகம். 
+Vegetables and fruits - காய்கறிகள் மற்றும் பழங்கள்
+Pondy vegi - போண்டி காய்கறிகள்
+
+Pondy town areas + Moolakulam,Ariyankuppam,Thavalakuppam,Villianur - பாண்டி நகரம் + மூலகுளம், அரியாங்குப்பம், தவலகுப்பம், வில்லியனூர் 
+Lawspet,Krishna Nagar,Muthialpet,TV Nagar,Vathikuppam,Vazhakulam,White Town,Uppalam,Velampet,Natesan Nagar, Reddiarpalayam,Moolakulam, 
+Shanmugapuram,Kathirkamam,Thatachavady,Gorimedu- லாஸ்பேட், கிருஷ்ணா நகர், முதியால்பேட்டை, டிவி நகர், வதிகுப்பம், வாழகுளம், வெள்ளை நகரம், உப்பலம், வேலாம்பேட்டை, நாட்டான் நகர், ரெட்டியார்பாளையம், மூலகுளம், சண்முகபுரம், கதிர்கம், தச்சாவடி, கோரிமேடு.
+
+Till 12 noon -  நண்பகல் 12 மணி வரை.
+
+Pondicherry Town Saram,Reddiarpalayam,Moolakulam -  பாண்டிச்சேரி  நகரம் சரம், ரெட்டியார்பாளையம், மூலகுளம்.
+KL & CO - கேஎல்  & கோ
+Order one day in advance.- ஒரு நாள் முன்னதாகவே ஆர்டர் செய்யுங்கள்
+Satmark - சாட்மார்க்
+Muthialpet & Boulevard Area/ White town - முதியால்பேட்டை மற்றும் பவுல்வார்ட் பகுதி/ வெள்ளை நகரம்.
+Groceries & Household items - மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Shri Venkateswara Traders - ஸ்ரீ வெங்கடேஸ்வரா வர்த்தகர்கள்
+8 Km from Mudaliarpet - முதலியார்பேட்டையிலிருந்து 8கி.மீ
+Alindia - அல்இந்தியா
+Big Bazzar - பிக் பஜார்
+24*7 Delivery - 24*7 விநியோகம். 
+Providence Mall - ப்ரோவிடான்ஸ் மால்
+Groceries & Household items - மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Upto Villianur - வில்லியனூர் வரை.
+Pothys Super Store, Anna Salai Groceries & Household items- போத்திஸ் சூப்பர் ஸ்டோர் அன்ன சாலை, மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+upto 10Km from Pothys - போத்திஸிலிருந்து 10 கி.மீ வரை.
+Till 12 noon  - நண்பகல் 12 மணி வரை .
+Dily Needs Groceries & Household items - தினசரி தேவைகள் மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+upto 10Km from Pothys - போத்திஸிலிருந்து 10 கி.மீ வரை.
+City Needs, Easwaran Kovil Street Groceries & Household items - நகரதேவைகள், ஈசுவரன் கோவில் தெரு மளிகைப் பொருட்கள்  மற்றும் வீட்டு உபயோகப் பொருட்கள்
+3-4 km from town area - நகரப் பகுதியிலிருந்து 3-4 கி.மீ
+Ariyankuppam Groceries & Household items - அரியாகுப்பம் மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Cash on Delivery,Google pay - ஓப்படைக்கும் பொது செலுத்தும் ரொக்கம் கூகிள் ஊதியம்
+Indira nagar Groceries & Household items - இந்திரா நகர் மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள் 
+Indira nagar - இந்திரா நகர்
+Kamarajar Nagar Groceries & Household items - காமராஜர்  நகர் மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Kamarajar Nagar - காமராஜர்  நகர்
+Mangalam Groceries & Household items - மங்கலம் மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Mangalam - மங்கலம்
+12am - 6pm - காலை 12 மணி - மாலை 6 மணி.
+Muthialpet Groceries & Household items- முதியால்பேட்டை மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Muthialpet - முதியால்பேட்டை
+Orleanpet Groceries & Household items - ஆர்லியன்பேட்டை மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Orleanpet - ஆர்லியன்பேட்டை
+Oulgaret Groceries & Household items - ஓல்கரேட் மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Thattanchavady Groceries & Household items - தட்டாங்காவடி  மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Thattanchavady - தட்டாங்காவடி
+Uppalam Groceries & Household items - உப்பலம் மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Uppalam - உப்பலம்
+10am - 6pm - காலை 10 - மாலை 6 மணி.
+Bahour Groceries & Household items - பஹோர் மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Bahour - பஹோர் 
+Kathirkamam Groceries & Household items - கத்ரிகம் மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Kathirkamam - கத்ரிகம்
+Lawspet Groceries & Household items  - லாஸ்பேட் மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள் 
+Lawspet - லாஸ்பேட்
+Mannadipet Groceries & Household items - மண்ணடிபேட்டை மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Mannadipet - மண்ணடிபேட்டை
+Nellithopet Groceries & Household items - நெல்லித்தோப்பு மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Nellithope - நெல்லித்தோப்பு
+Osudu Groceries & Household items - ஒசுடு மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Osudu - ஒசுடு 
+Raj Bhavan Groceries & Household items - ராஜ்பவன் மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள் 
+Raj Bhavan - ராஜ்பவன்
+Thirubavanai Groceries & Household items -திருபாவனை மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Thirubavanai - திருபாவனை
+ Embalam Groceries & Household items -  அம்பலம்  மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+ Embalam -  அம்பலம்  
+Kalapet Groceries & Household items - கலாபேட்டை மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Kalapet - கலாபேட்டை
+Manavely Groceries & Household items - மனவெலி மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Manavely - மனவெலி
+Mudaliarpet Groceries & Household items - முதலியார்பேட்டை மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Mudaliarpet - முதலியார்பேட்டை
+Nettapakkam Groceries & Household items - நெட்டப்பாக்கம் மளிகைப் பொருட்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள்
+Nettapakkam - நெட்டப்பாக்கம்
+Healthy Foods- ஆரோக்கியமான உணவுகள்
+Pulpe Sup Smoothies - புல்பெ சுப ஸ்மூத்திஸ் 
+Pondy town areas  - பாண்டி நகரப் பகுதிகள் .
+Fresh Square - பிரெஷ் ஸஃவரே
+Milk by Gopaal - மில்க் பய கோபால்
+Online shopping - இணையவழி பொருட்கள் வாங்குதல்
+Pondy Maligai - பாண்டி மாலிகை
+Le Mart - லே மார்ட்
+Sri Vijayaganapathi store - ஸ்ரீ விஜயகணபதி ஸ்டோர்
+ Pondicherry  -  பாண்டிச்சேரி .
+Pothys super store - போத்திஸ் சூப்பர் ஸ்டோர்
+Medicines - மருந்துகள்
+Kalki Medical Enterprises - கல்கி மருத்துவ என்டர்ப்ரிஸ்பேஸ் 
+Apollo Pharmacy - அப்பல்லோ பார்மசி
+Abirami Medicals - அபிராமி மெடிசல்ஸ்
+8:30am - 10pm - காலை 8:30 - இரவு 10 மணி.
+Eva Pharmacy -எவே பார்மசி
+Med Pharmacy - மெட் பார்மசி
+Super Meat - சூப்பர்  மேட்  
+Fish Pondy - பிஷ் போண்டி 
+Auro Fish - ஆரோ பிஷ்
+Fish Shop - பிஷ் ஷாப்
+Licious - லிஸியஸ்
+Kasaap - கசாப்  
+
+ISOLATION CENTER :
+
+Free Isolation Rooms - இலவச தனிமை அறைகள்
+Initiative of the Trust for Youth and Child Leadership (TYCL) -இளைஞர் மற்றும் சிறுவர் தலைமைத்துவத்திற்கான நம்பிக்கைப் பொறுப்புக்குழுவின் முன்முயற்சி
+For Room Request - அறை கோரிக்கைக்கு
+Vacant Rooms - காலியாக அறைகள்
+Benefited - காலியாக அறைகள்
+Contac - தொடுநிலை
+For More Details Visit - மேலதிக விபரங்கள் பார்வையிட
+
+EMERGENCY CENTER :
+
+For Any COVID-19 Emergency - எந்த கோவிட்-19 அவசரநிலை
+Covid-19 helpline - கோவிட்-19  உதவி எண்
+Chitti whatsapp health Assistance - சிட்டி வாட்ஸ்அப் சுகாதார உதவி
+Ambulance - இயங்கு மருந்தகம்
+Medical Emergency -மருத்துவ அவசரநிலை
+Disaster Management - அனர்த்த முகாமைத்துவம்
+Covid-19 National Emergency - கோவிட்-19 தேசிய அவசரநிலை
+Puducherry Police Emergency - புதுச்சேரி போலீஸ் அவசரநிலை
+General Police Helpline - பொது பொலிஸ் உதவி
+Traffic - வாணிக நடிவடிக்கை
+Whatsapp- வாட்ஸ்அப்
+Control Room Office - கட்டுப்பாட்டு அறை அலுவலகம்
+Cyber Crime- சைபர் கிரைம்
+Other important Contacts - மற்ற முக்கிய தொடர்புகள்
+
+Hospital Bag Checklist :
+
+ 3 Sets of Clothing - 3 ஆடை தொகுப்புகள்
+undergarments - உள்ளாடைகள்
+Towels - துண்டுகள்
+Regular Medicines - வழக்கமான மருந்துகள்
+Casesheet Number (Medical Records) - வழக்குத் தாள் எண் (மருத்துவ பதிவுகள்)
+Steam Inheler - நீராவி உள்ளிழுக்கும்
+Pulse Oximeter - துடிப்பு ஆக்சிமீட்டர்
+Thermometer - வெப்பமானி
+Flask - பிளாஸ்க்
+Mug/Cup - குவளை / கோப்பை
+Plate - தட்டு
+Water Bottle - தண்ணீர் குடுவை
+Mask - முகமூடி
+Sanittizer - சுத்திகரிப்பு
+Soap - வழலை
+Toothpaste & Brush - பற்பசை மற்றும் தூரிகை
+Earphones - காதணிகள்
+Phone Chargers -தொலைபேசி சார்ஜர்கள் 
+Spices(If required salt , Turmaric , Pepper) - மசாலா (தேவைப்பட்டால் உப்பு, மஞ்சள், மிளகு)
+Bathroom Slipers - குளியலறை காலணி
+Pillow - தலையணை
+Thin Bedsheet - மெல்லிய படுக்கை விரிப்பு
+Any work related items that need to be brouught - எந்தவொரு வேலை தொடர்பான பொருட்களும் கொண்டு வரப்பட வேண்டும்

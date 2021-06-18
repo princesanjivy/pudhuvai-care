@@ -5,10 +5,10 @@
 body,html{
     width: 100vw;
     height: 100vh;
-    /* overflow: scroll; */
     margin: 0px;
     width: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* header */
@@ -20,14 +20,12 @@ body,html{
     margin-left: 10%;
 }
 .top-bar a{
-
     float: right;
     padding: 3px;
 }
 .top-bar i{
     float: right;
     padding: 5px;
-    margin-top: -3px;
 }
 
 .header{
@@ -53,8 +51,8 @@ body,html{
 }
 .header p{
     display: inline-block;
-    margin-top: 20px;
-    padding-top: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
     float: right;
     font-size:1.5vw;
 }
@@ -64,8 +62,8 @@ body,html{
 }
 .title-card img{
     
-    max-height: 100%;
-    width: 100% ;
+    max-height: 5%;
+    max-width: 100% ;
 }
 .title-card h2{
     position: absolute;
@@ -105,11 +103,9 @@ body,html{
 }
 
 .container-ash button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: inline-block;
     padding: 7px;
-    background-color:rgb(0, 232, 0) ;
+    background-color:#C5E3FF;
     color: black;
     border-radius: 10px;
 }
@@ -126,7 +122,7 @@ body,html{
     width: 70%;
 }
 
-.container-ash th,td,table{
+.container-ash th,td{
     /* border: 1px solid black; */
     /* border-collapse: collapse; */
     text-align: center;
@@ -157,19 +153,12 @@ body,html{
 #ventilator-ash{
     background-color: #C5E3FF;
 }
-#not_found_gov-ash{
+#not_found-ash{
         background-color: rgb(250, 85, 85);
 
 }
-#not_found_private-ash{
-    background-color: rgb(250, 85, 85);
-
-}
-#not_found_nursing-ash{
-    background-color: rgb(250, 85, 85);
 
 
-}
 
 /* footer */
 body,html{

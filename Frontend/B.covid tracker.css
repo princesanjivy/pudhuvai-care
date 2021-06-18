@@ -8,6 +8,7 @@ body,html{
     margin: 0px;
     width: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* header */
@@ -16,7 +17,7 @@ body,html{
     background-color: #F0F0F0;
 }
 .top-bar small{
-    margin-left: 8%;
+    margin-left: 10%;
 }
 .top-bar a{
     float: right;
@@ -24,7 +25,7 @@ body,html{
 }
 .top-bar i{
     float: right;
-    padding: 10px;
+    padding: 5px;
 }
 
 .header{
@@ -34,7 +35,7 @@ body,html{
     margin-right: auto;
 }
 .header img{
-    margin-left:3%;
+    margin-left:5%;
     float: left;
     padding: 3px;
     max-height: 100px;
@@ -50,8 +51,8 @@ body,html{
 }
 .header p{
     display: inline-block;
-    margin-top: 20px;
-    padding-top: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
     float: right;
     font-size:1.5vw;
 }
@@ -90,24 +91,6 @@ body,html{
     /* margin-bottom: 1px; */
     
 }
-#chart-ash{
-    position: relative;
-    height: 650px;
-
-}
-#piechart-ash{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100%;
-    height:100%;
-}
-
-/* #piechart-ash{
-    margin-top: 10%;
-    width:auto;
-    height:auto;
-} */
 .ash-h3{
     display: block;
 margin-left: auto;
@@ -168,6 +151,55 @@ margin-right: auto;
   }
   
 
+
+
+  /* new */
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    flex: 50%;
+  }
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+  }
+
+  .row tr{
+      padding: 1px;
+  }
+
+  .summary_table{
+      font-size: small;
+  }
+#wise{
+    background-color: rgb(37, 37, 137);
+    color: white;
+}
+
+#summary_on{
+    background-color: #7a97e9;
+    color: blue;
+    text-align: left;
+}
+tr:nth-child(even){
+    background-color: rgb(231, 229, 229);
+}
+
+#first_row{
+    background-color: grey;
+}
+
+
+
   /* footer */
 
 .footertitle{
@@ -181,8 +213,7 @@ margin-right: auto;
     height: 40px;
     background-color: rgb(37, 37, 137);
     text-align: center;
-    padding-top: 8px;
-    margin-top: 8px;
+
     
 }
 

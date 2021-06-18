@@ -2,25 +2,24 @@
 
 // Author: Ashok
 
-function display_ct() {
-    var x = new Date()
-    var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
-    hours = x.getHours( ) % 12;
-    hours = hours ? hours : 12;
-    month = x.getMonth()+1;
-    var x1=" Date: " + x.getDate() +  "/" + month + "/" + x.getFullYear(); 
-    x1 = x1 + " ";
-    x2 = " Time: " +  hours + ":" +  x.getMinutes() + ":" + ampm;
-    document.getElementById('ct_d-ash').innerHTML = x1;
-    document.getElementById('ct_t-ash').innerHTML = x2
-    display_c();
-     }
+    // function display_ct() {
+    // var x = new Date()
+    // var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+    // hours = x.getHours( ) % 12;
+    // hours = hours ? hours : 12;
+    // month = x.getMonth()+1;
+    // var x1=" Date: " + x.getDate() +  "/" + month + "/" + x.getFullYear(); 
+    // x1 = x1 + " ";
+    // x2 = " Time: " +  hours + ":" +  x.getMinutes() + ":" + ampm;
+    // document.getElementById('ct_d-ash').innerHTML = x1;
+    // document.getElementById('ct_t-ash').innerHTML = x2
+    // display_c();
+    //  }
      
-    function display_c(){
-    var refresh=1000; // Refresh rate in milli seconds
-    mytime=setTimeout('display_ct()',refresh)
-    }
-    // display_c()
+    // function display_c(){
+    // var refresh=1000; // Refresh rate in milli seconds
+    // mytime=setTimeout('display_ct()',refresh)
+    // }
 
 // testing 
 
@@ -60,109 +59,143 @@ function myFunction() {
 // Author:Ashok
 
 
-// working
-    // var original = document.getElementById('search').value;
-    // var input = original.toUpperCase();
-    // console.log(input);
-    // // console.log(input);
-    // var table = document.getElementById('table_content');
-    // var rows = document.getElementsByClassName('content');
-  
-    //   for (var i = 0; i<rows.length; i++ ){
-    //     // console.log(rows[i].textContent);
-    //     // console.log(input);
-    //     if (!(rows[i].textContent.match(input))) {
-    //       // console.log('true');
-    //       rows[i].style.display = 'none';
-    //         not_found = document.getElementById('not_found');
-    //       not_found.style.display='';
-    
+// 
 
-            
-    //     }
-    //     else{
-    //       // console.log('false');
-    //       rows[i].style.display='';
-    //       not_found = document.getElementById('not_found');
-    //       not_found.style.display='none';
+function table_search() {
 
-    //     }
-    //       }  
-
-function gov() {
     var original = document.getElementById('search-ash').value;
     var input = original.toUpperCase();
+    // console.log(input);
+    var count = 0;
+
+    //gov body
+    var gov_body = document.getElementById('gov_body');
+    var row = gov_body.getElementsByTagName('tr');
+    var hospital_name = gov_body.getElementsByClassName('hospital-name');
+    var gov_head = document.getElementById('gov_head');
+
+    //private body
+    var private_body = document.getElementById('private_body');
+    var private_row = private_body.getElementsByTagName('tr');
+    var private_hospital_name = private_body.getElementsByClassName('hospital-name');
+    var private_head = document.getElementById('private_head');
+
+
+    // nursing home
+    var nursing_body = document.getElementById('nursing_body');
+    var nursing_row = nursing_body.getElementsByTagName('tr');
+    var nursing_hospital_name = nursing_body.getElementsByClassName('hospital-name');
+    var nursing_head = document.getElementById('nursing_head')
     
-    var gov = document.getElementsByClassName('gov_institue-ash');
-    // console.log(gov.length);
-    
-    for (var i = 0; i < gov.length; i++) {
-      // console.log(gov[i]);
-      var x = gov[i].textContent.toUpperCase();
-      // console.log(x);
-      if (!(x.indexOf(input) > -1 ))  {
-        gov[i].style.display = 'none';
-        not_found = document.getElementById('not_found_gov-ash');
-      not_found.style.display='';
-          
-      }        else{
-        // console.log('false');
-        gov[i].style.display='';
-        not_found = document.getElementById('not_found_gov-ash');
-        not_found.style.display='none';
-    
+
+
+    //gov loop
+    for(var i = 0; i<row.length; i++){
+      var x = hospital_name[i].textContent.toUpperCase()
+      if (x.indexOf(input)>-1) {
+        // console.log('found');
+      }
+      else{
+        row[i].style.display = 'none';
       }
     }
+    for(var j =0; j<hospital_name.length; j++){
+      if (row[j].style.display =='none') {
+          count +=1;
+      }
+    }
+    // console.log(count);
+    // console.log(hospital_name.length);
+    if (count == hospital_name.length) {
+      gov_head.style.display = 'none';
     }
 
-
-
-function private() {
-var original = document.getElementById('search-ash').value;
-var input = original.toUpperCase();
-var priva = document.getElementsByClassName('private_institute-ash');
-    for (var i = 0; i < priva.length; i++) {
-      var x = priva[i].textContent.toUpperCase();
-
-        if (!(x.indexOf(input) > -1 ))  {
-          priva[i].style.display = 'none';
-          not_found = document.getElementById('not_found_private-ash');
-        //   console.log(not_found);
-             not_found.style.display='';
-            
+    //loop for private
+    for(var k = 0;k<private_hospital_name.length; k++ ){
+        var y = private_hospital_name[k].textContent.toUpperCase();
+        if (y.indexOf(input)>-1) {
+            // console.log('found');            
         }
         else{
-          // console.log('false');
-          priva[i].style.display='';
-          not_found = document.getElementById('not_found_private-ash');
-          not_found.style.display='none';
-
-      
+            private_row[k].style.display = 'none';
         }
-
-      }
-
-}
-
-function private_nursing() {
-    var original = document.getElementById('search-ash').value;
-    var input = original.toUpperCase();
-    var priva = document.getElementsByClassName('private_nursing-ash');
-        for (var i = 0; i < priva.length; i++) {
-          var x = priva[i].textContent.toUpperCase();
-            if (!(x.indexOf(input) > -1 ))  {
-              priva[i].style.display = 'none';
-              not_found = document.getElementById('not_found_nursing-ash');
-              // console.log(not_found);
-                 not_found.style.display='';
-            }
-            else{
-              // console.log('false');
-              priva[i].style.display='';
-              not_found = document.getElementById('not_found_nursing-ash');
-              not_found.style.display='none';
-          
-            }
-              
-          }
     }
+    var count2 = 0;
+    for(var j =0; j<private_hospital_name.length; j++){
+        if (private_row[j].style.display =='none') {
+            count2 +=1;
+        }
+      }
+    // console.log(private_hospital_name.length);
+    if (count2 == private_hospital_name.length) {
+      private_head.style.display = 'none';
+    }
+
+    //loop for private nursing 
+    for(var i=0; i<nursing_hospital_name.length; i++){
+        var z = nursing_hospital_name[i].textContent.toUpperCase();
+        // console.log(z);
+        if (z.indexOf(input)> -1) {
+            console.log('Found');
+        }
+        else{
+            nursing_row[i].style.display = 'none';
+        }
+    }
+    var count3 = 0;
+    for(var m = 0; m<nursing_hospital_name.length;m++){
+        if (nursing_row[m].style.display=='none') {
+            count3+=1;
+        }
+    }
+    if (count3 == nursing_hospital_name.length) {
+        nursing_head.style.display = 'none';        
+    }
+
+    not_found();
+
+  }
+
+  function not_found() {
+    var gov_head = document.getElementById('gov_head');
+    var private_head = document.getElementById('private_head');
+    var nursing_head = document.getElementById('nursing_head');
+    var not_found = document.getElementById('not_found-ash');
+
+    if (gov_head.style.display === 'none' && private_head.style.display ==='none' && nursing_head.style.display ==='none') {
+      not_found.style.display = '';
+    }
+  
+
+  }
+
+
+//   reset
+function reset() {
+    var all_rows = document.getElementsByTagName('tr');
+    var all_head = document.getElementsByTagName('thead');
+    var table = document.getElementsByTagName('table');
+    var not_found = document.getElementById('not_found-ash');
+    
+    // console.log(all_rows);
+    // for(var i = 0; i<table.length; i++){
+    //   table[i].style.display = '';
+    // }
+
+    for(var i = 0; i<all_rows.length; i++){
+      all_rows[i].style.display = '';
+    }
+    for(var i=0; i<all_head.length; i++){
+        all_head[i].style.display='';
+    }
+    // for(var i = 0; i<extra.length; i++){
+    //   extra[i].style.display = 'none';
+    // }
+    var gov_head = document.getElementById('gov_head');
+    gov_head.style.display = '';
+
+
+    not_found.style.display = 'none';
+
+  
+}
