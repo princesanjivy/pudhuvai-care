@@ -1,0 +1,359 @@
+<!----Aunthor: Ashok----->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="B.covid tracker.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/flag.png"/>
+    <script src="script.js" ></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <title>Covid_19 Tracker</title>
+
+</head>
+
+<body>
+
+   <!-- header -->
+   <div class="top-bar">
+    <small> புதுச்சேரி அரசு Government of Puducherry</small>
+
+    
+  <a href="https://mobile.twitter.com/lgov_puducherry?lang=en"> <i class="fa fa-twitter" style="font-size :15spx;color:blue;margin-right:5vw "></i>  </a> 
+    <a href="https://m.facebook.com/LtGov.Puducherry/"><i class="fa fa-facebook-f" style="font-size:15px;color:blue;"></i></a>
+   <a href="#youtube"> <i class="fa fa-youtube-play" style="font-size:15px;color:red;"></i> </a> 
+   <a href="#insta"><i class="fa fa-instagram" style="font-size:15px;color:red;"></i></a>
+</div>
+
+<div id="header-container"> 
+    <table class="header" style="margin-left:10%;">
+        <tr>
+            <td style="padding-right:0.5vmax;"> 
+            <img src="images/emblem.png" alt="">
+            </td>
+            <td id="header-text" >
+                <div>
+                    <p style="padding-right:1vmax;" >Department of <br> <b> Health and Family Welfare Services </b> <br> <span>Government of Puducherry</span></p>
+                </div>
+            </td>
+            <td id="header-text" >
+                    <div >
+                        <p style="text-align: center;border-left: 1px solid black; padding-left: 40px;" > நல்வழித்துறை <br> புதுச்சேரி அரசு <br> இந்தியா
+                        </p>
+            
+                    </div>
+                </td>
+                <td id="header-text">
+                    <img src="images/gate.png" style="border-right: 1px solid black;padding-right:40px;"alt="">
+                </td>
+        </tr>
+    </table>
+
+    <div id="translation-links"> 
+     <h3> <a href="#ta">தமிழ் </a> | <a href="#en">ENGLISH</a> </h3>
+    </div>
+</div>
+
+<div class="title-card">
+    <img src="images/vector.png" alt="">
+    <h2>Covid-19 Tracker</h2>
+</div>
+
+<!-- <div ><a href="A-index.html"><img src="images/home2.png"></a> / COVID TRACKER</a></div> -->
+
+<div class=bars> <h4>
+    <a href="A-index.html"><img src="images/home2.png"></a> / Covid Tracker</a><h4></div>
+
+<!-- content -->
+
+<center>
+    <div class="row" >
+
+        <div class="column" >
+
+            <h3>District Wise</h3>
+            <!-- pie chart -->
+            <div id="chart-ash" >
+            <div id="piechart-ash"></div>
+        </div>
+            <!-- color table -->
+            <table id="pie-color-ash">
+                <tr>
+                    <th>
+                      <u> Total Cases </u>  
+                    </th>
+                    <th>
+                        <u> Total Cured</u>
+                       
+                    </th>
+                    <th>
+                        <u>  Active Cases</u>
+                      
+                    </th>
+                    <th>
+                        <u>Total Death</u>
+                        
+                    </th>
+                </tr>
+                <tr style="background-color: white;">
+                    <td>    <div class="color-box-ash total-cases-ash"></div> <span id="total_cases1-ash">199942</span></td>
+                    <td>
+                        <div class="color-box-ash total-cured-ash"></div><span id="total_cured1-ash">48882</span></td>
+                        <td><div class="color-box-ash active-cases-ash"></div><span id="active_cases1-ash">4223</span></td>
+                        <td><div class="color-box-ash death-ash"></div><span id="total_death1-ash">12233</span></td>
+        
+                    
+                </tr>
+            </table>
+            <br>
+
+
+            <!-- table -->
+            <table class="summary_table" >
+                <tr>
+                <th id="wise" colspan="5">  
+                District Wise report
+                </th>
+            </tr>
+            <tr>
+                <th id="summary_on" colspan="5">Summary as on $date </th>
+            </tr>
+            <tr id="#first_row" style="background-color: rgb(52, 54, 52); color: white;">
+                <th>
+                    District 
+                </th>
+                <th>Reported</th>
+                <th>Cured</th>
+                <th>Active</th>
+                <th>Death</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td id="district" >Pondicherry</td>
+                    <td id="reported">8879</td>
+                    <td id="cured">8338</td>
+                    <td id="active">392</td>
+                    <td id="death">121</td>
+                </tr>
+                <tr>
+                    <td id="district" >Karaikal</td>
+                    <td id="reported">889</td>
+                    <td id="cured">838</td>
+                    <td id="active">3492</td>
+                    <td id="death">121</td>
+                </tr>
+                <tr>
+                    <td id="district" >Mahe</td>
+                    <td id="reported">8879</td>
+                    <td id="cured">8938</td>
+                    <td id="active">342</td>
+                    <td id="death">161</td>
+                </tr>
+                <tr>
+                    <td id="district" >Yanam</td>
+                    <td id="reported">8879</td>
+                    <td id="cured">83938</td>
+                    <td id="active">3492</td>
+                    <td id="death">1261</td>
+                </tr>
+                <tr>
+                    <td id="total" style="text-align: right;font-weight: bold;">Total</td>
+                    <td id="total_reported" style="font-weight:bold;">8879</td>
+                    <td id="total_cured"style="font-weight:bold;">3938</td>
+                    <td id="total_active"style="font-weight:bold;">342</td>
+                    <td id="total_death"style="font-weight:bold;">1261</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+       
+        <br>
+        <div class="column" >
+            <h3>Date Wise</h3>
+            <!-- pie chart -->
+            <div id="chart-ash" >
+            <div id="piechart2-ash"></div>
+        </div>
+            <!-- color table -->
+            <table id="pie-color-ash">
+                <tr>
+                    <th>
+                      <u> Total Cases </u>  
+                    </th>
+                    <th>
+                        <u> Total Cured</u>
+                       
+                    </th>
+                    <th>
+                        <u>  Active Cases</u>
+                      
+                    </th>
+                    <th>
+                        <u>Total Death</u>
+                        
+                    </th>
+                </tr>
+                <tr style="background-color: white;" >
+                    <td>    <div class="color-box-ash total-cases-ash"></div> <span id="total_cases2-ash">199943</span></td>
+                    <td>
+                        <div class="color-box-ash total-cured-ash"></div><span id="total_cured2-ash">48882</span></td>
+                        <td><div class="color-box-ash active-cases-ash"></div><span id="active_cases2-ash">4223</span></td>
+                        <td><div class="color-box-ash death-ash"></div><span id="total_death2-ash">122313</span></td>
+        
+                    
+                </tr>
+            </table>
+            <br>
+
+            <!-- table -->
+            <table class="summary_table">
+                <tr>
+                <th id="wise" colspan="5">  
+                Date Wise Report
+                </th>
+            </tr>
+            <tr>
+                <th id="summary_on" colspan="5">
+                    As on $date
+                </th>
+            </tr>
+            <tr id="#first_row" style="background-color: rgb(52, 54, 52); color: white;">
+                <th>
+                    District 
+                </th>
+                <th>Reported</th>
+                <th>Cured</th>
+                <th>Active</th>
+                <th>Death</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td id="district_2" >Pondicherry</td>
+                    <td id="reportedz-2">8879</td>
+                    <td id="curedz_2">8338</td>
+                    <td id="active_2">392</td>
+                    <td id="death_2">121</td>
+                </tr>
+              
+                    <tr>
+                        <td id="district" >Karaikal</td>
+                        <td id="reported">8879</td>
+                        <td id="cured">8338</td>
+                        <td id="active">392</td>
+                        <td id="death">121</td>
+                    </tr>
+             
+            
+                    <tr>
+                        <td id="district" >Mahe</td>
+                        <td id="reported">8879</td>
+                        <td id="cured">8338</td>
+                        <td id="active">392</td>
+                        <td id="death">121</td>
+                    </tr>
+             
+               
+                    <tr>
+                        <td id="district" >Yanam</td>
+                        <td id="reported">8879</td>
+                        <td id="cured">8338</td>
+                        <td id="active">392</td>
+                        <td id="death">121</td>
+                    </tr>
+              
+                <tr>
+                    <td id="total_2" style="text-align: right;font-weight: bold;">Total</td>
+                    <td id="total_reported_2" style="font-weight:bold;">8879</td>
+                    <td id="total_cured_2"style="font-weight:bold;">3938</td>
+                    <td id="total_active_2"style="font-weight:bold;">342</td>
+                    <td id="total_death_2"style="font-weight:bold;">1261</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+</center>
+
+
+<br><br>
+
+    <!-- footer -->
+    <h4 class="footertitle">Date last updated : <b>June 7,2021</b></h4>
+    <footer class="aboutus" >
+               <a class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
+               <span class="spanhr">|</span>
+        <a class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
+    </footer>
+
+
+
+
+
+<!-- pie chart -->
+<script type="text/javascript">
+// Load google charts
+// district wise
+var total_cases = parseInt(document.getElementById('total_cases1-ash').textContent);
+var total_cured = parseInt(document.getElementById('total_cured1-ash').textContent);
+var active = parseInt(document.getElementById('active_cases1-ash').textContent);
+var total_death = parseInt(document.getElementById('total_death1-ash').textContent);
+
+// date wise
+var total_cases2 = parseInt(document.getElementById('total_cases2-ash').textContent);
+var total_cured2 = parseInt(document.getElementById('total_cured2-ash').textContent);
+var active2 = parseInt(document.getElementById('active_cases2-ash').textContent);
+var total_death2 = parseInt(document.getElementById('total_death2-ash').textContent);
+
+
+
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data1 = google.visualization.arrayToDataTable([
+  ['status', 'Number of Cases'],
+  ['Total Case', total_cases],
+  ['Total Cured', total_cured],
+  ['Active Cases', active],
+  ['Total Death', total_death]
+]);
+var data2 = google.visualization.arrayToDataTable([
+  ['status', 'Number of Cases'],
+  ['Total Case', total_cases2],
+  ['Total Cured', total_cured2],
+  ['Active Cases', active2],
+  ['Total Death', total_death2]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options1 = {'title':'District Wise', 'width':700, 'height':500};
+  var options2 = {'title':'Current Date Wise', 'width':700, 'height':500};
+
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart-ash'));
+  var chart2 = new google.visualization.PieChart(document.getElementById('piechart2-ash'));
+
+  chart.draw(data1, options1);
+  chart2.draw(data2, options2);
+
+}
+</script>
+
+
+
+    
+
+</body>
+</html>
