@@ -10,7 +10,9 @@ body,html{
     /*font-family:"Times New Roman",Times,serif;*/
    
 }
-
+.bars{
+    margin-left: 50px;
+}
 /* header */
 
 .top-bar{

@@ -16,7 +16,12 @@
    margin-left: 40px;
   
 }
-
+.phoneatag1{
+    text-decoration: none;
+}
+.bars{
+    margin-left: 50px;
+}
 .emergencytitle{
     text-align: center;
     font-size: 40px;

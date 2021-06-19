@@ -10,7 +10,9 @@ body,html{
     box-sizing: border-box;
     overflow-x: hidden;
 }
-
+.bars{
+    margin-left: 50px;
+}
 /* header */
 
 .top-bar{

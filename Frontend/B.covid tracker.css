@@ -12,7 +12,9 @@ body,html{
 }
 
 /* header */
-
+.bars{
+    margin-left: 50px;
+}
 .top-bar{
     background-color: #F0F0F0;
 }

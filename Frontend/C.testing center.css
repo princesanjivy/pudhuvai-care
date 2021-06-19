@@ -6,7 +6,9 @@ body,html{
     width: 100%;
     box-sizing: border-box;
 }
-
+.bars{
+    margin-left: 50px;
+}
 /* header */
 
 .topbar{
