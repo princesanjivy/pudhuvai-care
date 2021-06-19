@@ -16,12 +16,7 @@
    margin-left: 40px;
   
 }
-.phoneatag1{
-    text-decoration: none;
-}
-.bars{
-    margin-left: 50px;
-}
+
 .emergencytitle{
     text-align: center;
     font-size: 40px;
@@ -70,79 +65,81 @@ body,html{
     margin: 0px;
     width: 100%;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* header */
+  .bars{
+    margin-left: 50px;
 }
-    
-
-
-.top-bar{
-    background-color: lavender;
-}
-.top-bar small{
+  .top-bar{
+    background-color: #F0F0F0;
+  }
+  .top-bar small{
     margin-left: 8%;
-}
-.top-bar img{
-    max-height: 15px;
-    max-width: 20px;
+  }
+  .top-bar a{
     float: right;
-   
+    padding-right: 1vmax;
+    padding-top: 5px;
+    font-size: 15px;
+  }
+  /* .top-bar i{
+    float: right;
+    padding: 10px;
+  } */
+  #header-container{
+    display: inline-table;
+    width: 100%;
+  }
+  
+  
+  .header{
+    max-height: 10px;
+    font-size: 1vmin;
+    float: left;
+  }
+  
+  .header img{
+    size: 1vmax;
+    max-height:5.5vmax;
+     width: auto;
+  }
+  #translation-links{
+    float: right; 
+    margin-top:2vmax; 
+    margin-right: 10%;
+  }
+  @media screen and(max-width:1000) {
+    #translation-links{
+      padding-left: 10%;
+    }
     
-    padding: 3px;
-}
-.marginfortwitter{
-    margin-right: 30px;
-}
-.header{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.header img{
-    margin-left:5%;
-    float: left;
-    padding: 3px;
-    max-height: 100px;
-    max-width: 50%;
-}
-.header1 img{
-    margin-left:5%;
-    float: center;
-    float: left;
-    padding: 3px;
-    max-height: 100px;
-    max-width: 50%;
-}
-.header p{
-    display: inline-block;
-    margin-top: 20px;
-    padding-top: 20px;
-    float: right;
-    font-size:1.5vw;
-}
-.title-card{
+  }
+  .title-card{
     position: relative;
-}
-.title-card img{
+  }
+  .title-card img{
     
-    max-height: 5%;
+    max-height:40%;
     max-width: 100% ;
-}
-.title-card h2{
+  }
+  .title-card h2{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2vmax;
-    margin-top: 40px;
+    margin-top: 2px;
     padding-bottom: 10px;
     color: white;
-
-}
+  
+  }
 
 
 /* footer */
 
 .footertitle{
-    
     text-align: center;
     margin-top: 0px;
     font-weight: lighter;
@@ -151,20 +148,17 @@ body,html{
 }
 .aboutus{
     height: 40px;
-    background-color: rgb(37, 37, 134);
+    background-color: #0B4BAB;
     text-align: center;
     padding-top: 8px;
     margin-top: 8px;
-    margin-left: 0px;
-    width: 100%;
-    box-sizing: border-box;
     
 }
 
 
 .footerlink{
     
-   width: 1000vw;
+   
     text-decoration: none;
     color: white;
    
@@ -308,7 +302,7 @@ label {
    
 }
 .hthree{
-    font-size: 20px;
+    font-size: 15px;
 }
 .home{
    margin-left: 50px;

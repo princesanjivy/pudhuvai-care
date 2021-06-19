@@ -7,32 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="E.bed availability.css">
     <script src="scriptjava.js" ></script>
+    <link rel="icon" href="images/flag.png"/>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>BED AVAILABILITY</title>
-    <STYle>
 
-       
-    </STYle>
 </head>
 <body>  
-    <!-- header -->
     <div class="top-bar">
         <small> புதுச்சேரி அரசு Government of Puducherry</small>
-      <a href="https://mobile.twitter.com/lgov_puducherry?lang=en"> <i class="fa fa-twitter" style="font-size :15px;color:blue;float: right; padding: 2px; margin-right: 10%;"></i>  </a> 
-        <a href="https://m.facebook.com/LtGov.Puducherry/"><i class="fa fa-facebook-f" style="font-size:15px;color:blue;float: right; padding: 2px; "></i></a>
-       <a href="#youtube"> <i class="fa fa-youtube-play" style="font-size:15px;color:red; float: right; padding: 2px;"></i> </a> 
-       <a href="#insta"><i class="fa fa-instagram" style="font-size:15px;color:red; float: right;padding: 2px;"></i></a>
+
+        
+      <a href="https://mobile.twitter.com/lgov_puducherry?lang=en"> <i class="fa fa-twitter" style="font-size :15spx;color:blue;margin-right:5vw "></i>  </a> 
+        <a href="https://m.facebook.com/LtGov.Puducherry/"><i class="fa fa-facebook-f" style="font-size:15px;color:blue;"></i></a>
+       <a href="#youtube"> <i class="fa fa-youtube-play" style="font-size:15px;color:red;"></i> </a> 
+       <a href="#insta"><i class="fa fa-instagram" style="font-size:15px;color:red;"></i></a>
     </div>
 
-    <div class="header">
-        <img src="images/header.1.png" alt="">
-        <p>TAMIL | ENGLISH<p>
+<div id="header-container"> 
+    <table class="header" style="margin-left:10%;padding: 0px;">
+        <tr style="padding: 0px;" >
+            <td style="padding-right:0.5vmax;"> 
+            <img src="images/emblem.png" alt="">
+            </td>
+            <td id="header-text" style="padding:0px;" >
+                <div>
+                    <p style="padding-right:1vmax; text-align: left;font-size: 1vmax;" >Department of <br> <b> Health and Family Welfare Services </b> <br> <span>Government of Puducherry</span></p>
+                </div>
+            </td>
+            <td style="padding:0px;">
+                    <div >
+                        <p style="text-align: center;border-left: 1px solid black; padding-left: 40px;font-size: 1vmax;" > நல்வழித்துறை <br> புதுச்சேரி அரசு <br> இந்தியா
+                        </p>
+            
+                    </div>
+                </td>
+                <td id="header-text" style="padding:0px;">
+                    <img src="images/gate.png" style="border-right: 1px solid black;padding-right:40px;"alt="">
+                </td>
+        </tr>
+    </table>
+
+
+    <div id="translation-links"> 
+     <h3> <a href="#ta">தமிழ் </a> | <a href="#en">ENGLISH</a> </h3>
     </div>
-    <div class="header1">      
-        <img src="images/header.2.png" alt="">
-        </div>
+</div>
       
     
     <div class="title-card">
@@ -40,20 +61,20 @@
         <h2>Bed Availability</h2>
     </div>
     
-<div class="bars"> <h4>
+<div class=bars> <h4>
     <a href="A-index.html"><img src="images/home2.png"></a> / Bed Availability</a><h4></div>
     <br>
     
 
     <!-- content -->
    <div class="container-ash">
-        <input type="search" id="search-ash" name="search" placeholder="Search" value="" >
+        <input type="search" id="search-ash" name="search" placeholder="Search" onkeyup="filter()"  value="" >
         <br>
-        <center>
+        <!-- <center>
             
         <button type="submit" onclick="table_search()"> Submit</button>
         <button name="reset" onclick="reset()" >Reset</button>
-    </center>
+    </center> -->
     </div>
 
     <!-- content -->

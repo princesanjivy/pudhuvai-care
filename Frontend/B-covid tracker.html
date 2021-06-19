@@ -6,35 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="B.covid tracker.css">
-    <script src="scriptjava.js" ></script>
+    <link rel="icon" href="images/flag.png"/>
+    <script src="script.js" ></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
     <title>Covid_19 Tracker</title>
+
 </head>
 
-<body onload="display_ct()">
+<body>
 
-
-<!-- header -->
-<div class="top-bar">
+   <!-- header -->
+   <div class="top-bar">
     <small> புதுச்சேரி அரசு Government of Puducherry</small>
-  <a href="https://mobile.twitter.com/lgov_puducherry?lang=en"> <i class="fa fa-twitter ash-i" style="font-size :15px;color:blue;float: right; padding: 2px; margin-right: 10%;"></i>  </a> 
-    <a href="https://m.facebook.com/LtGov.Puducherry/"><i class="fa fa-facebook-f ash-i" style="font-size:15px;color:blue;float: right; padding: 2px; "></i></a>
-   <a href="#youtube"> <i class="fa fa-youtube-play ash-i" style="font-size:15px;color:red; float: right; padding: 2px;"></i> </a> 
-   <a href="#insta"><i class="fa fa-instagram ash-i" style="font-size:15px;color:red; float: right;padding: 2px;"></i></a>
+
+    
+  <a href="https://mobile.twitter.com/lgov_puducherry?lang=en"> <i class="fa fa-twitter" style="font-size :15spx;color:blue;margin-right:5vw "></i>  </a> 
+    <a href="https://m.facebook.com/LtGov.Puducherry/"><i class="fa fa-facebook-f" style="font-size:15px;color:blue;"></i></a>
+   <a href="#youtube"> <i class="fa fa-youtube-play" style="font-size:15px;color:red;"></i> </a> 
+   <a href="#insta"><i class="fa fa-instagram" style="font-size:15px;color:red;"></i></a>
 </div>
 
-<div class="header">
-    <img src="images/header.1.png" alt="">
-    <p>TAMIL | ENGLISH<p>
-</div>
-<div class="header1">      
-        <img src="images/header.2.png" alt="">
-</div>
-      
+<div id="header-container"> 
+    <table class="header" style="margin-left:10%;">
+        <tr>
+            <td style="padding-right:0.5vmax;"> 
+            <img src="images/emblem.png" alt="">
+            </td>
+            <td id="header-text" >
+                <div>
+                    <p style="padding-right:1vmax;" >Department of <br> <b> Health and Family Welfare Services </b> <br> <span>Government of Puducherry</span></p>
+                </div>
+            </td>
+            <td id="header-text" >
+                    <div >
+                        <p style="text-align: center;border-left: 1px solid black; padding-left: 40px;" > நல்வழித்துறை <br> புதுச்சேரி அரசு <br> இந்தியா
+                        </p>
+            
+                    </div>
+                </td>
+                <td id="header-text">
+                    <img src="images/gate.png" style="border-right: 1px solid black;padding-right:40px;"alt="">
+                </td>
+        </tr>
+    </table>
 
+    <div id="translation-links"> 
+     <h3> <a href="#ta">தமிழ் </a> | <a href="#en">ENGLISH</a> </h3>
+    </div>
+</div>
 
 <div class="title-card">
     <img src="images/vector.png" alt="">
@@ -43,25 +65,17 @@
 
 <!-- <div ><a href="A-index.html"><img src="images/home2.png"></a> / COVID TRACKER</a></div> -->
 
-<div class="bars"> <h4>
+<div class=bars> <h4>
     <a href="A-index.html"><img src="images/home2.png"></a> / Covid Tracker</a><h4></div>
 
 <!-- content -->
-    
 
-     </div>
-    <!-- <div class="time_container-ash">
-        <span  id='ct_d-ash' ></span><br>
-        <span id="ct_t-ash" > </span>
-    </div> -->
-<br>
-<br>
-<br><br>
-<center style="overflow-x: scroll;">
+<center>
     <div class="row" >
 
         <div class="column" >
 
+            <h3>District Wise</h3>
             <!-- pie chart -->
             <div id="chart-ash" >
             <div id="piechart-ash"></div>
@@ -70,7 +84,7 @@
             <table id="pie-color-ash">
                 <tr>
                     <th>
-                      <u> Total Death </u>  
+                      <u> Total Cases </u>  
                     </th>
                     <th>
                         <u> Total Cured</u>
@@ -156,9 +170,10 @@
             </tbody>
             </table>
         </div>
+       
         <br>
         <div class="column" >
-
+            <h3>Date Wise</h3>
             <!-- pie chart -->
             <div id="chart-ash" >
             <div id="piechart2-ash"></div>
@@ -167,7 +182,7 @@
             <table id="pie-color-ash">
                 <tr>
                     <th>
-                      <u> Total Death </u>  
+                      <u> Total Cases </u>  
                     </th>
                     <th>
                         <u> Total Cured</u>
@@ -225,7 +240,7 @@
                 </tr>
               
                     <tr>
-                        <td id="district" >Pondicherry</td>
+                        <td id="district" >Karaikal</td>
                         <td id="reported">8879</td>
                         <td id="cured">8338</td>
                         <td id="active">392</td>
@@ -234,7 +249,7 @@
              
             
                     <tr>
-                        <td id="district" >Pondicherry</td>
+                        <td id="district" >Mahe</td>
                         <td id="reported">8879</td>
                         <td id="cured">8338</td>
                         <td id="active">392</td>
@@ -243,7 +258,7 @@
              
                
                     <tr>
-                        <td id="district" >Pondicherry</td>
+                        <td id="district" >Yanam</td>
                         <td id="reported">8879</td>
                         <td id="cured">8338</td>
                         <td id="active">392</td>
@@ -269,7 +284,7 @@
 </center>
 
 
-
+<br><br>
 
     <!-- footer -->
     <h4 class="footertitle">Date last updated : <b>June 7,2021</b></h4>
@@ -283,6 +298,7 @@
 
 
 
+<!-- pie chart -->
 <script type="text/javascript">
 // Load google charts
 // district wise
@@ -320,18 +336,19 @@ var data2 = google.visualization.arrayToDataTable([
 ]);
 
   // Optional; add a title and set the width and height of the chart
-  var options = {'title':'', 'width':700, 'height':500};
+  var options1 = {'title':'District Wise', 'width':700, 'height':500};
+  var options2 = {'title':'Current Date Wise', 'width':700, 'height':500};
+
 
   // Display the chart inside the <div> element with id="piechart"
   var chart = new google.visualization.PieChart(document.getElementById('piechart-ash'));
   var chart2 = new google.visualization.PieChart(document.getElementById('piechart2-ash'));
 
-  chart.draw(data1, options);
-  chart2.draw(data2, options);
+  chart.draw(data1, options1);
+  chart2.draw(data2, options2);
 
 }
 </script>
-
 
 
 

@@ -6,7 +6,7 @@ Tamil - தமிழ்
 English - ஆங்கிலம்
 
 The puducherryCovid-19 portal is a one-stop platform for authenticated data and news regarding the novel coronavirus situation in puducherry covid-19 dashboard around the state.showing the latest state and information related to covid-19 advice for the publicawareners -
- புதுச்சேரி கோவிட் -19 போர்ட்டல் என்பது மாநிலம் முழுவதும் உள்ள புதுச்சேரி கோவிட் -19 டாஷ்போர்டில் நாவல் கொரோனா வைரஸ் நிலைமை குறித்த அங்கீகரிக்கப்பட்ட தரவு மற்றும் செய்திகளுக்கான ஒரு நிறுத்த தளமாகும்.
+ புதுச்சேரி கோவிட் -19 போர்ட்டல் என்பது மாநிலம் முழுவதும்  உள்ள புதுச்சேரி கோவிட் -19 டாஷ்போர்டில் நாவல் கொரோனா வைரஸ் நிலைமை குறித்த அங்கீகரிக்கப்பட்ட தரவு மற்றும் செய்திகளுக்கான ஒரு நிறுத்த தளமாகும்.
 
 Date last update - தேதி கடைசியாக புதுப்பிக்கப்பட்டது
 Developed and Maintained by Pondicherry Engineering College - பாண்டிச்சேரி பொறியியல் கல்லூரியால் உருவாக்கப்பட்டது மற்றும் பராமரிக்கப்படுகிறது

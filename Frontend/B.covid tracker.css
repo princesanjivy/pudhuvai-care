@@ -1,85 +1,83 @@
-/*COVID TRACKER*/
-
-/*-----Author: Ashok-----*/
-
+/*covid tracker*/
 body,html{
-    width: 100vw;
     height: 100vh;
     margin: 0px;
     width: 100%;
     box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-/* header */
-.bars{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* header */
+  .bars{
     margin-left: 50px;
 }
+ 
 .top-bar{
-    background-color: #F0F0F0;
+  background-color: #F0F0F0;
 }
 .top-bar small{
-    margin-left: 10%;
+  margin-left: 8%;
 }
 .top-bar a{
-    float: right;
-    padding: 3px;
+  float: right;
+  padding-right: 1vmax;
+  padding-top: 5px;
+  font-size: 15px;
 }
-.top-bar i{
-    float: right;
-    padding: 5px;
+/* .top-bar i{
+  float: right;
+  padding: 10px;
+} */
+#header-container{
+  display: inline-table;
+  width: 100%;
 }
 
+
 .header{
-    /* position: relative; */
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
+  max-height: 10px;
+  font-size: 1vmin;
+  float: left;
 }
+
 .header img{
-    margin-left:5%;
-    float: left;
-    padding: 3px;
-    max-height: 100px;
-    max-width: 50%;
+  size: 1vmax;
+  max-height:5.5vmax;
+   width: auto;
 }
-.header1 img{
-    margin-left:5%;
-    float: center;
-    float: left;
-    padding: 3px;
-    max-height: 100px;
-    max-width: 50%;
+#translation-links{
+  float: right; 
+  margin-top:2vmax; 
+  margin-right: 10%;
 }
-.header p{
-    display: inline-block;
-    margin-top: 10px;
-    padding-top: 10px;
-    float: right;
-    font-size:1.5vw;
+#header-text{
+  font-size: 1vmax;
 }
-.title-card{
-    /* max-height: 10%; */
+@media screen and(max-width:1000) {
+  #translation-links{
+    padding-left: 10%;
+  }
+  
+}
+
+  .title-card{
     position: relative;
-}
-.title-card img{
+  }
+  .title-card img{
     
-    max-height: 5%;
+    max-height:40%;
     max-width: 100% ;
-}
-.title-card h2{
+  }
+  .title-card h2{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2vmax;
-    margin-top: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     color: white;
-
-}
-
-
+  
+  }
 
 
 /* body */
@@ -121,13 +119,14 @@ margin-right: auto;
 }
 
 
-.pie-color-ash table{
+.pie-color-ash{
 margin-left: auto;
 margin-right: auto;
 }
 
 .pie-color-ash table, th,td{
-    padding: 30px;
+    padding: 10px;
+    font-size: 20px;
 }
 
 .total-cases-ash {
@@ -202,7 +201,10 @@ tr:nth-child(even){
 
 
 
-  /* footer */
+
+
+
+/* footer */
 
 .footertitle{
     text-align: center;
@@ -213,23 +215,16 @@ tr:nth-child(even){
 }
 .aboutus{
     height: 40px;
-    background-color: rgb(37, 37, 137);
+    background-color: #0B4BAB;
     text-align: center;
-
+    padding-top: 8px;
+    margin-top: 8px;
     
 }
-
-
-.footerlink{
-    
-   
+.footerlink{  
     text-decoration: none;
     color: white;
-   
-   
 }
-
-
 .spanhr{
     margin-left: 10px;
     margin-right: 10px;

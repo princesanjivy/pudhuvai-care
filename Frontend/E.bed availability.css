@@ -1,83 +1,86 @@
 /*BED AVAILABILITY*/
 
 /*-----Author: Ashok------*/
-
 body,html{
     width: 100vw;
     height: 100vh;
     margin: 0px;
     width: 100%;
     box-sizing: border-box;
-    overflow-x: hidden;
-}
-.bars{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* header */
+  .bars{
     margin-left: 50px;
 }
-/* header */
 
-.top-bar{
+  .top-bar{
     background-color: #F0F0F0;
-}
-.top-bar small{
-    margin-left: 10%;
-}
-.top-bar a{
+  }
+  .top-bar small{
+    margin-left: 8%;
+  }
+  .top-bar a{
     float: right;
-    padding: 3px;
-}
-.top-bar i{
+    padding-right: 1vmax;
+    padding-top: 5px;
+    font-size: 15px;
+  }
+  /* .top-bar i{
     float: right;
-    padding: 5px;
-}
+    padding: 10px;
+  } */
+  #header-container{
+    display: inline-table;
+    width: 100%;
+  }
+  
+  
+  .header{
+    max-height: 10px;
+    font-size: 1vmin;
+    float: left;
+  }
 
-.header{
-    /* position: relative; */
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.header img{
-    margin-left:5%;
-    float: left;
-    padding: 3px;
-    max-height: 100px;
-    max-width: 50%;
-}
-.header1 img{
-    margin-left:5%;
-    float: center;
-    float: left;
-    padding: 3px;
-    max-height: 100px;
-    max-width: 50%;
-}
-.header p{
-    display: inline-block;
-    margin-top: 10px;
-    padding-top: 10px;
-    float: right;
-    font-size:1.5vw;
-}
-.title-card{
-    /* max-height: 10%; */
-    position: relative;
-}
-.title-card img{
+  .header img{
+    size: 1vmax;
+    max-height:5.5vmax;
+     width: auto;
+  }
+  #header-text{
+    font-size: 1vmax;
+  }
+  #translation-links{
+    float: right; 
+    margin-top:2vmax; 
+    margin-right: 10%;
+  }
+  @media screen and(max-width:1000) {
+    #translation-links{
+      padding-left: 10%;
+    }
     
-    max-height: 5%;
+  }
+  .title-card{
+    position: relative;
+  }
+  .title-card img{
+    
+    max-height:40%;
     max-width: 100% ;
-}
-.title-card h2{
+  }
+  .title-card h2{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2vmax;
-    margin-top: 40px;
+    margin-top: 2px;
     padding-bottom: 10px;
     color: white;
-
-}
+  
+  }
 
 /* body */
 
@@ -116,7 +119,7 @@ body,html{
     background-color: rgb(165, 246, 165);
 }
 
-.container-ash table{
+#content_table-ash{
 
     display:table;
     margin-left: auto;
@@ -163,11 +166,7 @@ body,html{
 
 
 /* footer */
-body,html{
-    margin-left: 0px;
-    width: 100%;
-    box-sizing: border-box;
-}
+
 .footertitle{
     text-align: center;
     margin-top: 0px;
@@ -177,7 +176,7 @@ body,html{
 }
 .aboutus{
     height: 40px;
-    background-color: rgb(37, 37, 137);
+    background-color: #0B4BAB;
     text-align: center;
     padding-top: 8px;
     margin-top: 8px;
@@ -190,11 +189,8 @@ body,html{
    
     text-decoration: none;
     color: white;
-   
-   
+
 }
-
-
 .spanhr{
     margin-left: 10px;
     margin-right: 10px;

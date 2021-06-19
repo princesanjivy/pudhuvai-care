@@ -54,12 +54,11 @@ function myFunction() {
 //    console.log(index);
 }
 
+
+
+
 // bed availability
-
 // Author:Ashok
-
-
-// 
 
 function table_search() {
 
@@ -198,4 +197,16 @@ function reset() {
     not_found.style.display = 'none';
 
   
+}
+
+
+function filter() {
+  var input = document.getElementById('search-ash');
+  // console.log(input.value.length);
+  if (input.value.length>0) {
+    table_search();
+  }
+  else {
+    reset();
+  }
 }
