@@ -12,7 +12,7 @@ def categorizeHospitals(govtHospitals, privateHospitals, privateNursingHomes):
     gov_tr = ''
     pri_tr = ''
     nursingHomes_tr = ''
-    finalTags = []
+    bedAvailability_Tags = []
     for i in govtHospitals:
         gov_tr += trTag.format('gov_institue-ash', i['hospitalName'], i['isolationBeds']
                                ['vacant'], i['oxygenBeds']['vacant'], i['ventilatorBeds']['vacant'])
@@ -24,13 +24,13 @@ def categorizeHospitals(govtHospitals, privateHospitals, privateNursingHomes):
     for i in privateNursingHomes:
         nursingHomes_tr += trTag.format('private_nursing-ash', i['hospitalName'], i['isolationBeds']
                                         ['vacant'], i['oxygenBeds']['vacant'], i['ventilatorBeds']['vacant'])
-    finalTags.append(gov_tr)
-    finalTags.append(pri_tr)
-    finalTags.append(nursingHomes_tr)
-    return finalTags
+    bedAvailability_Tags.append(gov_tr)
+    bedAvailability_Tags.append(pri_tr)
+    bedAvailability_Tags.append(nursingHomes_tr)
+    return bedAvailability_Tags
 
 
-def processData(hospitalDetails):
+def processHospitalData(hospitalDetails):
     govtHospitals = []
     privateHospitals = []
     privateNursingHomes = []
@@ -41,15 +41,70 @@ def processData(hospitalDetails):
             privateHospitals.append(i)
         elif(i['typeofInstitution'] == 'PRIVATE NURSING HOMES'):
             privateNursingHomes.append(i)
-    return categorizeHospitals(govtHospitals, privateHospitals, privateNursingHomes)
+    return govtHospitals, privateHospitals, privateNursingHomes
+
+
+def processTrackerDetails(trackerDetails):
+    overallCases = ''' <tr style="background-color: white;">
+                    <td>    <div class="color-box-ash total-cases-ash"></div> <span id="total_cases1-ash">{}</span></td>
+                    <td>
+                        <div class="color-box-ash total-cured-ash"></div><span id="total_cured1-ash">{}</span></td>
+                        <td><div class="color-box-ash active-cases-ash"></div><span id="active_cases1-ash">{}</span></td>
+                        <td><div class="color-box-ash death-ash"></div><span id="total_death1-ash">{}</span></td>
+        
+                    
+                </tr>'''
+    tracker_Trtag = '''
+                <tr>
+                    <td id="district" >{}</td>
+                    <td id="reported">{}</td>
+                    <td id="cured">{}</td>
+                    <td id="active">{}</td>
+                    <td id="death">{}</td>
+                </tr>'''
+    tracker_tag = ''
+    totalCases = 0
+    totalCured = 0
+    totalActiveCases = 0
+    totalDeathCases = 0
+    for i in trackerDetails:
+        totalCases += int(i['reported'])
+        totalCured += int(i['cured'])
+        totalActiveCases += int(i['active'])
+        totalDeathCases += int(i['death'])
+    # print(totalCases, ' ', totalCured, ' ',
+        # totalActiveCases, ' ', totalDeathCases)
+        if i['district'] == 'Pondicherry':
+            tracker_tag += tracker_Trtag.format('Pondicherry',
+                                                i['reported'], i['cured'], i['active'], i['death'])
+        elif i['district'] == 'Karaikal':
+            tracker_tag += tracker_Trtag.format('Karaikal', i['reported'],
+                                                i['cured'], i['active'], i['death'])
+
+        elif i['district'] == 'Yanam':
+            tracker_tag += tracker_Trtag.format('Yanam', i['reported'],
+                                                i['cured'], i['active'], i['death'])
+
+        elif i['district'] == 'Mahe':
+            tracker_tag += tracker_Trtag.format('Mahe', i['reported'],
+                                                i['cured'], i['active'], i['death'])
+    overallCases = overallCases.format(totalCases, totalCured,
+                                       totalActiveCases, totalDeathCases)
+    return tracker_tag, overallCases
 
 
 def getApiData():
-    resp = request.urlopen('https://pycare-api.herokuapp.com/hospitalDetails')
-    data = resp.read()
-    hospitalDetails = data.decode('utf-8')
+    resp_1 = request.urlopen(
+        'https://pycare-api.herokuapp.com/hospitalDetails')
+    data_1 = resp_1.read()
+    hospitalDetails = data_1.decode('utf-8')
     hospitalDetails = json.loads(hospitalDetails)
-    return processData(hospitalDetails)
+    resp_2 = request.urlopen(
+        'https://pycare-api.herokuapp.com/districtWiseReport')
+    data_2 = resp_2.read()
+    trackerDetails = data_2.decode()
+    trackerDetails = json.loads(trackerDetails)
+    return hospitalDetails, trackerDetails
 
 
 def readDynamicPages():
@@ -59,16 +114,19 @@ def readDynamicPages():
         covidTracker = dynamicPage_1.read()
     with open(".\dynamicPages\/bedAvailability.html", "r", encoding='utf-8') as dynamicPage_2:
         bedAvailability = dynamicPage_2.read()
-    finalTags = getApiData()
-    writeToStaticPages(covidTracker, bedAvailability, finalTags)
+    return covidTracker, bedAvailability
 
 
 # formatting the two string's placeholders with the realtime data from the API
 
 
-def writeToStaticPages(covidTracker, bedAvailability, finalTags):
+def writeToStaticPages(covidTracker, bedAvailability, bedAvailability_Tags, tracker_tag, overallCases):
     bedAvailability = bedAvailability.format(
-        finalTags[0], finalTags[1], finalTags[2])
+        bedAvailability_Tags[0], bedAvailability_Tags[1], bedAvailability_Tags[2])
+    covidTracker = covidTracker.format(overallCases, tracker_tag)
+    with open(".\dynamicPages\/trackerscript.txt", "r", encoding="utf-8") as s:
+        trackerJs = s.read()
+    covidTracker += trackerJs
     with open(".\staticPages\covidTracker.html", "w", encoding='utf-8') as covidTrackerFile:
         covidTrackerFile.write(covidTracker)
     with open(".\staticPages\/bedAvailability.html", "w", encoding='utf-8') as bedAvailabilityFile:
@@ -76,4 +134,12 @@ def writeToStaticPages(covidTracker, bedAvailability, finalTags):
     print('HTML Files generated succesfully')
 
 
-readDynamicPages()
+covidTracker, bedAvailability = readDynamicPages()
+hospitalDetails, trackerDetails = getApiData()
+govtHospitals, privateHospitals, privateNursingHomes = processHospitalData(
+    hospitalDetails)
+bedAvailability_Tags = categorizeHospitals(
+    govtHospitals, privateHospitals, privateNursingHomes)
+tracker_tag, overallCases = processTrackerDetails(trackerDetails)
+writeToStaticPages(covidTracker, bedAvailability,
+                   bedAvailability_Tags, tracker_tag, overallCases)
