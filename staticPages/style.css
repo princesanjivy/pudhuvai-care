@@ -538,26 +538,22 @@ td {
 /* mental center */
 
 ::-webkit-input-placeholder {
-	font-size: 25px;
-	font-weight: bolder;
-	color: rgb(170, 170, 170);
-	font-family: "Times New Roman", Times, serif;
-}
-
- :-moz-placeholder {
-	font-size: 25px;
-	font-family: "Times New Roman", Times, serif;
-}
-
- ::-moz-placeholder {
-	font-size: 25px;
-	font-family: "Times New Roman", Times, serif;
-}
-
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(170, 170, 170);
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+       font-size: 25px;
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+       font-size: 25px;
+ }
+ 
  :-ms-input-placeholder {
-	font-size: 25px;
-	font-family: "Times New Roman", Times, serif;
-}
+       font-size: 25px;
+ }
 
 /* home delivery */
 
