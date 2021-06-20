@@ -8,14 +8,15 @@
     <!-- <link rel="stylesheet" href="A.index.css"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/flag.png"/>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <script src="script.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
     <title>HOME</title>
 
 </head>
-<body>  
+<body onload="updatedOn()">  
 
     <!-- header -->
      <!-- header -->
@@ -23,7 +24,7 @@
         <small> புதுச்சேரி அரசு Government of Puducherry</small>
 
         
-      <a href="https://mobile.twitter.com/lgov_puducherry?lang=en"> <i class="fa fa-twitter" style="font-size :15spx;color:blue;margin-right:5vw "></i>  </a> 
+      <a href="https://mobile.twitter.com/lgov_puducherry?lang=en"> <i class="fa fa-twitter" style="font-size :15spx;color:blue;"></i></a> 
         <a href="https://m.facebook.com/LtGov.Puducherry/"><i class="fa fa-facebook-f" style="font-size:15px;color:blue;"></i></a>
        <a href="#youtube"> <i class="fa fa-youtube-play" style="font-size:15px;color:red;"></i> </a> 
        <a href="#insta"><i class="fa fa-instagram" style="font-size:15px;color:red;"></i></a>
@@ -32,8 +33,8 @@
 <div id="header-container"> 
     <table class="header" style="margin-left:10%;">
         <tr>
-            <td style="padding-right:0.5vmax;"> 
-            <img src="images/emblem.png" alt="">
+            <td style="padding-left:0.5vmax;"> 
+            <img src="images/emblem.png" alt=""> 
             </td>
             <td id="header-text" >
                 <div>
@@ -47,7 +48,7 @@
             
                     </div>
                 </td>
-                <td id="header-text">
+                <td id="header-text" >
                     <img src="images/gate.png" style="border-right: 1px solid black;padding-right:40px;"alt="">
                 </td>
         </tr>
@@ -71,17 +72,17 @@
  
 <div class="rrow">
     <div class="ccolumn">
-        <a href="covidTracker.html">
+        
             <div class="card">
-                <img src="images/covidtracker.png" alt="">
+                <img src="images/covidtracker.png"alt=""><a href="covidTracker.html">
                <h2 class="hometext">Covid <br> Tracker</h2>
           </div>
       </a>
     </div>
     <div class="ccolumn">
-        <a href="testingCenter.html">
+       
         <div class="card">
-            <img src="images/testingcenter.png" alt="">
+            <img src="images/testingcenter.png"alt=""> <a href="testingCenter.html">
           <h2>Testing <br>Center</h2>
         </div>
     </a>
@@ -92,17 +93,17 @@
 
 <div class="rrow">
     <div class="ccolumn">
-        <a href="vaccinationCenter.html">
+        
             <div class="card">
-                <img src="images/vaccine.png" alt="">
+                <img src="images/vaccine.png"alt=""> <a href="vaccinationCenter.html">
                <h2>Vaccination <br>Center</h2>
           </div>
       </a>
     </div>
     <div class="ccolumn">
-        <a href="bedAvailability.html">
+        
         <div class="card">
-            <img src="images/hospital.png" alt="">
+            <img src="images/hospital.png"alt=""> <a href="bedAvailability.html">
           <h2>Bed<br> Availability</h2>
         </div>
     </a>
@@ -114,17 +115,15 @@
 
 <div class="rrow">
     <div class="ccolumn">
-        <a href="mentalCenter.html">
-            <div class="card">
-                <img src="images/emotions.png" alt="">
+         <div class="card">
+                <img src="images/emotions.png"alt=""><a href="mentalCenter.html">
                <h2>Mental<br> Health</h2>
           </div>
       </a>
     </div>
     <div class="ccolumn">
-        <a href="homeDelivery.html">
         <div class="card">
-            <img src="images/delivery.png" alt="">
+            <img src="images/delivery.png"alt=""> <a href="homeDelivery.html">
           <h2>Home Delivery<br> Services</h2>
         </div>
     </a>
@@ -136,17 +135,15 @@
 
 <div class="rrow">
     <div class="ccolumn">
-        <a href="isolationCenter.html">
-            <div class="card">
-                <img src="images/target.png" alt="">
+        <div class="card">
+                <img src="images/target.png"alt=""> <a href="isolationCenter.html">
                <h2>Isolation <br>Center</h2>
           </div>
       </a>
     </div>
     <div class="ccolumn">
-        <a href="emergency.html">
         <div class="card">
-            <img src="images/emergency-call.png" alt="">
+            <img src="images/emergency-call.png" alt=""> <a href="emergency.html">
           <h2>Emergency<br> Contacts</h2>
         </div>
     </a>
@@ -156,16 +153,16 @@
 
 <!-- row 5 -->
 
-<div class="rrow">
-    <div class="ccolumn">
-        <a href="hospitalBag.html">
+<!-- <div class="rrow">
+    <div class="ccolumn"> -->
+        
             <div class="card">
-                <img src="images/hospital.png" alt="">
+                <img src="images/hospital.png" alt=""> <a href="hospitalBag.html">
                <h2>Hospital Bag <br>Checklist</h2>
           </div>
       </a>
-    </div>
-</div>
+    <!-- </div>
+</div> -->
 
 
 
@@ -175,11 +172,11 @@
 
 
     <!-- footer -->
-    <h4 class="footertitle">Date last updated : <b>June 7,2021</b></h4>
+    <h4 class="footertitle">Last updated : <b><span  id="lastdateupdatedOn"></span></b></h4>
     <footer class="aboutus" >
-               <a class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
+               <a style="color: white" class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
                <span class="spanhr">|</span>
-        <a class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
+        <a style="color: white" class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
     </footer>
 
 </body>

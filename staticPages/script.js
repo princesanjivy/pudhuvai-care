@@ -228,3 +228,12 @@ function filter() {
     reset();
   }
 }
+
+function updatedOn() {
+  var x = new Date();
+
+  month = x.getMonth() + 1;
+  var lastdateupdatedOn =
+    "" + x.getDate() + "/" + month + "/" + x.getFullYear();
+  document.getElementById("lastdateupdatedOn").innerHTML = lastdateupdatedOn;
+}
