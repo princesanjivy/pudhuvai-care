@@ -62,6 +62,13 @@ def processTrackerDetails(trackerDetails):
                     <td id="active">{}</td>
                     <td id="death">{}</td>
                 </tr>'''
+    total_tag = '''<tr id="total" class = "total">
+                    <td id="total" >{}</td>
+                    <td id="reported">{}</td>
+                    <td id="cured">{}</td>
+                    <td id="active">{}</td>
+                    <td id="death">{}</td>
+                </tr>            '''
     tracker_tag = ''
     totalCases = 0
     totalCured = 0
@@ -90,6 +97,8 @@ def processTrackerDetails(trackerDetails):
                                                 i['cured'], i['active'], i['death'])
     overallCases = overallCases.format(totalCases, totalCured,
                                        totalActiveCases, totalDeathCases)
+    tracker_tag += total_tag.format('Total', totalCases,
+                                    totalCured, totalActiveCases, totalDeathCases)
     return tracker_tag, overallCases
 
 
@@ -124,9 +133,6 @@ def writeToStaticPages(covidTracker, bedAvailability, bedAvailability_Tags, trac
     bedAvailability = bedAvailability.format(
         bedAvailability_Tags[0], bedAvailability_Tags[1], bedAvailability_Tags[2])
     covidTracker = covidTracker.format(overallCases, tracker_tag)
-    with open(".\dynamicPages\/trackerscript.txt", "r", encoding="utf-8") as s:
-        trackerJs = s.read()
-    covidTracker += trackerJs
     with open(".\staticPages\covidTracker.html", "w", encoding='utf-8') as covidTrackerFile:
         covidTrackerFile.write(covidTracker)
     with open(".\staticPages\/bedAvailability.html", "w", encoding='utf-8') as bedAvailabilityFile:

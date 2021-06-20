@@ -159,7 +159,13 @@
                     <td id="cured">4267</td>
                     <td id="active">81</td>
                     <td id="death">32</td>
-                </tr>
+                </tr><tr id="total" class = "total">
+                    <td id="total" >Total</td>
+                    <td id="reported">114596</td>
+                    <td id="cured">109083</td>
+                    <td id="active">3793</td>
+                    <td id="death">1720</td>
+                </tr>            
             </tbody>
             </table>
         </div>
@@ -195,39 +201,4 @@
     
 
 </body>
-</html><script type="text/javascript">
-// Load google charts
-// district wise
-var total_cases = parseInt(document.getElementById('total_cases1-ash').textContent);
-var total_cured = parseInt(document.getElementById('total_cured1-ash').textContent);
-var active = parseInt(document.getElementById('active_cases1-ash').textContent);
-var total_death = parseInt(document.getElementById('total_death1-ash').textContent);
-
-
-
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-// Draw the chart and set the chart values
-function drawChart() {
-  var data1 = google.visualization.arrayToDataTable([
-  ['status', 'Number of Cases'],
-  ['Total Case', total_cases],
-  ['Total Cured', total_cured],
-  ['Active Cases', active],
-  ['Total Death', total_death]
-]);
-
-
-  // Optional; add a title and set the width and height of the chart
-  var options1 = {'title':'District Wise', 'width':700, 'height':500};
-
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart-ash'));
-
-  chart.draw(data1, options1);
-  chart2.draw(data2, options2);
-
-}
-</script>
+</html>
