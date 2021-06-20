@@ -8,14 +8,15 @@
     <!-- <link rel="stylesheet" href="A.index.css"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/flag.png"/>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <script src="script.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
     <title>HOME</title>
 
 </head>
-<body>  
+<body onload="updatedOn()">  
 
     <!-- header -->
      <!-- header -->
@@ -23,7 +24,7 @@
         <small> புதுச்சேரி அரசு Government of Puducherry</small>
 
         
-      <a href="https://mobile.twitter.com/lgov_puducherry?lang=en"> <i class="fa fa-twitter" style="font-size :15spx;color:blue;margin-right:5vw "></i>  </a> 
+      <a href="https://mobile.twitter.com/lgov_puducherry?lang=en"> <i class="fa fa-twitter" style="font-size :15spx;color:blue;"></i></a> 
         <a href="https://m.facebook.com/LtGov.Puducherry/"><i class="fa fa-facebook-f" style="font-size:15px;color:blue;"></i></a>
        <a href="#youtube"> <i class="fa fa-youtube-play" style="font-size:15px;color:red;"></i> </a> 
        <a href="#insta"><i class="fa fa-instagram" style="font-size:15px;color:red;"></i></a>
@@ -171,7 +172,7 @@
 
 
     <!-- footer -->
-    <h4 class="footertitle">Date last updated : <b>June 7,2021</b></h4>
+    <h4 class="footertitle">Last updated : <b><span  id="lastdateupdatedOn"></span></b></h4>
     <footer class="aboutus" >
                <a style="color: white" class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
                <span class="spanhr">|</span>
