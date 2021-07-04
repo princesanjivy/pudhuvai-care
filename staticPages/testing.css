@@ -1,0 +1,332 @@
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bars {
+  margin-left: 50px;
+}
+.top-bar {
+  background-color: #f0f0f0;
+}
+
+.top-bar small {
+  padding-left: 20vmin;
+}
+
+@media screen and(max-width:500px) {
+  .top-bar small {
+    padding-left: 0%;
+  }
+}
+
+.top-bar a {
+  float: right;
+  padding-right: 1vmax;
+  padding-top: 5px;
+  font-size: 15px;
+}
+
+#header-container {
+  display: inline-table;
+  width: 100%;
+}
+
+.header {
+  max-height: 10px;
+  font-size: 1vmin;
+  float: left;
+}
+
+.header img {
+  size: 1vmax;
+  max-height: 5.5vmax;
+  width: auto;
+}
+
+#header-text {
+  font-size: 1vmax;
+}
+
+#translation-links {
+  float: right;
+  margin-top: 2vmax;
+  margin-right: 10%;
+}
+
+@media screen and(max-width:1000) {
+  #translation-links {
+    padding-left: 10%;
+  }
+}
+
+.title-card {
+  position: relative;
+}
+
+.title-card img {
+  max-height: 40%;
+  max-width: 100%;
+}
+
+.title-card h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2vmax;
+  margin-top: 2px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card h2 {
+  font-size: 25px;
+  color: white;
+}
+
+.ccolumn {
+  float: left;
+  width: 50%;
+  padding-bottom: 20px;
+  height: auto;
+  display: block;
+}
+
+.rrow {
+  margin: 0 -5px;
+}
+
+.rrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (min-width: 900px) {
+  .ccolumn {
+    padding-left: auto;
+    padding-right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ccolumn {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  background-color: #0b4bab;
+  border-radius: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 140px;
+  width: 340px;
+}
+
+.card img {
+  max-height: 100px;
+  width: 100px;
+  float: left;
+  padding: 5px;
+}
+
+.ccolumn a {
+  color: white;
+  text-decoration: none;
+}
+
+.footertitle {
+  text-align: center;
+  margin-top: 0px;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+.aboutus {
+  height: 40px;
+  background-color: #0b4bab;
+  text-align: center;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.footerlink {
+  text-decoration: none;
+  color: white;
+}
+
+.spanhr {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* testing center and vaccination center */
+
+.hom img {
+  margin-left: 50px;
+  width: 40px;
+  height: 20px;
+  float: left;
+}
+
+.hero {
+  background: #fff;
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 80px;
+  box-sizing: border-box;
+  text-align: center;
+  color: black;
+}
+
+.row {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col {
+  flex-basis: 28%;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  min-width: 230px;
+  margin-bottom: 20px;
+  border: 1px solid #0b56c5;
+  background: #dfe4f7;
+}
+
+.profile {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: #dfe4f6;
+  padding: 12px;
+}
+
+.profile img {
+  width: 100%;
+}
+
+.profile h3 {
+  color: #0b56c5;
+  margin: 0px 0 10px;
+  font-weight: 500;
+}
+
+.profile p {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.fa {
+  position: relative;
+  left: 110px;
+  top: 17px;
+  color: #ea4335;
+}
+
+.icon .fa {
+  position: relative;
+  left: 110px;
+  top: 180px;
+  color: #ea4335;
+}
+
+p.age {
+  color: #fb2e3a;
+  font-family: arial;
+}
+
+.click {
+  background-color: lightgrey;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .hero {
+    width: 100%;
+  }
+  .fa {
+    left: 100px;
+    top: 17px;
+  }
+  .icon .fa {
+    left: 100px;
+  }
+  .topbar i {
+    margin-top: -40px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .fa {
+    left: 100px;
+    top: 17px;
+  }
+  .icon .fa {
+    left: 100px;
+  }
+  .topbar i {
+    margin-top: -20px;
+  }
+}
+/*----search-----*/
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  align-items: center;
+}
+
+.container input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  width: 50%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container input:focus{
+  outline: none;
+}

@@ -1,0 +1,21 @@
+::-webkit-input-placeholder {
+	font-size: 25px;
+	font-weight: bolder;
+	color: rgb(170, 170, 170);
+	font-family: "Times New Roman", Times, serif;
+}
+
+ :-moz-placeholder {
+	font-size: 25px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+ ::-moz-placeholder {
+	font-size: 25px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+ :-ms-input-placeholder {
+	font-size: 25px;
+	font-family: "Times New Roman", Times, serif;
+}

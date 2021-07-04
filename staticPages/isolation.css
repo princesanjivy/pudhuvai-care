@@ -1,0 +1,147 @@
+.mainheadingniv h2 {
+	text-align: center;
+	font-size: 2vw;
+	color: blue;
+	text-decoration: underline;
+}
+
+.mainheadingniv p {
+	text-align: center;
+	color: black;
+	font-size: 2vw;
+}
+
+.statusdisplayniv table,
+tr {
+	width: 35%;
+	border: none;
+}
+
+.roomrequestniv h3 {
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-size: 1.5vw;
+	padding-left: 20%;
+	min-width: 100%;
+	max-width: 100%;
+	padding-bottom:0%;
+}
+
+.roundcornerniv {
+	border-radius: 10px;
+	background: #BCE9F0;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	align-self: center;
+	font-size: 1.5vw;
+	margin-left: 15%;
+	display: inline-block;
+	min-width: 70%;
+	max-width: 5000px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-left: 20%;
+}
+
+.roundcornerniv-2 {
+	width: 70%;
+	border-radius: 10px;
+	background: #ffffffff;
+	padding-bottom: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	height: 25px;
+	align-self: center;
+	font-size: 2vw;
+	margin-left: 20%;
+}
+
+.roundcornerniv num {
+	float: left;
+	margin-left: 2%;
+}
+
+.roundcornerniv icon {
+	float: right;
+	margin-right: 2%;
+	min-width: 50px;
+	
+
+}
+
+a:link {
+	color: blue;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.thumbnailniv {
+	align-content: center;
+	margin-left: 20%;
+}
+
+.thumbnailniv img {
+	padding-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 25%;
+}
+
+.middle-barniv img {
+	max-height: inherit;
+	max-width: inherit;
+	float: right;
+	padding: 10px;
+}
+
+.middle-barniv-2 img {
+	float: left;
+	margin-left: 15%
+}
+
+.centeredniv {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.containerniv {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.containerniv img {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+.containerniv h1,
+h3 {
+	position: relative;
+	text-align: center;
+	color: black;
+	width: 250px;
+}
+
+.centeredniv {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.pagepositionniv {
+	text-align: left;
+	text-decoration: none;
+	color: blue;
+	font-size: 1.5vw;
+	padding-left: 20%;
+}

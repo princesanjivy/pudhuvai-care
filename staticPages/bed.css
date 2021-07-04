@@ -1,0 +1,79 @@
+.container-ash {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	align-items: center;
+}
+
+.container-ash input {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	width: 50%;
+	background-color: rgb(152, 209, 247);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.container-ash input:active {
+	background-color: rgb(205, 228, 243);
+}
+
+.container-ash button {
+	display: inline-block;
+	padding: 7px;
+	background-color: #C5E3FF;
+	color: black;
+	border-radius: 10px;
+}
+
+.container-ash button:hover {
+	background-color: rgb(165, 246, 165);
+}
+
+#content_table-ash {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.container-ash th,
+td {
+	text-align: center;
+	padding: 5px;
+}
+
+#hospital-name-ash {
+	background-color: #00E0FF;
+}
+
+#updated-date-ash {
+	background-color: #FEE202;
+}
+
+#available_beds-ash {
+	background-color: #00EEEE;
+}
+
+#institution-ash {
+	background-color: #C5E3FF;
+}
+
+#isolation-ash {
+	background-color: #FA00FF;
+}
+
+#oxygen-ash {
+	background-color: #02FE76;
+}
+
+#ventilator-ash {
+	background-color: #C5E3FF;
+}
+
+#not_found-ash {
+	background-color: rgb(250, 85, 85);
+}

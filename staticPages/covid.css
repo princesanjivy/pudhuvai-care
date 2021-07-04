@@ -1,0 +1,117 @@
+.page_title-ash {
+    border-bottom-right-radius: 500px;
+    background-color: rgb(37, 37, 134);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  .ash-h3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .time_container-ash {
+    float: right;
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgb(37, 37, 134);
+    color: white;
+  }
+  
+  #chart-ash {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .pie-color-ash {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .pie-color-ash table,
+  th,
+  td {
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .total-cases-ash {
+    background: #1352ff;
+  }
+  
+  .active-cases-ash {
+    background: #c2a31c;
+  }
+  
+  .total-cured-ash {
+    background: #ae163e;
+  }
+  
+  .death-ash {
+    background-color: green;
+  }
+  
+  .color-box-ash {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+  }
+  
+  .row tr {
+    padding: 1px;
+  }
+  
+  .summary_table {
+    font-size: small;
+  }
+  
+  #wise {
+    background-color: rgb(37, 37, 137);
+    color: white;
+  }
+  
+  #summary_on {
+    background-color: #7a97e9;
+    color: blue;
+    text-align: left;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(231, 229, 229);
+  }
+  
+  #first_row {
+    background-color: grey;
+  }
+  
