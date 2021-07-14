@@ -26,7 +26,7 @@
   <a href="https://mobile.twitter.com/lgov_puducherry?lang=en" id="twitter"> <i class="fa fa-twitter" ></i></a> 
     <a href="https://m.facebook.com/LtGov.Puducherry/" id="facebook"><i class="fa fa-facebook-f"></i></a>
    <a href="#youtube" id="youtube"> <i class="fa fa-youtube-play" ></i> </a> 
-   <a href="#insta" id="insta"><i class="fa fa-instagram"></i></a>
+   <a href="https://www.instagram.com/puducherryhealthdepartment/" id="insta"><i class="fa fa-instagram"></i></a>
 </div>
 
 <div id="header-container"> 
@@ -71,10 +71,7 @@
 <!-- content -->
 
 <center>
-    <div class="row" >
-
-        <div class="column" >
-
+        
             <h3>District Wise</h3>
             <!-- pie chart -->
             <div id="chart-ash" >
@@ -83,46 +80,47 @@
             <!-- color table -->
             <table id="pie-color-ash">
                 <tr>
-                    <th>
+                    <th id="pie-color-title">
                       <u> Total Cases </u>  
                     </th>
-                    <th>
+                    <th id="pie-color-title">
                         <u> Total Cured</u>
                        
-                    </th>
-                    <th>
+                    </th >
+                    <th id="pie-color-title">
                         <u>  Active Cases</u>
                       
-                    </th>
-                    <th>
+                    </th >
+                    <th id="pie-color-title">
                         <u>Total Death</u>
                         
                     </th>
                 </tr>
                 <tr style="background-color: white;">
-                    <td>    <div class="color-box-ash total-cases-ash"></div> <span id="total_cases1-ash">114596</span></td>
-                    <td>
+                    <td id="pie-color-title">    <div class="color-box-ash total-cases-ash"></div> <span id="total_cases1-ash">114596</span></td>
+                    <td id="pie-color-title">
                         <div class="color-box-ash total-cured-ash"></div><span id="total_cured1-ash">109083</span></td>
-                        <td><div class="color-box-ash active-cases-ash"></div><span id="active_cases1-ash">3793</span></td>
-                        <td><div class="color-box-ash death-ash"></div><span id="total_death1-ash">1720</span></td>
+                        <td id="pie-color-title"><div class="color-box-ash active-cases-ash"></div><span id="active_cases1-ash">3793</span></td>
+                        <td id="pie-color-title"><div class="color-box-ash death-ash"></div><span id="total_death1-ash">18852</span></td>
         
                     
                 </tr> 
             </table>
+            
             <br>
 
 
             <!-- table -->
-            <table class="summary_table" >
-                <tr>
+            <table class="summary_table">
+                <tr id="district-wise">
                 <th id="wise" colspan="5">  
                 District Wise report
                 </th>
             </tr>
-            <tr>
+            <tr id="district-wise">
                 <th id="summary_on" colspan="5">Summary as on $date </th>
             </tr>
-            <tr id="#first_row" style="background-color: rgb(52, 54, 52); color: white;">
+            <tr id="district-wise" id="#first_row" style="background-color: rgb(52, 54, 52); color: white;">
                 <th>
                     District 
                 </th>
@@ -133,28 +131,28 @@
             </tr>
             <tbody>
                 
-                <tr>
+                <tr id="district-wise">
                     <td id="district" >Pondicherry</td>
                     <td id="reported">89596</td>
                     <td id="cured">85221</td>
                     <td id="active">3001</td>
                     <td id="death">1374</td>
                 </tr>
-                <tr>
+                <tr id="district-wise">
                     <td id="district" >Karaikal</td>
                     <td id="reported">14181</td>
                     <td id="cured">13332</td>
                     <td id="active">637</td>
                     <td id="death">212</td>
                 </tr>
-                <tr>
+                <tr id="district-wise">
                     <td id="district" >Yanam</td>
                     <td id="reported">6439</td>
                     <td id="cured">6263</td>
                     <td id="active">74</td>
                     <td id="death">102</td>
                 </tr>
-                <tr>
+                <tr id="district-wise">
                     <td id="district" >Mahe</td>
                     <td id="reported">4380</td>
                     <td id="cured">4267</td>
@@ -163,16 +161,11 @@
                 </tr>
             </tbody>
             </table>
-        </div>
+  
        
-        <br>
-        
-
-
-
-
-
 </center>
+        <br>
+    
 
 
 <br><br>
@@ -221,7 +214,7 @@ function drawChart() {
 
 
   // Optional; add a title and set the width and height of the chart
-  var options1 = {'title':'District Wise', 'width':700, 'height':500};
+  var options1 = {'title':'District Wise', 'width':"100%", 'height':"100%"};
 
 
   // Display the chart inside the <div> element with id="piechart"
