@@ -19,9 +19,50 @@ html {
 }
 
 .top-bar small {
-  padding-left: 20vmin;
+  padding-left: 10vmin;
+  /* margin-left: 10px; */
+}
+#twitter{
+  font-size: 15px;
+  color: blue;
+  margin-right: 20px;
+}
+#facebook{
+  font-size: 15px;
+  color: blue;
+}
+#youtube{
+  font-size: 15px;
+  color: red;
+}
+#insta{
+  font-size: 15px;
+  color: red;
 }
 
+@media only screen and (max-width: 600px) {
+  .top-bar small {
+    font-size: 10px;
+  }
+  #twitter{
+    font-size: 10px;
+}
+#facebook{
+    font-size: 10px;
+}
+#youtube{
+    font-size: 10px;
+}
+#insta{
+    font-size: 10px;
+}
+}
+@media only screen and (max-width: 400px) {
+  .top-bar small {
+    font-size: 7px;
+    margin-left: 5vmin;
+  }
+}
 @media screen and(max-width:500px) {
   .top-bar small {
     padding-left: 0%;
