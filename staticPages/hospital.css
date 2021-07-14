@@ -1,49 +1,11 @@
-#myInput {
-	background-position: 10px 12px;
-	background-repeat: no-repeat;
-	width: 100%;
-	font-size: 16px;
-	padding: 12px 20px 12px 40px;
-	border: 1px solid #ddd;
-	margin-bottom: 12px;
-	padding-left: 40px;
-	background-color: rgb(197, 227, 251);
-	width: 820px;
-}
 
-#myUL {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
 
-.text {
-	font-weight: 100;
-	margin-left: 40px;
-	padding-top: 20px;
-	margin-top: 0px;
+.newcheck{
+	margin-left: 190px;
 }
-
-.search {
-	border: black;
-	margin-left: 40px;
-	border-radius: 10px;
-}
-
-.searchbar {
-	margin-left: 100px;
-}
-
-a {
-	text-decoration: none;
+.newcheck label{
 	font-size: 20px;
-	font-weight: 900px;
-}
-
-.checkbox {
-	margin-bottom: 30px;
-	width: 90px;
-	height: 20px;
+	color:rgb(37, 37, 137);
 }
 
 .home img {
@@ -52,5 +14,14 @@ a {
 	height: 50px;
 	float: left;
 }
+@media only screen and (max-width: 700px) {
+	.newcheck{
+		margin-left: 30px;
+	}
+	
+  }
+  
+  
+
 
 
