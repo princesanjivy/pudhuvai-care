@@ -1,7 +1,8 @@
 <!----Author: Yadhava Prasana.G---->
 <!DOCTYPE html>
-<html lang="en">
 <head>
+    <!-- language test -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +57,8 @@
     </table>
 
     <div id="translation-links"> 
-     <h3> <a href="#ta">தமிழ் </a> | <a href="#en">ENGLISH</a> </h3>
+     <h3> <a id="tamil" href="#ta" onclick="changeLangToTamil()">தமிழ் </a> | <a id="eng" href="#en" onclick="changeLangToEnglish()">ENGLISH</a> </h3>
+    </div>
     </div>
 </div>
 
@@ -76,7 +78,8 @@
         
             <div class="card">
                 <img src="images/covidtracker.png"alt=""><a href="covidTracker.html">
-               <h2 class="hometext">Covid <br> Tracker</h2>
+               <h2 lang="en" class="hometext">Covid <br> Tracker</h2>
+               <h2 lang="ta"class="hometext">கோவிட் <br> புள்ளிவிவரங்கள்</h2>
           </div>
       </a>
     </div>
@@ -84,7 +87,8 @@
        
         <div class="card">
             <img src="images/testingcenter.png"alt=""> <a href="testingCenter.html">
-          <h2>Testing <br>Center</h2>
+          <h2 lang="en">Testing <br>Center</h2>
+          <h2 lang="ta">சோதனை <br> மையம்</h2>
         </div>
     </a>
       </div>
@@ -97,7 +101,8 @@
         
             <div class="card">
                 <img src="images/vaccine.png"alt=""> <a href="vaccinationCenter.html">
-               <h2>Vaccination <br>Center</h2>
+               <h2 lang="en">Vaccination <br>Center</h2>
+                <h2 lang="ta">தடுப்பூசி <br>மையம்</h2>
           </div>
       </a>
     </div>
@@ -105,7 +110,8 @@
         
         <div class="card">
             <img src="images/hospital.png"alt=""> <a href="bedAvailability.html">
-          <h2>Bed<br> Availability</h2>
+          <h2 lang="en">Bed<br> Availability</h2>
+          <h2 lang="ta">படுக்கை<br> இருப்பு</h2>
         </div>
     </a>
       </div>
@@ -118,14 +124,16 @@
     <div class="ccolumn">
          <div class="card">
                 <img src="images/emotions.png"alt=""><a href="mentalCenter.html">
-               <h2>Mental<br> Health</h2>
+               <h2 lang="en">Mental<br> Health</h2>
+               <h2 lang="ta">மன<br> ஆரோக்கியம்</h2>
           </div>
       </a>
     </div>
     <div class="ccolumn">
         <div class="card">
             <img src="images/delivery.png"alt=""> <a href="homeDelivery.html">
-          <h2>Home Delivery<br> Services</h2>
+          <h2 lang="en">Home Delivery<br> Services</h2>
+           <h2 lang="ta">வீட்டு விநியோக<br>சேவைகள்</h2>
         </div>
     </a>
       </div>
@@ -138,14 +146,16 @@
     <div class="ccolumn">
         <div class="card">
                 <img src="images/target.png"alt=""> <a href="isolationCenter.html">
-               <h2>Isolation <br>Center</h2>
+               <h2 lang="en">Isolation <br>Center</h2>
+                <h2 lang="ta">தனிமை <br>மையம்</h2>
           </div>
       </a>
     </div>
     <div class="ccolumn">
         <div class="card">
             <img src="images/emergency-call.png" alt=""> <a href="emergency.html">
-          <h2>Emergency<br> Contacts</h2>
+          <h2 lang="en">Emergency<br> Contacts</h2>
+          <h2 lang="ta">அவசர<br> தொடர்பு </h2>
         </div>
     </a>
       </div>
@@ -159,7 +169,8 @@
         
             <div class="card">
                 <img src="images/hospital.png" alt=""> <a style="text-decoration: none;" href="hospitalBag.html">
-               <h2>Hospital Bag <br>Checklist</h2>
+               <h2 lang="en">Hospital Bag <br>Checklist</h2>
+                <h2 lang="ta"> மருத்துவமனை பை<br> சரிபார்ப்பு பட்டியல்</h2>
           </div>
       </a>
     <!-- </div>
@@ -173,12 +184,23 @@
 
 
     <!-- footer -->
-    <h4 class="footertitle">Last updated : <b><span  id="lastdateupdatedOn"></span></b></h4>
+    <h4 lang="en" class="footertitle"> <span lang="en">Last updated</span> : <b><span  id="lastdateupdatedOn"></span></b></h4>
+    <h4 lang="ta"class="footertitle"><span lang="ta">கடைசியாக புதுப்பிக்கப்பட்டது</span> : <b><span  id="lastdateupdatedOn"></span></b></h4>
     <footer class="aboutus" >
-               <a style="color: white" class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
+               <a lang="en" class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
+               <a lang="ta" class="footerlink" href="K-about us.html"> பாண்டிச்சேரி பொறியியல் கல்லூரியால் உருவாக்கப்பட்டது மற்றும் பராமரிக்கப்படுகிறது</a>
                <span class="spanhr">|</span>
-        <a style="color: white" class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
+        <a lang="en" class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
+        <a lang="ta" class="footerlink" href="https://healthdept.page.link/Feedback">கருத்து</a>
+
     </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+    $('[lang]').hide(); // hide all lang attributes on start.
+    $('[lang="en"]').show(); // show just Korean text (you can change it)
+
+    </script>
 
 </body>
 </html>

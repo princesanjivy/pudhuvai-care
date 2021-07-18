@@ -1,7 +1,8 @@
 <!----Author: Manigandan.G---->
 <!DOCTYPE html>
-<html lang="en">
 <head>
+    <!-- language test -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,7 +55,7 @@
     </table>
 
     <div id="translation-links"> 
-     <center><h3> <a href="#ta">தமிழ் </a> | <a href="#en">ENGLISH</a> </h3></center>
+     <center><h3> <a id="tamil" href="#ta" onclick="changeLangToTamil()">தமிழ் </a> | <a id="eng" href="#en" onclick="changeLangToEnglish()">ENGLISH</a> </h3></center>
     </div>
 </div>
     
@@ -535,9 +536,19 @@
  <!-- footer -->
     <h4 class="footertitle">Last updated : <b><span  id="lastdateupdatedOn"></span></b></h4>
     <footer class="aboutus" >
-               <a style="color: white" class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
+               <a lang="en" class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
+               <a lang="ta" class="footerlink" href="K-about us.html"> பாண்டிச்சேரி பொறியியல் கல்லூரியால் உருவாக்கப்பட்டது மற்றும் பராமரிக்கப்படுகிறது</a>
                <span class="spanhr">|</span>
-        <a style="color: white" class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
+        <a lang="en" class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
+        <a lang="ta" class="footerlink" href="https://healthdept.page.link/Feedback">கருத்து</a>
+
     </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+    $('[lang]').hide(); // hide all lang attributes on start.
+    $('[lang="en"]').show(); // show just Korean text (you can change it)
+
+    </script>
     </body>
 </html>

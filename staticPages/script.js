@@ -80,9 +80,26 @@ function myFunction() {
       contents[i].style.display = "block";
     }
   }
-  //    var index =  contents[0].innerText.indexOf(input);
-  //    console.log(contents[0].innerText);
-  //    console.log(index);
+}
+
+
+
+// change language
+$('[lang]').hide(); // hide all lang attributes on start.
+$('[lang="en"]').show(); // show just Korean text (you can change it)
+function changeLangToTamil() {
+    var tamil = document.getElementById("tamil");
+    $('[lang]').hide(); // hide all lang attributes on start.
+    $('[lang="ta"]').show(); // show just Korean text (you can change it)
+    $('[lang="en"]').hide();
+    
+}
+function changeLangToEnglish() {
+    var tamil = document.getElementById("tamil");
+    $('[lang]').hide(); // hide all lang attributes on start.
+    $('[lang="en"]').show(); // show just Korean text (you can change it)
+    $('[lang="ta"]').hide();
+    
 }
 
 // bed availability

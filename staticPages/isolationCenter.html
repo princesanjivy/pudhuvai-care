@@ -1,7 +1,9 @@
 <!------Author: Nivedha Vengadesh------->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <!-- language test -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,13 +49,14 @@
     </table>
 
     <div id="translation-links"> 
-     <h3> <a href="#ta">தமிழ் </a> | <a href="#en">ENGLISH</a> </h3>
+     <h3> <a id="tamil" href="#ta" onclick="changeLangToTamil()">தமிழ் </a> | <a id="eng" href="#en" onclick="changeLangToEnglish()">ENGLISH</a> </h3>
     </div>
 </div>
 
         <div class="title-card">
     <img src="images/vector.png" alt="">
-    <h2>Isolation Center</h2>
+    <h2 lang="en">Isolation Center</h2>
+    <h2 lang="ta">தனிமை மையம்</h2>
 </div>
 
 <!-- body contet -->
@@ -63,13 +66,17 @@
 
     <!-- <div ><a href="A-index.html"><img src="images/home2.png"></a> / Isolation Center</a></div> -->
 
-<div class=bars> <h4>
-    <a href="index.html"><img src="images/home2.png"></a> / Isolation Center</a><h4></div>
+<div class=bars> <h4 lang="en">
+    <a href="index.html"><img src="images/home2.png"></a> <span lang="en">/ Isolation Center </span></a><h4></div>
+        <h4 lang="ta">
+    <a href="index.html"><img src="images/home2.png"></a> <span lang="ta">/ தனிமை மையம் </span></a><h4></div>
 
 <!-- Main Heading -->
 	<div class="mainheadingniv">
-    <h2> FREE ISOLATION ROOMS </h2>
-    <p> Initiative of the Trust for Youth and Child Leadership (TYCL). </p>
+    <h2 lang="en"> FREE ISOLATION ROOMS </h2>
+    <h2 lang="ta"> இலவச தனிமை அறைகள் </h2>
+    <p lang="en"> Initiative of the Trust for Youth and Child Leadership (TYCL). </p>
+     <p lang="ta"> இளைஞர் மற்றும் சிறுவர் தலைமைத்துவத்திற்கான நம்பிக்கைப் பொறுப்புக்குழுவின் முன்முயற்சி(TYCL). </p>
 		</div>	
 <!-- Status Display -->	
 <table class="statusdisplayniv" align="center">
@@ -77,27 +84,32 @@
     <tr>
       <td>	<div class="containerniv" >
   <img src="images/green-bg.png">
-  <div class="centeredniv"><h1>36</h1><h3>VACANT ROOMS</h3></div>
+  <div class="centeredniv"><h1 lang="en">36</h1><h3 lang="en">VACANT ROOMS</h3></div>
+  <div class="centeredniv"><h1 lang="ta">36</h1><h3 lang="ta">காலியாக அறைகள்</h3></div>
 </div></td>
       <td><div class="containerniv">
   <img src="images/blue-bg.png">
-  <div class="centeredniv"><h1>14</h1><h3>BENEFITED</h3></div>
+  <div class="centeredniv"><h1 lang="en">14</h1><h3 lang="en">BENEFITED</h3></div>
+ <div class="centeredniv"><h1 lang="ta">14</h1><h3 lang="ta">பயனடைந்தது</h3></div>
 </div></td>
     </tr>
   </tbody>
 </table>
 
 		<div class="roomrequestniv">
-    <h3> For Room Request: </h3>
+    <h3 lang="en"> For Room Request: </h3>
+    <h3 lang="ta">அறை கோரிக்கைக்கு: </h3>
 		</div>	
 
-	<div class="roundcornerniv"><num>Contact: 9600515255</num>
+	<div class="roundcornerniv"><num lang="en">Contact: 9600515255</num>
+        <num lang="ta">தொடுநிலை: 9600515255</num>
 				
                     <icon><a href="sms:9600515255"><img class="middle-bar" src="images/sms.png" /></a>
                     <a href="tel:9600515255"><img class="middle-bar" src="images/call.png" /></a></icon>
 					</div>
 	<br/>
-	<div class="roundcornerniv"><num>Contact: 9042796535</num>
+	<div class="roundcornerniv"><num lang="en">Contact: 9042796535</num>
+        <num lang="ta">தொடுநிலை: 9042796535</num>
 				
                     <icon><a href="sms:9042796535"><img class="middle-bar" src="images/sms.png" /></a>
                     <a href="tel:9042796535"><img class="middle-bar" src="images/call.png" /></a></icon>
@@ -105,7 +117,8 @@
 	
 	
 		<div class="roomrequestniv">
-			<h3> For More Details Visit : </h3></div>
+			<h3 lang="en"> For More Details Visit : </h3>
+            <h3 lang="ta"> மேலதிக விபரங்கள் பார்வையிட : </h3></div>
 	<div class="roundcornerniv-2" ><a href="https://overcomecovid19.in/en/home-page/" target="_blank"><img class="middle-bar-2" src="images/web+icon.png" /><num2 style="color:blue">https://overcomecovid19.in/en/home-page/</num2></a>
 		</div>	
 	<br/>
@@ -118,12 +131,23 @@
 
 
 <!-- footer -->
-<h4 class="footertitle">Last updated : <b><span  id="lastdateupdatedOn"></span></b></h4>
-<footer class="aboutus" >
-               <a style="color:white"class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
+<h4 lang="en" class="footertitle"> <span lang="en">Last updated</span> : <b><span  id="lastdateupdatedOn"></span></b></h4>
+    <h4 lang="ta"class="footertitle"><span lang="ta">கடைசியாக புதுப்பிக்கப்பட்டது</span> : <b><span  id="lastdateupdatedOn"></span></b></h4>
+    <footer class="aboutus" >
+               <a lang="en" class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
+               <a lang="ta" class="footerlink" href="K-about us.html"> பாண்டிச்சேரி பொறியியல் கல்லூரியால் உருவாக்கப்பட்டது மற்றும் பராமரிக்கப்படுகிறது</a>
                <span class="spanhr">|</span>
-        <a style="color: white"class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
+        <a lang="en" class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
+        <a lang="ta" class="footerlink" href="https://healthdept.page.link/Feedback">கருத்து</a>
+
     </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+    $('[lang]').hide(); // hide all lang attributes on start.
+    $('[lang="en"]').show(); // show just Korean text (you can change it)
+
+    </script>
 
 
 </body>

@@ -1,8 +1,10 @@
 <!-- Author: Yadhava Prasana.G -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <!-- language test -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,62 +52,107 @@
     </table>
     
     <div id="translation-links"> 
-     <h3> <a href="#ta">தமிழ் </a> | <a href="#en">ENGLISH</a> </h3>
+     <h3> <a id="tamil" href="#ta" onclick="changeLangToTamil()">தமிழ் </a> | <a id="eng" href="#en" onclick="changeLangToEnglish()">ENGLISH</a> </h3>
     </div>
     </div>
     <div class="title-card">
         <img src="images/vector.png" alt="">
-        <h2> Hospital Bag Checklist</h2>
+        <h2 lang="en"> Hospital Bag Checklist</h2>
+        <h2 lang="ta"> மருத்துவமனை பை சரிபார்ப்பு பட்டியல்</h2>
     </div>
-    <div class=bars> <h4>
-        <a href="index.html"><img src="images/home2.png"></a> / Hospital Bag Checklist</a><h4></div>
+    <div class=bars> <h4 lang="en">
+        <a href="index.html"><img src="images/home2.png"></a> <span lang="en">/ Hospital Bag Checklist </span></a><h4>
+        <h4 lang="ta">
+        <a href="index.html"><img src="images/home2.png"></a> <span lang="ta">/ மருத்துவமனை பை சரிபார்ப்பு பட்டியல் </span></a><h4></div>
     
     <!-- <h4 class="homeiconchecklist" ><img src="images\home2.png">/ Hospital Bag Checklist</h4> -->
     
     <form>
         <div class="newcheck">
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">3 Sets of Clothing</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Undergarments</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Towels</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Regular Medicine</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Case Sheet Numbers(Medical Records)</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Steam Inhaler</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Pulse Oximeter</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Thermometer</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Flask</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Mug/Cup</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Plate</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Water Bottle</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Mask</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Sanitizer</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Soap</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">ToothPaste & Brush</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Earphones</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Phone Charger</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Bathroom Slippers</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Pillow</label><br><br>
-          <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-          <label for="subscribeNews">Thin Bedsheet</label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"> <span lang="en">3 Sets of Clothing </span></label>
+          <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"> <span lang="ta">3 ஆடை தொகுப்புகள்</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Undergarments</span></label>
+          <input lang="ta"type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label lang="ta" for="subscribeNews"> <span lang="ta">உள்ளாடைகள்</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Towels</span></label>
+          <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">துண்டுகள்</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"> <span lang="en">Regular Medicine</span></label>
+          <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"> <span lang="ta">வழக்கமான மருந்துகள்</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Case Sheet Numbers(Medical Records)</span></label>
+           <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">வழக்குத் தாள் எண் (மருத்துவ பதிவுகள்)</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"> <span lang="en">Steam Inhaler</span></label>
+                   <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"> <span lang="ta">நீராவி உள்ளிழுக்கும்</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Pulse Oximeter</span></label>
+          <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">துடிப்பு ஆக்சிமீட்டர்</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Thermometer</span></label>
+          <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">வெப்பமானி</span></label<br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Flask</span></label>
+           <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">பிளாஸ்க்</span><br><br>
+          <input lang="en"type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Mug/Cup</span></label>
+             <input lang="ta"type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">குவளை / கோப்பை</span><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Plate</span></label>
+           <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">தட்டு</span></label><br><br>
+          <input lang="en"type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"> <span lang="en">Water Bottle</span></label>
+          <input lang="ta"type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"> <span lang="ta">தண்ணீர் குடுவை</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Mask</span></label>
+            <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">முகமூடி</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Sanitizer</span></label>
+          <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">சுத்திகரிப்பு</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Soap</span></label>
+          <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">வழலை</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">ToothPaste & Brush</span></label>
+              <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">பற்பசை மற்றும் தூரிகை</span></label><br><br>
+          <input lang="en"type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Earphones</span></label>
+           <input lang="ta"type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">காதணிகள்</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Phone Charger</span></label>
+           <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">தொலைபேசி சார்ஜர்கள் </span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Bathroom Slippers</span></label>
+          <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">குளியலறை காலணி</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Pillow</span></label>
+           <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">தலையணை</span></label><br><br>
+          <input lang="en" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="en">Thin Bedsheet</span></label>
+            <input lang="ta" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+          <label for="subscribeNews"><span lang="ta">மெல்லிய படுக்கை விரிப்பு</span></label><br><br>
           
          
         </div>
@@ -117,9 +164,19 @@
 
 </body>
 <h4 class="footertitle">Last updated : <b><span  id="lastdateupdatedOn"></span></b></h4>
-<footer class="aboutus" >
-           <a style="color: white" class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
-           <span class="spanhr">|</span>
-    <a style="color: white" class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
-</footer>
+    <footer class="aboutus" >
+               <a lang="en" class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
+               <a lang="ta" class="footerlink" href="K-about us.html"> பாண்டிச்சேரி பொறியியல் கல்லூரியால் உருவாக்கப்பட்டது மற்றும் பராமரிக்கப்படுகிறது</a>
+               <span class="spanhr">|</span>
+        <a lang="en" class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
+        <a lang="ta" class="footerlink" href="https://healthdept.page.link/Feedback">கருத்து</a>
+
+    </footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+    $('[lang]').hide(); // hide all lang attributes on start.
+    $('[lang="en"]').show(); // show just Korean text (you can change it)
+
+    </script>
 </html>

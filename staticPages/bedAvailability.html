@@ -1,6 +1,6 @@
 <!----Author: Ashok---->
 <!DOCTYPE html>
-<html lang="ta">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,13 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>BED AVAILABILITY</title>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+    <!-- language test -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title lang="en">BED AVAILABILITY</title>
+    <title lang="ta">படுக்கை இருப்பு</title>
+
 
 </head>
 <body  onload="updatedOn()">  
@@ -50,30 +56,23 @@
 
 
     <div id="translation-links"> 
-     <h3> <a href="#ta">தமிழ் </a> | <a href="#en">ENGLISH</a> </h3>
+     <h3> <a id="tamil" href="#ta" onclick="changeLangToTamil()">தமிழ் </a> | <a id="eng" href="#en" onclick="changeLangToEnglish()">ENGLISH</a> </h3>
     </div>
-</div>
-      
+    </div>
     
     <div class="title-card">
         <img src="images/vector.png" alt="">
-        <h2>Bed Availability</h2>
+        <h2 lang="en">Bed Availability</h2>
+        <h2 lang="ta"> படுக்கை கிடைக்கும் </h2>
+
     </div>
     
 <div class=bars> <h4>
-    <a href="index.html"><img src="images/home2.png"></a> / Bed Availability</a><h4></div>
+    <a href="index.html"><img src="images/home2.png"></a> <span lang="en"> / Bed Availability </span> <span lang="ta"> / படுக்கை கிடைக்கும் </span> </a><h4></div>
+        
     <br>
-    
 
-    <!-- content -->
-   <!-- <div class="container-ash">
-        <input type="search" id="search-ash" name="search" placeholder="Search" onkeyup="filter()"  value="" >
-        <br> -->
-        <!-- <center>
-            
-        <button type="submit" onclick="table_search()"> Submit</button>
-        <button name="reset" onclick="reset()" >Reset</button>
-    </center> -->
+    
     </div>
 
     <!-- content -->
@@ -81,18 +80,33 @@
         <table id="content_table-ash" style="margin-bottom: 0px;">
             <thead>
                 <tr>
-                    <th rowspan="2" id="hospital-name-ash">HOSPITAL NAME </th>
-                    <th colspan="3" id="available_beds-ash" >AVAILABLE BEDS</th>
+                    <th lang="en" rowspan="2" id="hospital-name-ash">HOSPITAL NAME </th>
+                    <th lang="ta" rowspan="2" id="hospital-name-ash">மருத்துவமனை பெயர்கள் </th>
+
+                    <th lang="en" colspan="3" id="available_beds-ash" >AVAILABLE BEDS</th>
+                    <th lang="ta" colspan="3" id="available_beds-ash" >கிடைக்கும் படுக்கைகள்</th>
+
                 </tr>
                 <tr> 
-                    <th id="isolation-ash">
+                    <th lang="en" id="isolation-ash">
                         ISOLATION
                     </th>
-                    <th id="oxygen-ash" >
+                    <th lang="ta" id="isolation-ash">
+                        தனிமை
+                    </th>
+
+                    <th lang="en" id="oxygen-ash" >
                         OXYGEN
                     </th>
-                    <th id="ventilator-ash">
+                    <th lang="ta" id="oxygen-ash" >
+                        உயிரகம்
+                    </th>
+
+                    <th lang="en" id="ventilator-ash">
                         VENTILATOR
+                    </th>
+                    <th lang="ta" id="ventilator-ash">
+                        பலகணி
                     </th>
                 </tr>
         
@@ -104,7 +118,9 @@
                 </tr>
             </tbody>
             <thead id="gov_head">
-                    <th colspan="5" id="institution-ash" >Government Instituion</th>
+                    <th lang="en" colspan="5" id="institution-ash" >Government Instituion</th>
+                    <th lang="ta" colspan="5" id="institution-ash" >அரசு நிறுவனம்</th>
+
             </thead>
             <tbody id="gov_body"><tr  class="content-ash gov_institue-ash"  >
                         <td id="hospital-name-ash"class="hospital-name" >IGGGH & PGI</td>
@@ -142,9 +158,12 @@
                 <!-- Private Medical institution -->
                           <thead id="private_head">
                 
-                                <th colspan="5" id="institution-ash">
+                                <th lang="en" colspan="5" id="institution-ash">
                                         Private Medical Institution
                                   </th>
+                                  <th lang="ta" colspan="5" id="institution-ash">
+                                    தனியார் மருத்துவ நிறுவனம்
+                              </th>
                                     
                            </thead>
                      <tbody id="private_body" ><tr  class="content-ash private_institute-ash"  >
@@ -186,8 +205,11 @@
 
                
                     <thead id="nursing_head">
-                            <th colspan="5" id="institution-ash">
+                            <th lang="en" colspan="5" id="institution-ash">
                                 Private Nursing Home
+                            </th>
+                            <th lang="ta" colspan="5" id="institution-ash">
+                                செவிலியர் தனியார் விடுதி
                             </th>
                      
                     </thead>
@@ -230,15 +252,22 @@
     
     <h4 class="footertitle">Last updated : <b><span  id="lastdateupdatedOn"></span></b></h4>
     <footer class="aboutus" >
-               <a class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
+               <a lang="en" class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
+               <a lang="ta" class="footerlink" href="K-about us.html"> பாண்டிச்சேரி பொறியியல் கல்லூரியால் உருவாக்கப்பட்டது மற்றும் பராமரிக்கப்படுகிறது</a>
                <span class="spanhr">|</span>
-        <a class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
+        <a lang="en" class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
+        <a lang="ta" class="footerlink" href="https://healthdept.page.link/Feedback">கருத்து</a>
+
     </footer>
 
 
 
 
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script>
+    $('[lang]').hide(); // hide all lang attributes on start.
+    $('[lang="en"]').show(); // show just Korean text (you can change it)
 
     </script>
 
