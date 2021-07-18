@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="B.covid tracker.css"> -->
+    <!-- <link rel="stylesheet" href="covid.css"> -->
 
     <link rel="stylesheet" href="covid.css" >
     <link rel="stylesheet" href="style.css">
@@ -69,103 +69,86 @@
     <a href="index.html"><img src="images/home2.png"></a> / Covid Tracker</a><h4></div>
 
 <!-- content -->
-
-<center>
-        
-            <h3>District Wise</h3>
-            <!-- pie chart -->
-            <div id="chart-ash" >
-            <div id="piechart-ash"></div>
-        </div>
-            <!-- color table -->
-            <table id="pie-color-ash">
-                <tr>
-                    <th id="pie-color-title">
-                      <u> Total Cases </u>  
-                    </th>
-                    <th id="pie-color-title">
-                        <u> Total Cured</u>
-                       
-                    </th >
-                    <th id="pie-color-title">
-                        <u>  Active Cases</u>
-                      
-                    </th >
-                    <th id="pie-color-title">
-                        <u>Total Death</u>
-                        
-                    </th>
-                </tr>
-                <tr style="background-color: white;">
-                    <td id="pie-color-title">    <div class="color-box-ash total-cases-ash"></div> <span id="total_cases1-ash">114596</span></td>
-                    <td id="pie-color-title">
-                        <div class="color-box-ash total-cured-ash"></div><span id="total_cured1-ash">109083</span></td>
-                        <td id="pie-color-title"><div class="color-box-ash active-cases-ash"></div><span id="active_cases1-ash">3793</span></td>
-                        <td id="pie-color-title"><div class="color-box-ash death-ash"></div><span id="total_death1-ash">18852</span></td>
-        
-                    
-                </tr> 
-            </table>
-            
-            <br>
+<center style="overflow-x: scroll;">
 
 
-            <!-- table -->
-            <table class="summary_table">
-                <tr id="district-wise">
-                <th id="wise" colspan="5">  
-                District Wise report
-                </th>
-            </tr>
-            <tr id="district-wise">
-                <th id="summary_on" colspan="5">Summary as on $date </th>
-            </tr>
-            <tr id="district-wise" id="#first_row" style="background-color: rgb(52, 54, 52); color: white;">
-                <th>
-                    District 
-                </th>
-                <th>Reported</th>
-                <th>Cured</th>
-                <th>Active</th>
-                <th>Death</th>
-            </tr>
-            <tbody>
-                
-                <tr id="district-wise">
-                    <td id="district" >Pondicherry</td>
-                    <td id="reported">89596</td>
-                    <td id="cured">85221</td>
-                    <td id="active">3001</td>
-                    <td id="death">1374</td>
-                </tr>
-                <tr id="district-wise">
-                    <td id="district" >Karaikal</td>
-                    <td id="reported">14181</td>
-                    <td id="cured">13332</td>
-                    <td id="active">637</td>
-                    <td id="death">212</td>
-                </tr>
-                <tr id="district-wise">
-                    <td id="district" >Yanam</td>
-                    <td id="reported">6439</td>
-                    <td id="cured">6263</td>
-                    <td id="active">74</td>
-                    <td id="death">102</td>
-                </tr>
-                <tr id="district-wise">
-                    <td id="district" >Mahe</td>
-                    <td id="reported">4380</td>
-                    <td id="cured">4267</td>
-                    <td id="active">81</td>
-                    <td id="death">32</td>
-                </tr>
-            </tbody>
-            </table>
-  
-       
-</center>
-        <br>
+<table id="table-content" style="overflow-x: scroll;">
+    <tr style="border: none;">
+        <td style="border: none;">
+            <img id="covid-th" src="images/covid_th.jpg" alt="infected">
+        </td>
+        <td style="border: none;">
+            <img id="hospital-th" src="images/hospital_th.jpg" alt="hospital">
+        </td>
+        <td style="border: none;">
+            <img id="isolation-th" src="images/home_th.jpg" alt="isolation">
+        </td>
+        <td style="border: none;">
+            <img id="recovered-th" src="images/recovered_th.jpg" alt="recovered">
+        </td>
+        <td style="border: none;">
+            <img id="death-th" src="images/death_th.jpg" alt="death">
+        </td>
+    </tr>
     
+
+    <tr id="tracker-table">
+        <th id="tracker-table" rowspan="2">Today New Cases </th>
+        <th id="tracker-table" colspan="2">Active = #NUMBER </th>
+        <th id="tracker-table" rowspan="2">Today Recovered</th>
+        <th id="tracker-table" rowspan="2" >Today Death</th>
+    </tr>
+    <tr id="tracker-table">
+        <th id="tracker-table">Hospital</th>
+        <th id="tracker-table">Home Isolation</th>
+    </tr>
+    <tr id="tracker-table">
+        <td id="tracker-table">100</td>
+        <td id="tracker-table">194</td>
+        <td id="tracker-table">930</td>
+        <td id="tracker-table">144</td>
+        <td>2</td>
+    </tr>
+    <tr id="tracker-table">
+        <td id="tracker-table" ><p style="text-align: left;"><u >PUDUCHERRY</u> <br> <p> 75 <small>(19423)</small></p> </p>
+        </td>
+        <td id="tracker-table">142</td>
+        <td id="tracker-table">754</td>
+        <td id="tracker-table"> <p> 122 <br><small>(21323)</small> </p>  </td>
+        <td id="tracker-table"> <p>  1 <br> <small>(213123)</small>  </p></td>
+    </tr>
+    <tr id="tracker-table">
+        <td id="tracker-table"><p style="text-align: left;"><u>KARAIKAL</u> <br><p> 75 <small>(19423)</small></p></p>
+        </td>
+        <td id="tracker-table" >142</td>
+        <td id="tracker-table">754</td>
+        <td id="tracker-table"> <p> 122 <br><small>(21323)</small> </p>  </td>
+        <td id="tracker-table"> <p>  1 <br> <small>(213123)</small>  </p></td>
+    </tr>
+    <tr id="tracker-table">
+        <td id="tracker-table"><p style="text-align: left;"><u>YANAM</u> <br><p> 75 <small>(19423)</small></p></p>
+        </td>
+        <td id="tracker-table">142</td>
+        <td id="tracker-table">754</td>
+        <td id="tracker-table"> <p> 122 <br><small>(21323)</small> </p>  </td>
+        <td id="tracker-table"> <p>  1 <br> <small>(213123)</small>  </p></td>
+    </tr>
+    <tr id="tracker-table">
+        <td id="tracker-table"><p style="text-align: left;"><u>MAHE</u> <br><p> 75 <small>(19423)</small></p></p>
+        </td>
+        <td id="tracker-table">142</td>
+        <td id="tracker-table">754</td>
+        <td id="tracker-table"> <p> 122 <br><small>(21323)</small> </p>  </td>
+        <td id="tracker-table"> <p>  1 <br> <small>(213123)</small>  </p></td>
+    </tr>
+</table>
+
+<p id="table-bottom-bar"> <small> Puducherry Healing: Less than 200 patients are in hospital admission for Covid in Puducherry UT today</small></p>
+
+</center>
+
+<!-- statistics -->
+
 
 
 <br><br>
@@ -189,39 +172,4 @@
     
 
 </body>
-</html><script type="text/javascript">
-// Load google charts
-// district wise
-var total_cases = parseInt(document.getElementById('total_cases1-ash').textContent);
-var total_cured = parseInt(document.getElementById('total_cured1-ash').textContent);
-var active = parseInt(document.getElementById('active_cases1-ash').textContent);
-var total_death = parseInt(document.getElementById('total_death1-ash').textContent);
-
-
-
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-// Draw the chart and set the chart values
-function drawChart() {
-  var data1 = google.visualization.arrayToDataTable([
-  ['status', 'Number of Cases'],
-  ['Total Case', total_cases],
-  ['Total Cured', total_cured],
-  ['Active Cases', active],
-  ['Total Death', total_death]
-]);
-
-
-  // Optional; add a title and set the width and height of the chart
-  var options1 = {'title':'District Wise', 'width':"100%", 'height':"100%"};
-
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart-ash'));
-
-  chart.draw(data1, options1);
-  chart2.draw(data2, options2);
-
-}
-</script>
+</html>

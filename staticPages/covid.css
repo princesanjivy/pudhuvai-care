@@ -1,129 +1,165 @@
-.page_title-ash {
-    border-bottom-right-radius: 500px;
-    background-color: rgb(37, 37, 134);
-    color: white;
-    text-align: center;
-    padding-top: 10px;
-  }
-  
-  .ash-h3 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  
-
-  
-  #chart-ash {
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .pie-color-ash {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .pie-color-ash {
-    padding: 10px;
-    font-size: 10px;
-  }
-  
-  .total-cases-ash {
-    background: #1352ff;
-  }
-  
-  .active-cases-ash {
-    background: #c2a31c;
-  }
-  
-  .total-cured-ash {
-    background: #ae163e;
-  }
-  
-  .death-ash {
-    background-color: green;
-  }
-  
-  .color-box-ash {
-    float: left;
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .column {
-    flex: 50%;
-  }
-  
-  @media screen and (max-width: 992px) {
-    .column {
-      flex: 50%;
-    }
-  }
-  
-  @media screen and (max-width: 992px) {
-    .column {
-      flex: 50%;
-    }
-  }
-
-  
-  .summary_table {
-    font-size: small;
-  }
-  
-  #wise {
-    background-color: rgb(37, 37, 137);
-    color: white;
-  }
-  
-  #summary_on {
-    background-color: #7a97e9;
-    color: blue;
-    text-align: left;
-  }
-  
-  tr:nth-child(even) {
-    background-color: rgb(231, 229, 229);
-  }
-  
-  #first_row {
-    background-color: grey;
-  }
-  
-  /* #pie-color-title{
-    padding: 20px;
-  } */
-
-  @media screen and (max-width: 500px) {
-    #pie-color-title{
-      font-size: 10px;
-      padding: 5px;
-    }    
-  }
-
-  #district-wise{
-    padding: 10px;
-  }
-#district-wise td{
+#tracker-table{
+  border: 1px solid black;
+  text-align: center;
   padding: 10px;
 }
 
+#table-content {
+  padding: 10px;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-@media screen and (min-width: 500px) {
-  #district-wise td{
-    padding: 20px;
-    font-size: large;
+#covid-th{
+  height: 150px;
+  width: 150px;
+  border: none;
+  border-radius: 15px;
+}
+#hospital-th{
+  height: 150px;
+  width: 150px;
+  border: none;
+  border-radius: 15px;
+
+
+}
+
+#isolation-th{
+  height: 150px;
+  width: 150px;
+  border: none;
+  border-radius: 15px;
+
+
+}
+#recovered-th{
+  height: 150px;
+  width: 150px;
+  border: none;
+  border-radius: 15px;
+
+}
+
+#death-th{
+  height: 150px;
+  width: 150px;
+  border: none;
+  border-radius: 15px;
+
+}
+
+#table-bottom-bar{
+  background-color: rgb(170, 145, 145);
+  width: 700px;
+  margin-top: 0px;
+  padding-top: 0px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #covid-th{
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
   }
-     
+  #hospital-th{
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+  
+  
+  }
+  
+  #isolation-th{
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+  
+  
+  }
+  #recovered-th{
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+  
+  }
+  
+  #death-th{
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+  
+  }
+  #tracker-table{
+    border: 1px solid black;
+    text-align: center;
+    padding: 0px;
+    font-size: small;
+  }
+  
+  #table-content {
+    padding: 1px;
+    font-size: 1px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #table-bottom-bar{
+    background-color: rgb(170, 145, 145);
+    width: auto;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 1px;
+  }
+  
+}
+
+@media only screen and (max-width: 400px) {
+  #covid-th{
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 15px;
+  }
+  #hospital-th{
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 15px;
+  
+  
+  }
+  
+  #isolation-th{
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 15px;
+  
+  
+  }
+  #recovered-th{
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 15px;
+  
+  }
+  
+  #death-th{
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 15px;
+  
+  }
+
+  
 }
