@@ -129,6 +129,98 @@ html {
   color: white;
 }
 
+/* vector */
+.vector{
+  background-image: linear-gradient(to right, #245BE1, #1D3A7C);;
+  text-align: center;
+}
+
+.vector h2{
+
+  padding-top: 30px;
+  margin-bottom: 0px;
+  text-align: center;
+  position: relative;
+  color: white;
+
+}
+.vector svg{
+  display: block;
+  position: relative;
+}
+#vector-table{
+  color: white; 
+  margin-left: 15%;
+  margin-right:15%;
+
+}
+
+#gate-td{
+  width: 100px;
+  /* padding-right: 100px; */
+}
+#gate-img{
+  height: 200px; 
+  width: 200px; 
+  /* padding-right: 10px; */
+}
+#vector-text{
+  text-align: left;
+  padding-left:2.5rem;
+  font-size: 2.5rem;
+  padding-right: 15%;
+  padding-top: 10px;
+  width: auto;
+  
+
+
+}
+
+@media only screen and (max-width: 900px){
+  #gate-td{
+    width: 100px;
+    /* padding-right: 100px; */
+  }
+  #gate-img{
+    height: 100px; 
+    width: 100px; 
+    /* padding-right: 10px; */
+  }
+  #vector-text{
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 1rem;
+  
+  
+  }
+}
+@media only screen and (max-width: 400px){
+  #vector-table{
+    color: white; 
+    margin-left: 5%;
+    margin-right: auto;
+  
+  }
+  #gate-td{
+    width: 100px;
+    /* padding-right: 100px; */
+  }
+  #gate-img{
+    height: 50px; 
+    width: 50px; 
+    /* padding-right: 10px; */
+  }
+  #vector-text{
+    text-align: left;
+    padding-left: 0.5rem;
+    font-size:small;
+    padding-right: 10px;
+  
+  
+  }
+}
+/*  */
+
 * {
   box-sizing: border-box;
 }
