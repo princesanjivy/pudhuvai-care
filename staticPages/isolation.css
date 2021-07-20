@@ -1,6 +1,6 @@
 .mainheadingniv h2 {
 	text-align: center;
-	font-size: 2vw;
+	font-size: 3vw;
 	color: blue;
 	text-decoration: underline;
 }
@@ -8,7 +8,7 @@
 .mainheadingniv p {
 	text-align: center;
 	color: black;
-	font-size: 2vw;
+	font-size: 2.5vw;
 }
 
 .statusdisplayniv table,
@@ -21,7 +21,7 @@ tr {
 	text-align: left;
 	text-decoration: none;
 	color: black;
-	font-size: 1.5vw;
+	font-size: 2.5vw;
 	padding-left: 20%;
 	min-width: 100%;
 	max-width: 100%;
@@ -36,7 +36,7 @@ tr {
 	padding-left: 10px;
 	padding-top: 10px;
 	align-self: center;
-	font-size: 1.5vw;
+	font-size: 2vw;
 	margin-left: 15%;
 	display: inline-block;
 	min-width: 70%;
