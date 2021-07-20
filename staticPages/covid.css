@@ -1,7 +1,7 @@
 #tracker-table{
   border: 1px solid black;
   text-align: center;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 #table-content {
@@ -9,6 +9,7 @@
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
+  /* width: 70%; */
 }
 
 #covid-th{
@@ -53,10 +54,69 @@
 #table-bottom-bar{
   background-color: rgb(170, 145, 145);
   width: 700px;
-  margin-top: 0px;
-  padding-top: 0px;
+  margin-top: 1px;
+  padding-top: 1px;
   text-align: center;
 }
+
+.td-red{
+  color: red;
+  font-size: large;
+  padding: 0px;
+  font-size: 15px;
+}
+
+.row{
+  display:flex;
+}
+
+.leftcol{
+  flex: 50%;
+  text-align: center;
+}
+
+#table-Teststatistics{
+  display: inline-table;
+  width: 55%;
+}
+
+#table-occupency{
+  display: inline-table;
+  width: 55%;
+}
+
+#table-TillDate{
+  display: inline-table;
+  width: 55%;
+}
+
+.rightcol{
+  flex: 50%;
+  text-align: center;
+}
+
+#table-Vital{
+  display: inline-table;
+  width: 55%;
+}
+
+#table-vaccine{
+  display: inline-table;
+  width: 80%;
+}
+
+#table-head{
+  text-align: center;
+}
+
+#vdata{
+  color: gray;
+}
+
+#table-headb{
+  font-weight: bold;
+}
+
 
 @media only screen and (max-width: 600px) {
   #covid-th{
@@ -71,7 +131,7 @@
     border: none;
     border-radius: 15px;
   
-  
+
   }
   
   #isolation-th{
@@ -116,9 +176,54 @@
     width: auto;
     margin-top: 0px;
     text-align: center;
-    font-size: 1px;
+    font-size: 15px;
   }
-  
+
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftcol{
+    order: 1;
+    width: 100%;
+  }
+
+  .rightcol{
+    margin-top: 20px;
+    order: 2;
+    width: 100%;
+  }
+
+  #table-Teststatistics{
+  display: inline-table;
+  width: 77%;
+}
+
+#table-occupency{
+  display: inline-table;
+  width: 77%;
+}
+
+#table-TillDate{
+  display: inline-table;
+  width: 77%;
+}
+
+#table-Vital{
+  display: inline-table;
+  width: 77%;
+}
+
+#table-vaccine{
+  display: inline-table;
+  width: 80%;
+}
+
+#table-headb{
+  font-weight: bold;
+}
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -161,5 +266,46 @@
   
   }
 
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftcol{
+    order: 1;
+  }
+
+  .rightcol{
+    margin-top: 20px;
+    order: 2;
+  }
+
+  #table-Teststatistics{
+    display: inline-table;
+    width: 77%;
+  }
   
+  #table-occupency{
+    display: inline-table;
+    width: 77%;
+  }
+  
+  #table-TillDate{
+    display: inline-table;
+    width: 77%;
+  }
+  
+  #table-Vital{
+    display: inline-table;
+    width: 77%;
+  }
+  
+  #table-vaccine{
+    display: inline-table;
+    width: 80%;
+  }
+  
+  #table-headb{
+    font-weight: bold;
+  }
 }
