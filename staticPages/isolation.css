@@ -2,7 +2,7 @@
 
 .body
 
-@media only screen and (max-width: 600px){
+
 
 .mainheadingniv h2 {
 	text-align: center;
@@ -35,7 +35,7 @@ tr {
 	padding-bottom:0%;
 
 }
-}
+
 
 .roundcornerniv {
 	border-radius: 10px;
@@ -74,14 +74,13 @@ tr {
 	
 
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 600px){
 
 
 a:link {
 	color: blue;
 	background-color: transparent;
 	text-decoration: none;
-}
 }
 
 .thumbnailniv {
@@ -149,4 +148,3 @@ h3 {
 	font-size: 1.5vw;
 	padding-left: 20%;
 }
-
