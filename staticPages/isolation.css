@@ -2,7 +2,7 @@
 
 .body
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 600px){
 
 .mainheadingniv h2 {
 	text-align: center;
@@ -23,16 +23,18 @@ tr {
 	border: none;
 }
 
+
 .roomrequestniv h3 {
 	text-align: left;
 	text-decoration: none;
 	color: black;
-	font-size: 2.5vw;
+	font-size: 2vw;
 	padding-left: 20%;
 	min-width: 100%;
 	max-width: 100%;
 	padding-bottom:0%;
 
+}
 }
 
 .roundcornerniv {
@@ -72,11 +74,14 @@ tr {
 	
 
 }
+@media only screen and (max-width: 400px){
+
 
 a:link {
 	color: blue;
 	background-color: transparent;
 	text-decoration: none;
+}
 }
 
 .thumbnailniv {
@@ -144,4 +149,4 @@ h3 {
 	font-size: 1.5vw;
 	padding-left: 20%;
 }
-}
+
