@@ -19,15 +19,13 @@ tr {
 
 .roomrequestniv h3 {
 	text-align: left;
-    text-decoration: none;
+	text-decoration: none;
 	color: black;
 	font-size: 2.5vw;
-	margin: auto;
 	padding-left: 20%;
 	min-width: 100%;
 	max-width: 100%;
 	padding-bottom:0%;
-	
 
 }
 
@@ -43,6 +41,7 @@ tr {
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+
 }
 
 .roundcornerniv-2 {
@@ -56,6 +55,7 @@ tr {
 
 .roundcornerniv num {
 	float: left;
+	text-align: center;
 }
 
 .roundcornerniv icon {
@@ -94,7 +94,7 @@ a:link {
 
 .middle-barniv-2 img {
 	float: left;
-	margin-left: 15%
+	margin-left:15%
 }
 
 .centeredniv {
