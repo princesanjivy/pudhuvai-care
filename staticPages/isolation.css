@@ -2,10 +2,9 @@
 
 .body
 
-@media only screen and (max-width: 600px){}
+@media only screen and (max-width: 600px){
 
-
- .mainheadingniv h2 {
+.mainheadingniv h2 {
 	text-align: center;
 	font-size: 3vw;
 	color: blue;
@@ -144,4 +143,5 @@ h3 {
 	color: blue;
 	font-size: 1.5vw;
 	padding-left: 20%;
+}
 }
