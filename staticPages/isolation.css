@@ -1,9 +1,4 @@
 
-
-.body
-
-
-
 .mainheadingniv h2 {
 	text-align: center;
 	font-size: 3vw;
@@ -74,7 +69,7 @@ tr {
 	
 
 }
-@media only screen and (max-width: 600px){
+
 
 
 a:link {
