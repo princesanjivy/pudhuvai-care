@@ -31,7 +31,7 @@
  .phoneatag i{
      padding-top: 20px;
      
-     color: rgb(37, 37, 134);
+     color: #0b56c5;
      width: 40px;
      height: 0px;
      margin-left: 0px;
@@ -263,7 +263,7 @@
  .memer{
      width: 1450px;
      height: 40px;
-     background-color: rgb(37,37,134);
+     background-color: #0b56c5;
      border-radius: 8px;
      color: white;
      padding-bottom: 8px;
@@ -288,11 +288,11 @@
      
      width: 1450px;
      height: 50px;
-     background-color: rgb(37,37,134);
+     background-color:#0b56c5;
      border-radius: 8px;
      color: white;
      padding-bottom: 8px;
-     background-color: rgb(37,37,134);
+     background-color: #0b56c5;
      padding-bottom: 15px;
      color: white;
      margin-top: 5px;
@@ -324,7 +324,7 @@
  
    
  .nnemer .hthree .one{
-     color: rgb(37, 37, 134);
+     color: #0b56c5;
      padding-left: 1%;
      text-decoration: none;
      

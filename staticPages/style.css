@@ -1,3 +1,38 @@
+/*marque*/
+.blue {
+  background: #347fd0;
+}
+
+.news {
+  box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4), 0 5px 10px rgba(0,0,0,0.5);
+     width: 890px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 1px;
+  -webkit-user-select: none;
+}
+
+.news span {
+  float: left;
+  color: #fff;
+  padding: 9px;
+  position: relative;
+  top: 1%;
+  box-shadow: inset 0 -15px 30px rgba(0,0,0,0.4);
+  font: 16px 'Raleway', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+.text1{
+
+box-shadow:none !important;
+  width: 750px;
+}
+
+
 /* header home footer */
 
 body,
