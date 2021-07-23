@@ -1,9 +1,5 @@
 
-@media screen and (max-width:600px){
-	.mainheadingniv p{
-		font-size: 3vw;
-	}
-}	
+	
 .mainheadingniv h2 {
 	text-align: center;
 	font-size: 3vw;
@@ -36,12 +32,46 @@ tr {
 	padding-bottom:0%;
 
 }
+@media only screen and (max-width: 600px) {
+.mainheadingniv h2 {
+	text-align: center;
+	font-size: 3vw;
+	color: blue;
+	text-decoration: underline;
+}
+
+.mainheadingniv p {
+	text-align: center;
+	color: black;
+	font-size: 2.5vw;
+}
+
+
+.statusdisplayniv table,
+tr {
+	width: auto;
+	border: none;
+}
+
+
+.roomrequestniv h3 {
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-size: 2.5vw;
+	padding-left: 20%;
+	min-width: 100%;
+	max-width: 100%;
+	padding-bottom:0%;
+
+}
+}
 
 
 .roundcornerniv {
 	border-radius: 10px;
 	background: #BCE9F0;
-	padding: 10px;
+	padding: 10px 10px 5px 10px;
 	align-self: center;
 	font-size: 2vw;
 	margin-right: auto;
@@ -59,10 +89,7 @@ tr {
 	padding-bottom: 30px;
 	height: 25px;
 	text-align: center;
-	font-size: 2vw;
 }
-
-
 
 .roundcornerniv num {
 	float: left;
@@ -149,3 +176,96 @@ h3 {
 	padding-left: 20%;
 }
 
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+.roundcornerniv num {
+	float: left;
+	text-align: center;
+}
+
+.roundcornerniv icon {
+	float: right;
+	/* margin-right: 2%; */
+	min-width: 50px;
+}
+
+
+
+a:link {
+	color: blue;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.thumbnailniv {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.thumbnailniv img {
+	padding-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 25%;
+}
+
+.middle-barniv img {
+	max-height: inherit;
+	max-width: inherit;
+	float: right;
+	padding: 10px;
+}
+
+.middle-barniv-2 img {
+	float: left;
+	margin-left:15%
+}
+
+.centeredniv {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.containerniv {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+.containerniv img {
+	max-width: 100%;
+	min-width: 100%;
+}
+
+.containerniv h1,
+h3 {
+	position: relative;
+	text-align: center;
+	color: black;
+	width: 250px;
+}
+
+.centeredniv {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.pagepositionniv {
+	text-align: left;
+	text-decoration: none;
+	color: blue;
+	font-size: 1.5vw;
+	padding-left: 20%;
+}
+
+}
