@@ -345,6 +345,13 @@ body {
   padding-top: 8px;
   margin-top: 8px;
 }
+@media only screen and (max-width: 600px) {
+  .aboutus {
+    height: 50px;
+    font-size: 8px;
+    
+  }
+}
 
 .footerlink {
   text-decoration: none;
