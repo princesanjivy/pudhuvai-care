@@ -110,9 +110,9 @@ def getApiData():
 def readDynamicPages():
     covidTracker = ''
     bedAvailability = ''
-    with open(".\dynamicPages\covidTracker.html", "r", encoding='utf-8') as dynamicPage_1:
+    with open("./dynamicPages/covidTracker.html", "r", encoding='utf-8') as dynamicPage_1:
         covidTracker = dynamicPage_1.read()
-    with open(".\dynamicPages\/bedAvailability.html", "r", encoding='utf-8') as dynamicPage_2:
+    with open("./dynamicPages/bedAvailability.html", "r", encoding='utf-8') as dynamicPage_2:
         bedAvailability = dynamicPage_2.read()
     return covidTracker, bedAvailability
 
@@ -120,16 +120,41 @@ def readDynamicPages():
 # formatting the two string's placeholders with the realtime data from the API
 
 
-def writeToStaticPages(covidTracker, bedAvailability, bedAvailability_Tags, tracker_tag, overallCases):
+def writeToStaticPages(covidTracker, bedAvailability, bedAvailability_Tags, tracker_tag, overallCases, trackerDetails):
     bedAvailability = bedAvailability.format(
         bedAvailability_Tags[0], bedAvailability_Tags[1], bedAvailability_Tags[2])
-    covidTracker = covidTracker.format(overallCases, tracker_tag)
-    with open(".\dynamicPages\/trackerscript.txt", "r", encoding="utf-8") as s:
-        trackerJs = s.read()
-    covidTracker += trackerJs
-    with open(".\staticPages\covidTracker.html", "w", encoding='utf-8') as covidTrackerFile:
+
+    temp = []
+    for i in trackerDetails:
+        if i["district"]=="Pondicherry":
+            temp.append(i["active"])
+            temp.append(i["active"])
+            temp.append(i["cured"])
+            temp.append(i["death"])
+        if i["district"]=="Karaikal":
+            temp.append(i["active"])
+            temp.append(i["active"])
+            temp.append(i["cured"])
+            temp.append(i["death"])
+        if i["district"]=="Yanam":
+            temp.append(i["active"])
+            temp.append(i["active"])
+            temp.append(i["cured"])
+            temp.append(i["death"])
+        if i["district"]=="Mahe":
+            temp.append(i["active"])
+            temp.append(i["active"])
+            temp.append(i["cured"])
+            temp.append(i["death"])
+
+    print(temp)
+    covidTracker = covidTracker.format(*temp)
+    # with open(".\dynamicPages\/trackerscript.txt", "r", encoding="utf-8") as s:
+    #     trackerJs = s.read()
+    # covidTracker += trackerJs
+    with open("./staticPages/covidTracker.html", "w", encoding='utf-8') as covidTrackerFile:
         covidTrackerFile.write(covidTracker)
-    with open(".\staticPages\/bedAvailability.html", "w", encoding='utf-8') as bedAvailabilityFile:
+    with open("./staticPages/bedAvailability.html", "w", encoding='utf-8') as bedAvailabilityFile:
         bedAvailabilityFile.write(bedAvailability)
     print('HTML Files generated succesfully')
 
@@ -142,4 +167,4 @@ bedAvailability_Tags = categorizeHospitals(
     govtHospitals, privateHospitals, privateNursingHomes)
 tracker_tag, overallCases = processTrackerDetails(trackerDetails)
 writeToStaticPages(covidTracker, bedAvailability,
-                   bedAvailability_Tags, tracker_tag, overallCases)
+                   bedAvailability_Tags, tracker_tag, overallCases, trackerDetails)
