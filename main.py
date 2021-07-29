@@ -1,4 +1,8 @@
+import io
 import json
+from os import terminal_size
+import requests
+import csv
 from urllib import request
 
 
@@ -51,8 +55,8 @@ def processTrackerDetails(trackerDetails):
                         <div class="color-box-ash total-cured-ash"></div><span id="total_cured1-ash">{}</span></td>
                         <td><div class="color-box-ash active-cases-ash"></div><span id="active_cases1-ash">{}</span></td>
                         <td><div class="color-box-ash death-ash"></div><span id="total_death1-ash">{}</span></td>
-        
-                    
+
+
                 </tr>'''
     tracker_Trtag = '''
                 <tr>
@@ -99,72 +103,114 @@ def getApiData():
     data_1 = resp_1.read()
     hospitalDetails = data_1.decode('utf-8')
     hospitalDetails = json.loads(hospitalDetails)
+
     resp_2 = request.urlopen(
         'https://pycare-api.herokuapp.com/districtWiseReport')
     data_2 = resp_2.read()
     trackerDetails = data_2.decode()
     trackerDetails = json.loads(trackerDetails)
-    return hospitalDetails, trackerDetails
+
+    testingCentersDataUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vReED3ftV6BZO96JnXcC9puD5jYQqDzHKRWd8C_Eab0Z-edLU0z60JRWi3j7MJuTYDROnkgWlcujVSk/pub?output=csv"
+    response = requests.get(testingCentersDataUrl)
+    reader = csv.reader(io.StringIO(response.text))
+
+    return hospitalDetails, trackerDetails, list(reader)[8:]
 
 
 def readDynamicPages():
     covidTracker = ''
     bedAvailability = ''
+    testingCenters = ""
+
     with open("./dynamicPages/covidTracker.html", "r", encoding='utf-8') as dynamicPage_1:
         covidTracker = dynamicPage_1.read()
     with open("./dynamicPages/bedAvailability.html", "r", encoding='utf-8') as dynamicPage_2:
         bedAvailability = dynamicPage_2.read()
-    return covidTracker, bedAvailability
+    with open("./dynamicPages/testingCenter.html", "r", encoding='utf-8') as dynamicPage:
+        testingCenters = dynamicPage.read()
+
+    return covidTracker, bedAvailability, testingCenters
 
 
-# formatting the two string's placeholders with the realtime data from the API
+# FORMATTING THE TWO STRING'S PLACEHOLDERS WITH THE REALTIME DATA FROM THE API
 
 
-def writeToStaticPages(covidTracker, bedAvailability, bedAvailability_Tags, tracker_tag, overallCases, trackerDetails):
+def writeToStaticPages(covidTracker,
+                       bedAvailability,
+                       bedAvailability_Tags,
+                       tracker_tag,
+                       overallCases,
+                       trackerDetails,
+                       testingCenters,
+                       testingCentersList):
     bedAvailability = bedAvailability.format(
         bedAvailability_Tags[0], bedAvailability_Tags[1], bedAvailability_Tags[2])
 
     temp = []
     for i in trackerDetails:
-        if i["district"]=="Pondicherry":
-            temp.append(i["active"])
-            temp.append(i["active"])
-            temp.append(i["cured"])
-            temp.append(i["death"])
-        if i["district"]=="Karaikal":
-            temp.append(i["active"])
-            temp.append(i["active"])
-            temp.append(i["cured"])
-            temp.append(i["death"])
-        if i["district"]=="Yanam":
-            temp.append(i["active"])
-            temp.append(i["active"])
-            temp.append(i["cured"])
-            temp.append(i["death"])
-        if i["district"]=="Mahe":
+        if i["district"] == "Pondicherry":
             temp.append(i["active"])
             temp.append(i["active"])
             temp.append(i["cured"])
             temp.append(i["death"])
 
-    print(temp)
+        if i["district"] == "Karaikal":
+            temp.append(i["active"])
+            temp.append(i["active"])
+            temp.append(i["cured"])
+            temp.append(i["death"])
+
+        if i["district"] == "Yanam":
+            temp.append(i["active"])
+            temp.append(i["active"])
+            temp.append(i["cured"])
+            temp.append(i["death"])
+
+        if i["district"] == "Mahe":
+            temp.append(i["active"])
+            temp.append(i["active"])
+            temp.append(i["cured"])
+            temp.append(i["death"])
+
     covidTracker = covidTracker.format(*temp)
     # with open(".\dynamicPages\/trackerscript.txt", "r", encoding="utf-8") as s:
     #     trackerJs = s.read()
     # covidTracker += trackerJs
+    del temp
+
+    temp = """<div class="col">
+                <div class="profile">
+                    <img src="images/test.jpg">
+                    <center><h3 lang="en"> {time} <a href="{mapLink}" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>{location}, {pincode}</p>            
+                </div>
+            </div>"""
+
+    t = ""
+
+    for divs in testingCentersList:
+        t += temp.format(time=divs[5], mapLink=divs[7],
+                         location=divs[2], pincode=divs[6])
+
+    testingCenters = testingCenters.format(t)
+
     with open("./staticPages/covidTracker.html", "w", encoding='utf-8') as covidTrackerFile:
         covidTrackerFile.write(covidTracker)
     with open("./staticPages/bedAvailability.html", "w", encoding='utf-8') as bedAvailabilityFile:
         bedAvailabilityFile.write(bedAvailability)
+    with open("./staticPages/testingCenter.html", "w", encoding='utf-8') as testingCenterFile:
+        testingCenterFile.write(testingCenters)
+
     print('HTML Files generated succesfully')
 
 
-covidTracker, bedAvailability = readDynamicPages()
-hospitalDetails, trackerDetails = getApiData()
+###  MAIN PART ###
+covidTracker, bedAvailability, testingCenters = readDynamicPages()
+hospitalDetails, trackerDetails, testingCentersList = getApiData()
 govtHospitals, privateHospitals, privateNursingHomes = processHospitalData(
     hospitalDetails)
 bedAvailability_Tags = categorizeHospitals(
     govtHospitals, privateHospitals, privateNursingHomes)
 tracker_tag, overallCases = processTrackerDetails(trackerDetails)
 writeToStaticPages(covidTracker, bedAvailability,
-                   bedAvailability_Tags, tracker_tag, overallCases, trackerDetails)
+                   bedAvailability_Tags, tracker_tag, overallCases, trackerDetails, testingCenters, testingCentersList)

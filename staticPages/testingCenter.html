@@ -1,6 +1,7 @@
 <!-- /*----Author: Manigandan.G-----*/ -->
 <!DOCTYPE html>
 <html>
+
 <head>
     <!-- language test -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -8,592 +9,360 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="C.testing center.css"> -->
-    <link rel="stylesheet" href="testing.css"> <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="testing.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js" ></script>
-    <link rel="icon" href="images/flag.png"/>
+    <script src="script.js"></script>
+    <link rel="icon" href="images/flag.png" />
     <script src="https://kit.fontawesome.com/94b5145fb6.js" crossorigin="anonymous"></script>
     <!-- icon pack -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Testing Centers</title>
 </head>
-<body  onload="Check_lang()">
-      <!-- header -->
-      <div class="top-bar">
+
+<body onload="Check_lang()">
+    <!-- header -->
+    <div class="top-bar">
         <small>புதுச்சேரி சுகாதார மற்றும் குடும்ப நல சேவைகள் துறை | Department of Health and Family Welfare Services Puducherry</small>
-       <a href="https://twitter.com/dms_puducherry" id="twitter"> <ion-icon name="logo-twitter" style="color: blue;" ></ion-icon></a> 
-       <a href="https://www.facebook.com/dmspuducherry.dmspuducherry" id="facebook"><ion-icon name="logo-facebook" style="color: blue;"></ion-icon></a>
-      <a href="https://www.youtube.com/channel/UClY1d7Cqxln0fZhfE45ZgWg?app=desktop" id="youtube"> <ion-icon name="logo-youtube" style="color: red;"></ion-icon> </a> 
-      <a href="https://www.instagram.com/dms_puducherry/" id="insta"><ion-icon name="logo-instagram" style="color: red;" ></ion-icon></a>
-      
+        <a href="https://twitter.com/dms_puducherry" id="twitter">
+            <ion-icon name="logo-twitter" style="color: blue;"></ion-icon>
+        </a>
+        <a href="https://www.facebook.com/dmspuducherry.dmspuducherry" id="facebook">
+            <ion-icon name="logo-facebook" style="color: blue;"></ion-icon>
+        </a>
+        <a href="https://www.youtube.com/channel/UClY1d7Cqxln0fZhfE45ZgWg?app=desktop" id="youtube">
+            <ion-icon name="logo-youtube" style="color: red;"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/dms_puducherry/" id="insta">
+            <ion-icon name="logo-instagram" style="color: red;"></ion-icon>
+        </a>
+
     </div>
 
 
-    <div id="header-container"> 
+    <div id="header-container">
         <table class="header" style="margin-left:10%;">
             <tr>
-                <td style="padding-right:0.5vmax;"> 
-                <img src="images/emblem.jpg" alt="">
+                <td style="padding-right:0.5vmax;">
+                    <img src="images/emblem.jpg" alt="">
                 </td>
-                <td id="header-text" >
+                <td id="header-text">
                     <div>
-                        <p style="padding-right:1vmax;" >Department of <br> <b> Health and Family Welfare Services </b> <br> <span>Government of Puducherry</span></p>
+                        <p style="padding-right:1vmax;">Department of <br> <b> Health and Family Welfare Services </b> <br> <span>Government of Puducherry</span></p>
                     </div>
                 </td>
-                <td id="header-text" >
-                        <div >
-                            <p style="text-align: center;border-left: 1px solid black; padding-left: 40px;" > நலவழித்துறை <br> புதுச்சேரி அரசு
-                            </p>
-                
-                        </div>
-                    </td>
-                    <td id="header-text">
-                        <img src="images/gate.svg" style="border-right: 1px solid black;padding-right:40px;"alt="">
-                    </td>
+                <td id="header-text">
+                    <div>
+                        <p style="text-align: center;border-left: 1px solid black; padding-left: 40px;"> நலவழித்துறை <br> புதுச்சேரி அரசு
+                        </p>
+
+                    </div>
+                </td>
+                <td id="header-text">
+                    <img src="images/gate.svg" style="border-right: 1px solid black;padding-right:40px;" alt="">
+                </td>
             </tr>
         </table>
-    
-        <div id="translation-links"> 
-         <center><h3> <a id="tamil" href="#ta" onclick="changeLangToTamil()">தமிழ் </a> | <a id="eng" href="#en" onclick="changeLangToEnglish()">ENGLISH</a> </h3></center>
+
+        <div id="translation-links">
+            <center>
+                <h3> <a id="tamil" href="#ta" onclick="changeLangToTamil()">தமிழ் </a> | <a id="eng" href="#en" onclick="changeLangToEnglish()">ENGLISH</a> </h3>
+            </center>
         </div>
     </div>
-    
-    
+
+
     <!-- <div class="title-card">
         <img src="images/vector.png" alt="">
         <h2>Testing Centers</h2>
     </div> -->
     <!-- div class="hom">
         <div class="page<a href="A-index.html"><img src="images/home2.png"></a></div> -->
- 
+
 
     <!-- <div class=bars> <h4>
     <a href="index.html"><img src="images/home2.png"></a> / Testing Center</a><h4></div> -->
 
-        <div class="vector">
-    <h2 lang="en"><a href="index.html"><img src="images/home.svg"style="
+    <div class="vector">
+        <h2 lang="en">
+            <a href="index.html"><img src="images/home.svg" style="
     height:3.5%; width:3.5%;"></a> Testing Center</h2>
-    <h2 lang="ta"><a href="index.html"><img src="images/home.svg"style="
+        <h2 lang="ta">
+            <a href="index.html"><img src="images/home.svg" style="
     height:3.5%; width:3.5%;"></a> சோதனை மையம்</h2>
-     <svg viewBox="0 0 500 50" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C3.38,-30.30 515.80,79.23 505.64,-17.48 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white;"></path></svg>
- </div>
-<!-----search------>
-   <div class="container">
-        <input type="search" id="searchInput" name="search" placeholder="Search for pincode,place,name...." value="" onkeyup="myFunction()" >
+        <svg viewBox="0 0 500 50" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C3.38,-30.30 515.80,79.23 505.64,-17.48 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white;"></path></svg>
+    </div>
+    <!-----search------>
+    <div class="container">
+        <input type="search" id="searchInput" name="search" placeholder="Search for pincode,place,name...." value="" onkeyup="myFunction()">
         <!-- <button type="submit"  > Submit </button> -->
     </div>
 
 
 
-<!-----Division------>
+    <!-----Division------>
     <div class="hero">
         <div class="row">
             <div class="col">
                 <div class="profile">
-                    <img src="images/ig.jpg">
-                    
-                    <center><h3 lang="en">9.00 AM To 10.30 AM <a href="https://goo.gl/maps/niVQt5xbC8VB3ZnJA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 9.00 மணி முதல் காலை 10.30 மணி வரை <a href="https://goo.gl/maps/niVQt5xbC8VB3ZnJA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>IGGGH & PGI</b>-Indira Gandhi Government General Hospital</p>
-                    <p lang="ta"><b>IGGGH & PGI</b>-இந்திரா காந்தி அரசு பொது மருத்துவமனை</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Rights Club Centre, Netaji Subhash Chandra Bose Salai ( Gingee Salai ), White Town, Puducherry, 605001</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>உரிமை கழக மையம், நேதாஜி சுபாஷ் சந்திர போஸ் சாலை (செஞ்சி சாலை), வெள்ளை நகரம், புதுச்சேரி, 605001</p>
+                    <img src="images/test.jpg">
+                    <center><h3 lang="en">    9.00 AM TO 4:30 PM <a href="https://goo.gl/maps/zDRW7Bc4J1CwErZR9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>JIPMER - Jawaharlal Institute of Postgraduate Medical Education and Research, 605006</p>            
                 </div>
-            </div>
-            <div class="col">
-                <div class="profile">
-                    <img src="images/jipmer.jpg">
-                    
-                    <center><h3 lang="en">9.00 AM To 4.30 PM <a href="https://goo.gl/maps/BrtbfRKXfTgq3zD56" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 9.00 மணி முதல் மாலை 4.30 மணி வரை <a href="https://goo.gl/maps/BrtbfRKXfTgq3zD56" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>JIPMER</b>-Jawaharlal Institute of Post graduate Medical Education and Research</p>
-                    <p lang="ta"><b>JIPMER</b>-ஜவஹர்லால் இன்ஸ்டிடியூட் ஆப் போஸ்ட் கிராஜுவேட் மெடிக்கல் எஜுகேஷன் அண்ட் ரிசர்ச்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Jipmer Campus Rd, Gorimedu, Puducherry, 605006</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>ஜிப்மர் வளாகம் சாலை, கோரிமேடு, புதுச்சேரி 605006</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="profile">
-                    <img src="images/iga.jpg">
-                    
-                    <center><h3 lang="en">9.00 AM To 7.00 PM <a href="https://goo.gl/maps/WtuqcXGdufQyb6YHA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                      <center><h3 lang="ta">
-காலை 9.00 மணி முதல் இரவு 7.00 மணி வரை <a href="https://goo.gl/maps/WtuqcXGdufQyb6YHA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>IG</b>-Indira Gandhi Arts and Science College</p>
-                    <p lang="ta"><b>IG</b>-இந்திரா காந்தி கலை மற்றும் அறிவியல்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Vazhudavoor Rd, near ndira Gandhi Govt. General Hospital & Postgraduate Institute, Kathirkamam, Puducherry, 605009</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>வழுதாவூர் சாலை, நிந்திரா காந்தி அரசு பொது மருத்துவமனை மற்றும் முதுகலை நிறுவனம் அருகில், கதிர்கம், புதுச்சேரி,605009</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="profile">
-                    <img src="images/avmc.jpg">
-                    
-                    <center><h3>24/7 <a href="https://goo.gl/maps/mDWQ7KUATxu8tcpVA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>AVMC</b>-Aarupadai Veedu Medical College</p>
-                     <p lang="ta"><b>AVMC</b>-ஆறுபடை வீடு மருத்துவக் கல்லூரி</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Commune Panchayat, Pondy Cuddalore Main road Kirumampakkam Bahour, Kirumampakkam, Puducherry 607402</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>கம்யூன் பஞ்சாயத்து, பாண்டி கடலூர் மெயின் ரோடு கீரமாம்பாக்கம் பகூர், கீரமாம்பாக்கம், புதுச்சேரி
-607402</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="profile">
-                    <img src="images/smvmc.jpg">
-                    
-                    <center><h3>24/7 <a href="https://goo.gl/maps/StXdNF8xRxbnYaz77" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>SMVMC</b>-Sri Manakula Vinayagar Medical College</p>
-                    <p lang="ta"><b>SMVMC</b>-ஸ்ரீ மணக்குல விநாயகர் மருத்துவக் கல்லூரி</p>
-                    <p lang="en" ><span style="font-weight: bold;">Address:</span>Madagadipet, Kalitheerthalkuppam, 605107</p>
-                    <p lang="ta" ><span style="font-weight: bold;">முகவரி:</span>மடகாடிபேட்டை, காளிதீர்த்தல்குப்பம்
- 605107</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="profile">
-                    <img src="images/svmc.jpg">
-                    
-                    <center><h3>Kit Not Available <a href="https://goo.gl/maps/EfErShVT1LQX49LL9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>SVMC</b>-Sri Venkateshwaraa Medical College Hospital & Research Centre</p>
-                    <p lang="ta"><b>SVMC</b>-ஸ்ரீ வெங்கடேஸ்வரா மருத்துவக் கல்லூரி மருத்துவமனை மற்றும் ஆராய்ச்சி மையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>13-A, Pondy-Villupuram Main Road, Ariyur, Puducherry-605 102, 605107</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>13-ஏ, பாண்டி-விழுப்புரம் மெயின் ரோடு, அரியூர், புதுச்சேரி
--605 102, 605107</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="profile">
-                    <img src="images/slims.jpg">
-                    
-                    <center><h3 lang="en">8.30 AM To 4.00 PM <a href="https://goo.gl/maps/P2GUYMLUMMuSQuTPA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 8.30 மணி முதல் மாலை 4.00 மணி வரை <a href="https://goo.gl/maps/P2GUYMLUMMuSQuTPA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>SLIMS</b>-Sri Lakshmi Narayana Institute of Medical Science Medical College & Hospital</p>
-                     <p lang="ta"><b>SLIMS</b>-ஸ்ரீ லக்ஷ்மி நாராயணா இன்ஸ்டிடியூட் ஆப் மெடிக்கல் சயின்ஸ் மெடிக்கல் காலேஜ் அண்ட் ஹாஸ்பிடல்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Osudu Agaram Village, Villianur Commune, Kudapakkam Post, Puducherry, 605502</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>ஓசுடு அகரம் கிராமம், வில்லியனூர் கம்யூன், குடப்பாக்கம் அஞ்சல், புதுச்சேரி,605502</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="profile">
-                    <img src="images/p.jpg">
-                    
-                    <center><h3 lang="en">8.00 AM To 3.00 PM <a href="https://goo.gl/maps/W2gkK1CXTmsrtiMS6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 8.00 மணி முதல் மாலை 3.00 மணி வரை<a href="https://goo.gl/maps/W2gkK1CXTmsrtiMS6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PIMS</b>-Pondicherry Institute of Medical Sciences</p>
-                    <p lang="ta"><b>PIMS</b>-பாண்டிச்சேரி இன்ஸ்டிடியூட் ஆப் மெடிக்கல் சயின்சஸ்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Kalathumettupathai, Ganapathichettikulam Village No.20, Kalapet, Puducherry 605014</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>களத்துமெட்டுப்பாத்தி, கணபதிசெட்டிகுளம் கிராமம் எண்.20, களப்பேட்டை, புதுச்சேரி,605014</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="profile">
-                    <img src="images/mgpgi.jpg">
-                    
-                    <center><br><h3 lang="en">10.00 AM TO 1.00 PM <a href="https://goo.gl/maps/tzHkohomfpzKRCcs8" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/tzHkohomfpzKRCcs8" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>MGPGI</b>-Mahatma Gandhi Postgraduate Institute of Dental Sciences</p>
-                    <p lang="ta"><b>MGPGI</b>-மகாத்மா காந்தி பட்டப்பின்படிப்பு பல் அறிவியல் நிறுவனம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>No. 4/477,1 st cross stree, opp. to Mahathma Dental College, Kalaivaanar Nagar, Puducherry, 605006</p>
-                    </p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>எண் 4/477,1 வது குறுக்கு மரம், மகாத்மா பல் மருத்துவக் கல்லூரி, கலைவானார் நகர், புதுச்சேரி, 605006</p>
-                    </p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="profile">
-                    <img src="images/mgmc.jpeg">
-                    
-                    <center><br><h3 lang="en">9.00 AM To 4.00 PM/IN EMERGENCY 24/7 <a href="https://goo.gl/maps/sTESJXYvcHccguBEA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><br><h3 lang="ta">காலை 9.00 மணி முதல் மாலை 4.00 மணி வரை/அவசரம் 24/7 <a href="https://goo.gl/maps/sTESJXYvcHccguBEA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>MGMC</b>-Mahatma Gandhi Medical College and Research Institute</p>
-                    <p lang="ta"><b>MGMC</b>-மகாத்மா காந்தி மருத்துவக் கல்லூரி மற்றும் ஆராய்ச்சி நிறுவனம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Pondicherry - Cuddalore Rd, ECR, Pillayarkuppam, Puducherry 607402</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>பாண்டிச்சேரி - கடலூர் சாலை, ஈ.சி.ஆர், பிள்ளையார்குப்பம், புதுச்சேரி
-607402</p>
-                </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><br><h3 lang="en">10.00 AM TO 1.00 PM <a href="https://goo.gl/maps/kz4CC8CHyTSDxH4Y9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/kz4CC8CHyTSDxH4Y9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Abishegapakkam</b>-Primary Health Centre</p>
-                      <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் அபிஷேகவாக்கம்</b>- ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Abhishekapakkam Main Rd, Abhishekapakkam, Puducherry, 605007</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>அபிஷேகப்பாக்கம் மெயின் ரோடு, அபிஷேகப்பாக்கம், புதுச்சேரி
- 605007</p>
+                    <center><h3 lang="en"> 9.00 AM To 7.00 PM <a href="https://goo.gl/maps/RmidBi3n8oSBj4yRA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>IGMC- Indira gandhi arts and science, 605009</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><br><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/CGesBrJ7tR8Eejpb6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/CGesBrJ7tR8Eejpb6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Ariyur</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் அரியூர்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Ariyur, Puducherry 605110</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>அரியூர், புதுச்சேரி 605110</p>
+                    <center><h3 lang="en"> 24 / 7  <a href="https://goo.gl/maps/NaZxBs9kreqGTdBf6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>AVMC- Aarupadai Veedu Medical College
+(C block - fever Clinic), 607402</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">9.00 AM To 10.30 AM <a href="https://goo.gl/maps/UkKH3mcLemrwSDEQA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 9.00 மணி முதல் காலை 10.30 மணி வரை <a href="https://goo.gl/maps/UkKH3mcLemrwSDEQA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Ariankuppam</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் அரியன்குப்பம்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Madha Koil St, Ariyankuppam, Puducherry, 605007</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>,மாதா கோயில் தெரு, அரியாங்குப்பம், புதுச்சேரி, 605007</p>
+                    <center><h3 lang="en"> 24 / 7 <a href="https://goo.gl/maps/wnvS5UYQ11LTZXu76" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>SMVMC - Sri Manakula Vinayagar Medical College, 605107</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/KLqVdeqYKgN3dkW28" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/KLqVdeqYKgN3dkW28" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Bahour</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் பஹோர்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>West St, Bahour, Puducherry, 607402</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>,மேற்கு தெரு , பஹூர், புதுச்சேரி, 607402</p>
+                    <center><h3 lang="en"> kit not available  <a href="https://goo.gl/maps/Ap3zFopjRKkYvvP5A" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>SVMC - Sri Venkateshwaraa Medical College Hospital & Research Centre, 605107</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/5iRmFsUEJnhjgARX7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/5iRmFsUEJnhjgARX7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Gorimedu</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் கோரிமேடு</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Gorimedu, Priyadarshini Nagar, Puducherry, 605006</p>
-                     <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>கோரிமேடு, பிரியதர்ஷினி நகர், புதுச்சேரி, 605006</p>
+                    <center><h3 lang="en"> 8:30AM to 4.00PM <a href="https://goo.gl/maps/urExHtRzb8o3JFYy9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>SLIMS - Sri Lakshmi Narayana Institute of Medical Science Medical College & Hospital, 605502</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/AhtrwBTCuHjCANir5" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                     <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/AhtrwBTCuHjCANir5" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Kalapet</b>-Primary Health Centre</p>
-                     <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் களப்பேட்டை</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Shop No.87, East Coast Rd, Chinna Kalapet, Puducherry, 605014</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>கடை எண்.87, கிழக்கு கடற்கரை சாலை, சின்ன களப்பேட்டை, புதுச்சேரி, 605014</p>
+                    <center><h3 lang="en"> 9.00AM to 4.00PM /
+In Emergency 24/7 <a href="https://goo.gl/maps/MEZvenRS4ocTgQR58" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>MGMC - Mahatma Gandhi Medical College and Research Institute, 607402</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/KqDJTM5x5M2uzfUm6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                     <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/KqDJTM5x5M2uzfUm6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Karayamputhur</b>-Primary Health Centre</p>
-                     <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் கரையம்புதூர்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                     <p lang="en"><span style="font-weight: bold;">Address:</span>Karayambuthur, Puducherry 605106</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>கரையாம்புத்தூர், புதுச்சேரி
- 605106</p>
+                    <center><h3 lang="en"> 8.00 AM to 3.00 PM  <a href="https://goo.gl/maps/NgyTSkgmKwMKaYeo7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PIMS - Pondicherry Institute of Medical Sciences, 605014</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/NFXiQZGxD1gcVG5TA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/NFXiQZGxD1gcVG5TA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Katterikuppam</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் கட்டேரிகுப்பம்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Katterikuppam, Puducherry 605111</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>கட்டேரிகுப்பம், புதுச்சேரி
-605111</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/G2Rh2pMpAnGbPYpg7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>MGPGI - Mahatma Gandhi Postgraduate Institute of Dental Sciences, 605006</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/zUHgB5qBMV6uSftB9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/zUHgB5qBMV6uSftB9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Kirumampakkam</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் கீரம்பாக்கம்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Kirumampakkam, Puducherry, 607402</p>
-                     <p lang="ta"><span style="font-weight: bold;">முகவரி:</span> கீரம்பாக்கம், புதுச்சேரி
-, 607402</p>
+                    <center><h3 lang="en">  <a href="" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>, </p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/1VCmFDTSeVW1WZrd7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/1VCmFDTSeVW1WZrd7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Koodapakkam</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் கூடப்பாக்கம்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Koodappakkam, Puducherry 605502</p>
-                     <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>கூடப்பாக்கம்,புதுச்சேரி,<br>605502</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/TDdvpuortoXxhNnX7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Abishegapakkam, 605007</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/6RrkQHH5ncMphA979" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                     <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/6RrkQHH5ncMphA979" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Kosapalayam</b>-Primary Health Centre</p>
-                     <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் கொசபாளையம்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Naveena Garden, Brindavan Colony, Puducherry, 605013</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>நவீனா கார்டன், பிருந்தாவன் காலனி, புதுச்சேரி, 605013</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/EAvBrCdZodknDPvS7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Ariyur, 605110</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/XfS6dNQkWnZNEniV7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை<a href="https://goo.gl/maps/XfS6dNQkWnZNEniV7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Lawspet</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் லாஸ்பேட்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>104, Lawspet Main Road, Pethuchettypet, Lawspet, Puducherry, 605008</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>104, லாஸ்பேட் மெயின் ரோடு, பெத்துசெட்டைப், லாஸ்பேட், புதுச்சேரி, 605008</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/TH7PSH65qLNbFdNo9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Ariankuppam, 605007</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/JafabBfLffzrTqqj6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta"> காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை<a href="https://goo.gl/maps/JafabBfLffzrTqqj6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Madukarai</b>-Primary Health Centre</p>
-                     <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் மடுக்கரை</b>- ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Valavanur, main road, Madukarai, Puducherry 605105</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>வளவனூர், பிரதான சாலை, மடுக்கரை, புதுச்சேரி,
-605105</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/SnSSQmcfwX13ajud9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Bahour, 607402</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/yhKwQ7XrL88EsqkK9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/yhKwQ7XrL88EsqkK9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Mettupalayam</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் மேட்டுப்பாளையம்</b>- ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Vazhudavoor Rd, Shanmugapuram, Puducherry, 605009</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>வழுதாவூர் வீதி, சண்முகபுரம், புதுச்சேரி, 605009</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/ueiz2WAuaGeXby1z9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Gorimedu, 605006</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/S6a2PMAwsZeWo9qn6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/S6a2PMAwsZeWo9qn6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Mudaliarpet</b>-Primary Health Centre</p>
-                     <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் முதலியார்பேட்டை</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Thiru Vi Ka Nagar, Bharathidasan Nagar, Mudaliarpet, Puducherry, 605004</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>திரு.வி.கா நகர், பாரதிதாசன் நகர், முதலியார்பேட்டை, புதுச்சேரி , 605004</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/EPVp1Kk4qFXNWDGP7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Kalapet, 605014</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/3DKhoC9n1z1HvKFo7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/3DKhoC9n1z1HvKFo7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Murungapakkam</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் முருங்கப்பாக்கம்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Selva Vinayagar Koil Street, Velrampet, Puducherry, 605004</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>செல்வ விநாயகர் கோயில் தெரு, வேல்ராம்பேட்டை, புதுச்சேரி ,
-605004</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/ikeM4XSEwdG7HNyb6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Karayamputhur, 605106</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/L8mrdUu1qDjbu7q66" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/L8mrdUu1qDjbu7q66" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Muthialpet</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் முதியால்பேட்டை</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Depasimpet, Puducherry, 605012</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>டெபசிம்பேட், புதுச்சேரி, 605012</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/6qtRTw54xY4UUKsw8" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Katterikuppam, 605111</p>            
                 </div>
-        
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/kZQPJd7ngoRrZs5H6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/kZQPJd7ngoRrZs5H6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Nettapakkam</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் நெட்டப்பாக்கம்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Nettapakkam - Pandachozhanallur Road, Nettapakkam, Puducherry 605106</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>நெட்டப்பாக்கம் - பாண்டசோழநல்லூர் சாலை, நெட்டப்பாக்கம், புதுச்சேரி,605106</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/6uPbRidf3NYbjk6K7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Kirumampakkam, 607402</p>            
                 </div>
-            
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/it93Wk5feb4yp8P59" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/it93Wk5feb4yp8P59" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Odiansalai</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் ஒடியன்சாலை</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><br><span style="font-weight: bold;">Address:</span>Anna Statue, Old Bus Stand, Odiansalai, Puducherry, 605001</p>
-                     <p lang="ta"><br><span style="font-weight: bold;">முகவரி:</span>அண்ணா சிலை, பழைய பேருந்து நிலையம், ஒடியான்சாலை, புதுச்சேரி, 605001</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/fDEJzxAJRTBcgkeLA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC koodapakkam , 605502</p>            
                 </div>
-                
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/93JkgNm1zR2hwEc87" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை<a href="https://goo.gl/maps/93JkgNm1zR2hwEc87" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Reddiarpalayam</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் ரெட்டியார்பாளையம்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Kamban Nagar, Reddiarpalayam, Puducherry, 605010</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>கம்பர் நகர், ரெட்டியார்பாளையம், புதுச்சேரி 
-, 605010</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/EAcesS1sRMTEtNY99" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Kosapalayam, 605013</p>            
                 </div>
-                
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/SNnHXsYym8PduJMV6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/SNnHXsYym8PduJMV6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Sedarapet</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் செடராபெட்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>42/9, Sedarapet, Puducherry 605111</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>42/9, சிடராபெட், புதுச்சேரி,
-605111</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/QjEoYrPw25fgRTUH8" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Lawspet/UHC Lawspet , 605008</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/8grPjzGNMZxixL4r6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/8grPjzGNMZxixL4r6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Sooramangalam</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் சூராமங்கலம்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Sooramangalam, Puducherry 605106</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>சூராமங்கலம், புதுச்சேரி,
-605106</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/MGp24X1vo29nDAx59" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Maducarai, 605105</p>            
                 </div>
-                
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/YzsMYRbpVktXiHRV6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                     <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை  <a href="https://goo.gl/maps/YzsMYRbpVktXiHRV6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Sorapet</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் சோராபெட்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>near Vinayaga koil, Sorapet, Puducherry 605501</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>அருகில் உள்ள விநாயகர் கோயில், சோரபெட், புதுச்சேரி,605501</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/dBh2qpwoXfxDP8J98" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Mettupalayam, 605009</p>            
                 </div>
-                
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/fp5FQikJua3y1BsZ6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                     <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/fp5FQikJua3y1BsZ6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Thavalakuppam</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் தவலகுப்பம்</b>-ஆரம்ப சுகாதார நிலைய தவலகுப்பம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Cuddalore Main Rd, Thavalakuppam, Puducherry 605007</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>கடலூர் மெயின் ரோடு, தவலகுப்பம், புதுச்சேரி,
- 605007</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/eZYtk4DDufU9NhBw6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Mudaliarpet, 605004</p>            
                 </div>
-                
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/Kftm2gQLNnCGp9Ly9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta"> காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை<a href="https://goo.gl/maps/Kftm2gQLNnCGp9Ly9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Thirubuvanai</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் திருபுவனை</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>No.97, Thirubhuvanai Main Rd, Thirubhuvanai, Puducherry, 605107</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>எண்.97, திருபுவனை பிரதான வீதி, திருபுவனை, புதுச்சேரி
-, 605107</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/PAaRZsWu1HKFB5FcA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Murungapakkam, 605004</p>            
                 </div>
-                
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/UJ8HmN7C4cRC3fkV7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta"> காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை<a href="https://goo.gl/maps/UJ8HmN7C4cRC3fkV7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>PHC Thirukanur</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் திருக்கானூர்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                    <p lang="en"><br><span style="font-weight: bold;">Address:</span>Thirukkanur, Tamil Nadu 605501</p>
-                    <p lang="ta"><br><span style="font-weight: bold;">முகவரி:</span>திருக்கானூர், தமிழ்நாடு, 605501</p>
-                    
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/bJD28mUKF3HjYRo87" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Muthialpet, 605012</p>            
                 </div>
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/wGaLFmR8JKkzjV5DA" target="_blank"  style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/wGaLFmR8JKkzjV5DA" target="_blank"  style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                      <p lang="en"><b>PHC Villianur</b>-Primary Health Centre</p>
-                    <p lang="ta"><b>ஆரம்ப சுகாதார நிலையம் வில்லியனூர்</b>-ஆரம்ப சுகாதார நிலையம்</p>
-                  
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Villianur Main Rd, Villianur, Puducherry 605110</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>வில்லியனூர் மெயின் ரோடு, வில்லியனூர், புதுச்சேரி,605110</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/5Y6Qb5XMUw11TvHC9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Nettapakkam, 605106</p>            
                 </div>
-                
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM <a href="https://goo.gl/maps/6FeUvFuWpC5ChL819" target="_blank"  style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை <a href="https://goo.gl/maps/6FeUvFuWpC5ChL819" target="_blank"  style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>CHC Karikalampakkam</b>-Community Health Centre</p>
-                    <p lang="ta"><b>சி.எச்.சி. மண்ணடிபேட்டை</b>-சமூக சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Madugarai Main Road, Karikalampakkam, Puducherry, 605106</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>மடுக்கரை பிரதான வீதி, கரிக்கலம்பாக்கம், புதுச்சேரி, 605106</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/YjTwof5s1aVcUrDY8" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Odiansalai, 605001</p>            
                 </div>
-                
-            </div>
-            <div class="col">
+            </div><div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    
-                    <center><h3 lang="en">10.00 AM To 1.00 PM<a href="https://goo.gl/maps/CzLRNEmTayvnoV2W7" target="_blank"  style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                     <center><h3 lang="ta">காலை 10.00 மணி முதல் மதியம் 1.00 மணி வரை<a href="https://goo.gl/maps/CzLRNEmTayvnoV2W7" target="_blank"  style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><b>CHC Mannadipet</b>-Community Health Centre</p>
-                     <p lang="ta"><b>சி.எச்.சி. மண்ணடிபேட்டை</b>-சமூக சுகாதார நிலையம்</p>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>Mannadipet, Puducherry 605501</p>
-                    <p lang="ta"><span style="font-weight: bold;">முகவரி:</span>மண்ணடிபேட்டை, புதுச்சேரி, 605501</p>
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/enYP6DjxaqMZPukZ7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Reddiarpalayam, 605010</p>            
+                </div>
+            </div><div class="col">
+                <div class="profile">
+                    <img src="images/test.jpg">
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/yLzkwjGBr2Sa62iAA" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Sedarapet, 605111</p>            
+                </div>
+            </div><div class="col">
+                <div class="profile">
+                    <img src="images/test.jpg">
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/6cqcXN52UAy39dnu5" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Sooramangalam, 605106</p>            
+                </div>
+            </div><div class="col">
+                <div class="profile">
+                    <img src="images/test.jpg">
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/qyV81CUK9JNSrVqp7" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Sorapet, 605501</p>            
+                </div>
+            </div><div class="col">
+                <div class="profile">
+                    <img src="images/test.jpg">
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/NRFawiAjR6Ftrns38" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Thavalakuppam, 605007</p>            
+                </div>
+            </div><div class="col">
+                <div class="profile">
+                    <img src="images/test.jpg">
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/2tovo64iHpnKUjx4A" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Thirubuvanai, 605107</p>            
+                </div>
+            </div><div class="col">
+                <div class="profile">
+                    <img src="images/test.jpg">
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/Zvi5fjrxwyT8h7uY6" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Thirukkanur, 605501</p>            
+                </div>
+            </div><div class="col">
+                <div class="profile">
+                    <img src="images/test.jpg">
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="https://goo.gl/maps/RLK4tAFDW8rEkg5T9" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>PHC Villianur, 605110</p>            
+                </div>
+            </div><div class="col">
+                <div class="profile">
+                    <img src="images/test.jpg">
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>UFWC , </p>            
+                </div>
+            </div><div class="col">
+                <div class="profile">
+                    <img src="images/test.jpg">
+                    <center><h3 lang="en">  <a href="" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>, </p>            
+                </div>
+            </div><div class="col">
+                <div class="profile">
+                    <img src="images/test.jpg">
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>CHC, Karikalampakkam, 605106</p>            
+                </div>
+            </div><div class="col">
+                <div class="profile">
+                    <img src="images/test.jpg">
+                    <center><h3 lang="en"> 10 AM to 1 PM <a href="" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p lang="en"><span style="font-weight: bold;">Address:</span>CHC, Mannadipet, 605501</p>            
                 </div>
             </div>
         </div>
     </div>
     <!-- footer -->
     <h4 lang="en" class="footertitle"> <span lang="en">Last updated</span> :22/07/2021 <b><span  id="lastdateupdatedOn"></span></b></h4>
-    <h4 lang="ta"class="footertitle"><span lang="ta">கடைசியாக புதுப்பிக்கப்பட்டது</span> :22/07/2021<b><span  id="lastdateupdatedOn"></span></b></h4>
-    <footer class="aboutus" >
+    <h4 lang="ta" class="footertitle"><span lang="ta">கடைசியாக புதுப்பிக்கப்பட்டது</span> :22/07/2021<b><span  id="lastdateupdatedOn"></span></b></h4>
+    <footer class="aboutus">
 
-               <a lang="en" class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
-               <a lang="ta" class="footerlink" href="K-about us.html"> பாண்டிச்சேரி பொறியியல் கல்லூரியால் உருவாக்கப்பட்டது மற்றும் பராமரிக்கப்படுகிறது</a>
-               <span class="spanhr">|</span>
+        <a lang="en" class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
+        <a lang="ta" class="footerlink" href="K-about us.html"> பாண்டிச்சேரி பொறியியல் கல்லூரியால் உருவாக்கப்பட்டது மற்றும் பராமரிக்கப்படுகிறது</a>
+        <span class="spanhr">|</span>
         <a lang="en" class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
         <a lang="ta" class="footerlink" href="https://healthdept.page.link/Feedback">கருத்து</a>
 
@@ -601,12 +370,12 @@
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script>
-    $('[lang]').hide(); // hide all lang attributes on start.
-    $('[lang="en"]').show(); // show just Korean text (you can change it)
-
+        $('[lang]').hide(); // hide all lang attributes on start.
+        $('[lang="en"]').show(); // show just Korean text (you can change it)
     </script>
 
-  
+
 
 </body>
+
 </html>
