@@ -118,6 +118,25 @@
             </tr>
             <tr id="tracker-table">
                 <td lang="en" id="tracker-table">
+                    <p style="text-align: left;"><u><span lang="en">MAHE</span></u> <br>
+                        <p class="td-red" style="font-size: 2vh; font-weight: bold;"> {} </p>
+                    </p>
+                    <td lang="ta" id="tracker-table">
+                        <p style="text-align: left;"><u><span lanr="ta">மாஹே</span></u> <br>
+                            <p class="td-red" style="font-size: 2vh; font-weight: bold;"> {} </p>
+                        </p>
+                    </td>
+                    <td class="td-red" id="tracker-table" style="font-size: 2vh; font-weight: bold;">142</td>
+                    <td class="td-red" id="tracker-table" style="font-size: 2vh; font-weight: bold;">800</td>
+                    <td id="tracker-table" style="color: green;font-size: 2vh;font-weight: bold;">
+                        <p> {} </p>
+                    </td>
+                    <td id="tracker-table" style="color: green;font-size: 2vh;font-weight: bold;">
+                        <p> {} </p>
+                    </td>
+            </tr>
+            <tr id="tracker-table">
+                <td lang="en" id="tracker-table">
                     <p style="text-align: left;padding: 0px;"><u><span lang="en">PUDUCHERRY </span></u> <br>
                         <p class="td-red" style="font-size: 2vh; font-weight: bold;"> {} </p>
                     </p>
@@ -129,25 +148,6 @@
                     <td class="td-red" style="font-size: 2vh; font-weight: bold;" id="tracker-table">142</td>
                     <td class="td-red" style="font-size: 2vh; font-weight: bold;" id="tracker-table">800</td>
                     <td id="tracker-table" style="color: green; font-size: 2vh;font-weight: bold; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                        <p> {} </p>
-                    </td>
-                    <td id="tracker-table" style="color: green;font-size: 2vh;font-weight: bold;">
-                        <p> {} </p>
-                    </td>
-            </tr>
-            <tr id="tracker-table">
-                <td lang="en" id="tracker-table">
-                    <p style="text-align: left;"><u> <span lang="en">KARAIKAL</span></u> <br>
-                        <p class="td-red" style="font-size: 2vh; font-weight: bold;"> {} </p>
-                    </p>
-                    <td lang="ta" id="tracker-table">
-                        <p style="text-align: left;"><u><span lang="ta">காரைக்கால்</span></u> <br>
-                            <p class="td-red" style="font-size: 2vh; font-weight: bold;"> {} </p>
-                        </p>
-                    </td>
-                    <td class="td-red" id="tracker-table" style="font-size: 2vh; font-weight: bold;">142</td>
-                    <td class="td-red" id="tracker-table" style="font-size: 2vh; font-weight: bold;">800</td>
-                    <td id="tracker-table" style="color: green;font-size: 2vh;font-weight: bold;">
                         <p> {} </p>
                     </td>
                     <td id="tracker-table" style="color: green;font-size: 2vh;font-weight: bold;">
@@ -175,11 +175,11 @@
             </tr>
             <tr id="tracker-table">
                 <td lang="en" id="tracker-table">
-                    <p style="text-align: left;"><u><span lang="en">MAHE</span></u> <br>
+                    <p style="text-align: left;"><u> <span lang="en">KARAIKAL</span></u> <br>
                         <p class="td-red" style="font-size: 2vh; font-weight: bold;"> {} </p>
                     </p>
                     <td lang="ta" id="tracker-table">
-                        <p style="text-align: left;"><u><span lanr="ta">மாஹே</span></u> <br>
+                        <p style="text-align: left;"><u><span lang="ta">காரைக்கால்</span></u> <br>
                             <p class="td-red" style="font-size: 2vh; font-weight: bold;"> {} </p>
                         </p>
                     </td>
@@ -327,8 +327,7 @@
     <br><br>
     <!-- footer -->
 
-    <h4 lang="en" class="footertitle"> <span lang="en">Last updated</span>: 22/07/2021<b><span  id="lastdateupdatedOn"></span></b></h4>
-    <h4 lang="ta" class="footertitle"><span lang="ta">கடைசியாக புதுப்பிக்கப்பட்டது</span> : 22/07/2021 <b><span  id="lastdateupdatedOn"></span></b></h4>
+    <h4 class="footertitle">Last Updated : <span id="lastUpdatedOn"></span></h4>
     <footer class="aboutus">
         <a lang="en" class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
         <a lang="ta" class="footerlink" href="K-about us.html"> பாண்டிச்சேரி பொறியியல் கல்லூரியால் உருவாக்கப்பட்டது மற்றும் பராமரிக்கப்படுகிறது</a>
@@ -343,17 +342,7 @@
         $('[lang]').hide(); // hide all lang attributes on start.
         $('[lang="en"]').show(); // show just Korean text (you can change it)
     </script>
-
-
-
-
-
-
-
-
-
-
-
+    <script src="lastUpdate.js" ></script>
 </body>
 
 </html>

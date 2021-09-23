@@ -1,35 +1,40 @@
 <!----Author: Ashok---->
 <!DOCTYPE html>
-<html lang="ta">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bed.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" ></script>
     <link rel="icon" href="images/flag.png"/>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>BED AVAILABILITY</title>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+    <!-- language test -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title lang="en">BED AVAILABILITY</title>
+    <title lang="ta">படுக்கை இருப்பு</title>
+
 
 </head>
-<body  onload="updatedOn()">  
+<body  onload="Check_lang()">  
     <div class="top-bar">
-        <small> புதுச்சேரி அரசு Government of Puducherry</small>
-
-        
-      <a href="https://mobile.twitter.com/lgov_puducherry?lang=en"> <i class="fa fa-twitter" style="font-size :15spx;color:blue;margin-right:5vw "></i>  </a> 
-        <a href="https://m.facebook.com/LtGov.Puducherry/"><i class="fa fa-facebook-f" style="font-size:15px;color:blue;"></i></a>
-       <a href="#youtube"> <i class="fa fa-youtube-play" style="font-size:15px;color:red;"></i> </a> 
-       <a href="#insta"><i class="fa fa-instagram" style="font-size:15px;color:red;"></i></a>
+        <small>புதுச்சேரி சுகாதார மற்றும் குடும்ப நல சேவைகள் துறை | Department of Health and Family Welfare Services Puducherry</small>
+      <a href="https://twitter.com/dms_puducherry" id="twitter"> <i class="fa fa-twitter" ></i></a> 
+        <a href="https://www.facebook.com/dmspuducherry.dmspuducherry" id="facebook"><i class="fa fa-facebook-f"></i></a>
+       <a href="https://www.youtube.com/channel/UClY1d7Cqxln0fZhfE45ZgWg?app=desktop" id="youtube"> <i class="fa fa-youtube-play" ></i> </a> 
+       <a href="https://www.instagram.com/dms_puducherry/" id="insta"><i class="fa fa-instagram"></i></a>
     </div>
 
 <div id="header-container"> 
     <table class="header" style="margin-left:10%;padding: 0px;">
         <tr style="padding: 0px;" >
             <td style="padding-right:0.5vmax;"> 
-            <img src="images/emblem.png" alt="">
+            <img src="images/emblem.jpg" alt="">
             </td>
             <td id="header-text" style="padding:0px;" >
                 <div>
@@ -38,62 +43,72 @@
             </td>
             <td style="padding:0px;">
                     <div >
-                        <p style="text-align: center;border-left: 1px solid black; padding-left: 40px;font-size: 1vmax;" > நல்வழித்துறை <br> புதுச்சேரி அரசு <br> இந்தியா
+                        <p style="text-align: center;border-left: 1px solid black; padding-left: 40px;font-size: 1vmax;" > நலவழித்துறை <br> புதுச்சேரி அரசு
                         </p>
             
                     </div>
                 </td>
                 <td id="header-text" style="padding:0px;">
-                    <img src="images/gate.png" style="border-right: 1px solid black;padding-right:40px;"alt="">
+                    <img src="images/gate.svg" style="border-right: 1px solid black;padding-right:40px;"alt="">
                 </td>
         </tr>
     </table>
 
 
     <div id="translation-links"> 
-     <h3> <a href="#ta">தமிழ் </a> | <a href="#en">ENGLISH</a> </h3>
+     <h3> <a id="tamil" href="#ta" onclick="changeLangToTamil()">தமிழ் </a> | <a id="eng" href="#en" onclick="changeLangToEnglish()">ENGLISH</a> </h3>
     </div>
-</div>
-      
-    
-    <div class="title-card">
-        <img src="images/vector.png" alt="">
-        <h2>Bed Availability</h2>
     </div>
     
-<div class=bars> <h4>
-    <a href="A-index.html"><img src="images/home2.png"></a> / Bed Availability</a><h4></div>
+    
+    <div class="vector">
+    <h2 lang="en"><a href="index.html"><img src="images/home.svg"style="
+    height:3.5%; width:3.5%;"></a> Bed Availability</h2>
+    <h2 lang="ta"><a href="index.html"><img src="images/home.svg"style="
+    height:3.5%; width:3.5%;"></a> படுக்கை இருப்பு</h2>
+     <svg viewBox="0 0 500 50" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C3.38,-30.30 515.80,79.23 505.64,-17.48 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white;"></path></svg>
+ </div>
+    
+<!-- <div class=bars> <h4>
+    <a href="index.html"><img src="images/home2.png"></a> <span lang="en"> / Bed Availability </span> <span lang="ta"> / படுக்கை கிடைக்கும் </span> </a><h4></div>
+        
     <br>
-    
 
-    <!-- content -->
-   <div class="container-ash">
-        <input type="search" id="search-ash" name="search" placeholder="Search" onkeyup="filter()"  value="" >
-        <br>
-        <!-- <center>
-            
-        <button type="submit" onclick="table_search()"> Submit</button>
-        <button name="reset" onclick="reset()" >Reset</button>
-    </center> -->
-    </div>
+    
+    </div> -->
 
     <!-- content -->
     <div class="container-ash" style="overflow-x: auto;">
         <table id="content_table-ash" style="margin-bottom: 0px;">
             <thead>
                 <tr>
-                    <th rowspan="2" id="hospital-name-ash">HOSPITAL NAME </th>
-                    <th colspan="3" id="available_beds-ash" >AVAILABLE BEDS</th>
+                    <th lang="en" rowspan="2" id="hospital-name-ash">HOSPITAL NAME </th>
+                    <th lang="ta" rowspan="2" id="hospital-name-ash">மருத்துவமனை பெயர்கள் </th>
+
+                    <th lang="en" colspan="3" id="available_beds-ash" >AVAILABLE BEDS</th>
+                    <th lang="ta" colspan="3" id="available_beds-ash" >கிடைக்கும் படுக்கைகள்</th>
+
                 </tr>
                 <tr> 
-                    <th id="isolation-ash">
+                    <th lang="en" id="isolation-ash">
                         ISOLATION
                     </th>
-                    <th id="oxygen-ash" >
+                    <th lang="ta" id="isolation-ash">
+                        தனிமை
+                    </th>
+
+                    <th lang="en" id="oxygen-ash" >
                         OXYGEN
                     </th>
-                    <th id="ventilator-ash">
+                    <th lang="ta" id="oxygen-ash" >
+                        உயிரகம்
+                    </th>
+
+                    <th lang="en" id="ventilator-ash">
                         VENTILATOR
+                    </th>
+                    <th lang="ta" id="ventilator-ash">
+                        பலகணி
                     </th>
                 </tr>
         
@@ -104,59 +119,35 @@
                   <td colspan="5" >NO RESULTS FOUND!</td>
                 </tr>
             </tbody>
-            <thead id="gov_head">
-                    <th colspan="5" id="institution-ash" >Government Instituion</th>
-            </thead>
-            <tbody id="gov_body">{}
-
-                
-                <!-- Private Medical institution -->
-                          <thead id="private_head">
-                
-                                <th colspan="5" id="institution-ash">
-                                        Private Medical Institution
-                                  </th>
-                                    
-                           </thead>
-                     <tbody id="private_body" >{}
-                         
-
-
-                    </tbody>
-                  <!-- Private Nursing Home -->
-
-               
-                    <thead id="nursing_head">
-                            <th colspan="5" id="institution-ash">
-                                Private Nursing Home
-                            </th>
-                     
-                    </thead>
-                    <tbody id="nursing_body">
-                        {}
+         
+            {}
         
             </tbody>
         </table>
     </div>
 
-
     
-
-
-    
-    <h4 class="footertitle">Last updated : <b><span  id="lastdateupdatedOn"></span></b></h4>
+    <h4 class="footertitle">Last Updated : <span id="lastUpdatedOn"></span></h4>
+    <!-- <h4 lang="en" class="footertitle"> <span lang="en">Last updated</span> : 22/07/2021 <b><span  id="lastdateupdatedOn"></span></b></h4>
+    <h4 lang="ta"class="footertitle"><span lang="ta">கடைசியாக புதுப்பிக்கப்பட்டது</span> : 22/07/2021 <b><span  id="lastdateupdatedOn"></span></b></h4> -->
     <footer class="aboutus" >
-               <a class="footerlink" href="K-about us.html">DEVELOPED AND MAINTAINED BY PEC</a>
+               <a lang="en" class="footerlink" href="aboutus/k-aboutus.html">DEVELOPED AND MAINTAINED BY PEC</a>
+               <a lang="ta" class="footerlink" href="aboutus/k-aboutus.html"> பாண்டிச்சேரி பொறியியல் கல்லூரியால் உருவாக்கப்பட்டது மற்றும் பராமரிக்கப்படுகிறது</a>
                <span class="spanhr">|</span>
-        <a class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
+        <a lang="en" class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
+        <a lang="ta" class="footerlink" href="https://healthdept.page.link/Feedback">கருத்து</a>
+
     </footer>
 
 
 
 
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script>
+    $('[lang]').hide(); // hide all lang attributes on start.
+    $('[lang="en"]').show(); // show just Korean text (you can change it)
 
     </script>
-
+    <script src="lastUpdate.js" ></script>
 </body>
 </html>

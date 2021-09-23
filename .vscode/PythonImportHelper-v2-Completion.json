@@ -1,0 +1,153 @@
+[
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "terminal_size",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "urllib",
+        "description": "urllib",
+        "isExtraImport": true,
+        "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "categorizeHospitals",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def categorizeHospitals(hospitalDetails):\n    trTag = '''<tr  class=\"content-ash\"  >\n                        <td id=\"hospital-name-ash\" class=\"hospital-name\" >{}</td>\n                        <td  id=\"isolation-ash\">{}</td>\n                        <td id=\"oxygen-ash\">{}</td>\n                        <td id=\"ventilator-ash\">{}</td>\n            </tr>'''\n    tr = ''\n    bedAvailability_Tags = []\n    for i in hospitalDetails:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "processHospitalData",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def processHospitalData(hospitalDetails):\n    return hospitalDetails\ndef processTrackerDetails(trackerDetails):\n    overallCases = ''' <tr style=\"background-color: white;\">\n                    <td>    <div class=\"color-box-ash total-cases-ash\"></div> <span id=\"total_cases1-ash\">{}</span></td>\n                    <td>\n                        <div class=\"color-box-ash total-cured-ash\"></div><span id=\"total_cured1-ash\">{}</span></td>\n                        <td><div class=\"color-box-ash active-cases-ash\"></div><span id=\"active_cases1-ash\">{}</span></td>\n                        <td><div class=\"color-box-ash death-ash\"></div><span id=\"total_death1-ash\">{}</span></td>\n                </tr>'''",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "processTrackerDetails",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def processTrackerDetails(trackerDetails):\n    overallCases = ''' <tr style=\"background-color: white;\">\n                    <td>    <div class=\"color-box-ash total-cases-ash\"></div> <span id=\"total_cases1-ash\">{}</span></td>\n                    <td>\n                        <div class=\"color-box-ash total-cured-ash\"></div><span id=\"total_cured1-ash\">{}</span></td>\n                        <td><div class=\"color-box-ash active-cases-ash\"></div><span id=\"active_cases1-ash\">{}</span></td>\n                        <td><div class=\"color-box-ash death-ash\"></div><span id=\"total_death1-ash\">{}</span></td>\n                </tr>'''\n    tracker_Trtag = '''\n                <tr>",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "getApiData",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def getApiData():\n    resp_1 = request.urlopen(\n        'https://pycare-api.herokuapp.com/hospitalDetails')\n    data_1 = resp_1.read()\n    hospitalDetails = data_1.decode('utf-8')\n    hospitalDetails = json.loads(hospitalDetails)\n    resp_2 = request.urlopen(\n        'https://pycare-api.herokuapp.com/districtWiseReport')\n    data_2 = resp_2.read()\n    trackerDetails = data_2.decode()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "readDynamicPages",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def readDynamicPages():\n    covidTracker = ''\n    bedAvailability = ''\n    testingCenters = \"\"\n    with open(\"./dynamicPages/covidTracker.html\", \"r\", encoding='utf-8') as dynamicPage_1:\n        covidTracker = dynamicPage_1.read()\n    with open(\"./dynamicPages/bedAvailability.html\", \"r\", encoding='utf-8') as dynamicPage_2:\n        bedAvailability = dynamicPage_2.read()\n    with open(\"./dynamicPages/testingCenter.html\", \"r\", encoding='utf-8') as dynamicPage:\n        testingCenters = dynamicPage.read()",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "writeToStaticPages",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def writeToStaticPages(covidTracker,\n                       bedAvailability,\n                       bedAvailability_Tags,\n                       tracker_tag,\n                       overallCases,\n                       trackerDetails,\n                       testingCenters,\n                       testingCentersList):\n    bedAvailability = bedAvailability.format(\n        bedAvailability_Tags[0])",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "hospitalDetails",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "hospitalDetails = processHospitalData(\n    hospitalDetails)\nbedAvailability_Tags = categorizeHospitals(\n    hospitalDetails)\ntracker_tag, overallCases = processTrackerDetails(trackerDetails)\nwriteToStaticPages(covidTracker, bedAvailability,\n                   bedAvailability_Tags, tracker_tag, overallCases, trackerDetails, testingCenters, testingCentersList)\nresponse = request.urlopen(\"https://pycare-api.herokuapp.com/status\")\ndata = response.read()\nlastUpdatedOn = json.loads(data.decode(\"utf-8\"))[0][\"lastUpdatedOn\"]",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "bedAvailability_Tags",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "bedAvailability_Tags = categorizeHospitals(\n    hospitalDetails)\ntracker_tag, overallCases = processTrackerDetails(trackerDetails)\nwriteToStaticPages(covidTracker, bedAvailability,\n                   bedAvailability_Tags, tracker_tag, overallCases, trackerDetails, testingCenters, testingCentersList)\nresponse = request.urlopen(\"https://pycare-api.herokuapp.com/status\")\ndata = response.read()\nlastUpdatedOn = json.loads(data.decode(\"utf-8\"))[0][\"lastUpdatedOn\"]\nwith open(\"./staticPages/lastUpdate.js\", \"w\") as js:\n    js.write('''document.getElementById(\"lastUpdatedOn\").innerHTML = \"{}\";'''.format(lastUpdatedOn))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "response = request.urlopen(\"https://pycare-api.herokuapp.com/status\")\ndata = response.read()\nlastUpdatedOn = json.loads(data.decode(\"utf-8\"))[0][\"lastUpdatedOn\"]\nwith open(\"./staticPages/lastUpdate.js\", \"w\") as js:\n    js.write('''document.getElementById(\"lastUpdatedOn\").innerHTML = \"{}\";'''.format(lastUpdatedOn))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "data = response.read()\nlastUpdatedOn = json.loads(data.decode(\"utf-8\"))[0][\"lastUpdatedOn\"]\nwith open(\"./staticPages/lastUpdate.js\", \"w\") as js:\n    js.write('''document.getElementById(\"lastUpdatedOn\").innerHTML = \"{}\";'''.format(lastUpdatedOn))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "lastUpdatedOn",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "lastUpdatedOn = json.loads(data.decode(\"utf-8\"))[0][\"lastUpdatedOn\"]\nwith open(\"./staticPages/lastUpdate.js\", \"w\") as js:\n    js.write('''document.getElementById(\"lastUpdatedOn\").innerHTML = \"{}\";'''.format(lastUpdatedOn))",
+        "detail": "main",
+        "documentation": {}
+    }
+]

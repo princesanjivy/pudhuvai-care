@@ -1,6 +1,5 @@
-// COVID TRACKER
-// Load google charts
-// district wise
+
+
 var total_cases = parseInt(
   document.getElementById("total_cases1-ash").textContent
 );

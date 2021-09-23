@@ -5,47 +5,25 @@ import requests
 import csv
 from urllib import request
 
-
-def categorizeHospitals(govtHospitals, privateHospitals, privateNursingHomes):
-    trTag = '''<tr  class="content-ash {}"  >
-                        <td id="hospital-name-ash"class="hospital-name" >{}</td>
-                        <td  id="isolation-ash" >{}</td>
-                        <td id="oxygen-ash" >{}</td>
-                        <td id="ventilator-ash" >{}</td>
+def categorizeHospitals(hospitalDetails):
+    trTag = '''<tr  class="content-ash"  >
+                        <td id="hospital-name-ash" class="hospital-name" >{}</td>
+                        <td  id="isolation-ash">{}</td>
+                        <td id="oxygen-ash">{}</td>
+                        <td id="ventilator-ash">{}</td>
             </tr>'''
-    gov_tr = ''
-    pri_tr = ''
-    nursingHomes_tr = ''
+    tr = ''
     bedAvailability_Tags = []
-    for i in govtHospitals:
-        gov_tr += trTag.format('gov_institue-ash', i['hospitalName'], i['isolationBeds']
+    for i in hospitalDetails:
+        tr += trTag.format(i['hospitalName'], i['isolationBeds']
                                ['vacant'], i['oxygenBeds']['vacant'], i['ventilatorBeds']['vacant'])
 
-    for i in privateHospitals:
-        pri_tr += trTag.format('private_institute-ash', i['hospitalName'], i['isolationBeds']
-                               ['vacant'], i['oxygenBeds']['vacant'], i['ventilatorBeds']['vacant'])
-
-    for i in privateNursingHomes:
-        nursingHomes_tr += trTag.format('private_nursing-ash', i['hospitalName'], i['isolationBeds']
-                                        ['vacant'], i['oxygenBeds']['vacant'], i['ventilatorBeds']['vacant'])
-    bedAvailability_Tags.append(gov_tr)
-    bedAvailability_Tags.append(pri_tr)
-    bedAvailability_Tags.append(nursingHomes_tr)
+    bedAvailability_Tags.append(tr)
     return bedAvailability_Tags
 
 
 def processHospitalData(hospitalDetails):
-    govtHospitals = []
-    privateHospitals = []
-    privateNursingHomes = []
-    for i in hospitalDetails:
-        if (i['typeofInstitution'] == 'Govt Institutions'):
-            govtHospitals.append(i)
-        elif (i['typeofInstitution'] == 'PRIVATE MEDICAL COLLEGES'):
-            privateHospitals.append(i)
-        elif(i['typeofInstitution'] == 'PRIVATE NURSING HOMES'):
-            privateNursingHomes.append(i)
-    return govtHospitals, privateHospitals, privateNursingHomes
+    return hospitalDetails
 
 
 def processTrackerDetails(trackerDetails):
@@ -144,7 +122,7 @@ def writeToStaticPages(covidTracker,
                        testingCenters,
                        testingCentersList):
     bedAvailability = bedAvailability.format(
-        bedAvailability_Tags[0], bedAvailability_Tags[1], bedAvailability_Tags[2])
+        bedAvailability_Tags[0])
 
     temp = []
     for i in trackerDetails:
@@ -181,8 +159,8 @@ def writeToStaticPages(covidTracker,
     temp = """<div class="col">
                 <div class="profile">
                     <img src="images/test.jpg">
-                    <center><h3 lang="en"> {time} <a href="{mapLink}" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
-                    <p lang="en"><span style="font-weight: bold;">Address:</span>{location}, {pincode}</p>            
+                    <center><h3> {time} <a href="{mapLink}" target="_blank" style="text-decoration: none;"><span style="font-size: 23px;color: blue;">&#128506</span></a></h3></center>
+                    <p><span style="font-weight: bold;">Address:</span>{location}, {pincode}</p>
                 </div>
             </div>"""
 
@@ -207,10 +185,17 @@ def writeToStaticPages(covidTracker,
 ###  MAIN PART ###
 covidTracker, bedAvailability, testingCenters = readDynamicPages()
 hospitalDetails, trackerDetails, testingCentersList = getApiData()
-govtHospitals, privateHospitals, privateNursingHomes = processHospitalData(
+hospitalDetails = processHospitalData(
     hospitalDetails)
 bedAvailability_Tags = categorizeHospitals(
-    govtHospitals, privateHospitals, privateNursingHomes)
+    hospitalDetails)
 tracker_tag, overallCases = processTrackerDetails(trackerDetails)
 writeToStaticPages(covidTracker, bedAvailability,
                    bedAvailability_Tags, tracker_tag, overallCases, trackerDetails, testingCenters, testingCentersList)
+
+
+response = request.urlopen("https://pycare-api.herokuapp.com/status")
+data = response.read()
+lastUpdatedOn = json.loads(data.decode("utf-8"))[0]["lastUpdatedOn"]
+with open("./staticPages/lastUpdate.js", "w") as js:
+    js.write('''document.getElementById("lastUpdatedOn").innerHTML = "{}";'''.format(lastUpdatedOn))
