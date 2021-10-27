@@ -1,7 +1,7 @@
 function loadJSON(callback) {
   let xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
-  xobj.open("GET", "dynamic.json", true);
+  xobj.open("GET", "covidTracker.json", true);
   xobj.onreadystatechange = function () {
     if (xobj.readyState == 4 && xobj.status == "200") {
       callback(xobj.responseText);
@@ -11,9 +11,9 @@ function loadJSON(callback) {
 }
 
 loadJSON(function (response) {
-    let data = JSON.parse(response);
+  let data = JSON.parse(response);
 
-    let table = `<table id="table-content" style="overflow-x: scroll;">
+  let table = `<table id="table-content" style="overflow-x: scroll;">
     <tr style="border: none;">
         <td style="border: none; text-align: center;">
             <img id="covid-th" src="images/covid_th.jpg" alt="infected">
@@ -44,26 +44,39 @@ loadJSON(function (response) {
         <th class="td-red" lang="en" id="tracker-table">Home Isolation</th>
     </tr>`;
 
-    let status = data["covidTracker"];
+  let status = data["covidTracker"];
+  let covidData = data["covidData"];
 
-    for(let i in status){
-        table += 
-        `<tr id="tracker-table">
+  for (let i in status) {
+    table +=
+      `<tr id="tracker-table">
                 <td id="tracker-table">
-                    <p style="text-align: left;"><u><span>`+ status[i].district +`</span></u> <br>
-                        <p class="td-red" style="font-size: 2vh; font-weight: bold;"> 107 </p>
+                    <p style="text-align: left;"><u><span>` +
+      status[i].district +
+      `</span></u> <br>
+                        <p class="td-red" style="font-size: 2vh; font-weight: bold;">` +
+      covidData.todayNewCases[status[i].district.toLowerCase()] +
+      `</p>
                     </p>
-                    <td class="td-red" id="tracker-table" style="font-size: 2vh; font-weight: bold;">142</td>
-                    <td class="td-red" id="tracker-table" style="font-size: 2vh; font-weight: bold;">800</td>
+                    <td class="td-red" id="tracker-table" style="font-size: 2vh; font-weight: bold;">` +
+      covidData.hospitalised[status[i].district.toLowerCase()] +
+      `</td>
+                    <td class="td-red" id="tracker-table" style="font-size: 2vh; font-weight: bold;">` +
+      covidData.homeIsolation[status[i].district.toLowerCase()] +
+      `</td>
                     <td id="tracker-table" style="color: green;font-size: 2vh;font-weight: bold;">
-                        <p>` + status[i].cured + `</p>
+                        <p>` +
+      status[i].cured +
+      `</p>
                     </td>
                     <td id="tracker-table" style="color: green;font-size: 2vh;font-weight: bold;">
-                        <p>` + status[i].death + `</p>
+                        <p>` +
+      status[i].death +
+      `</p>
                     </td>
             </tr>`;
-    }
-    table += "</table>";
+  }
+  table += "</table>";
 
-    document.getElementById("covidTrackerTable").innerHTML = table;
+  document.getElementById("covidTrackerTable").innerHTML = table;
 });
