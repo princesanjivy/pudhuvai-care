@@ -36,6 +36,15 @@
         "documentation": {}
     },
     {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
         "label": "dynamic",
         "kind": 5,
         "importPath": "staticPages.main",
@@ -76,7 +85,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "dynamic = {}\ncovidTrackerRes = requests.get(\n    \"https://pycare-api.herokuapp.com/districtWiseReport\")\ncovidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = covidTrackerData\n# covidData \nurl = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=csv\"\nresp = requests.get(url)\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)",
+        "peekOfCode": "dynamic = {}\ncovidTrackerRes = requests.get(\n    \"https://pycare-api.herokuapp.com/districtWiseReport\")\ncovidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = covidTrackerData\n# covidData \nurl = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=\"\nresp = requests.get(url+\"csv\")\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -85,7 +94,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "covidTrackerRes = requests.get(\n    \"https://pycare-api.herokuapp.com/districtWiseReport\")\ncovidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = covidTrackerData\n# covidData \nurl = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=csv\"\nresp = requests.get(url)\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]",
+        "peekOfCode": "covidTrackerRes = requests.get(\n    \"https://pycare-api.herokuapp.com/districtWiseReport\")\ncovidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = covidTrackerData\n# covidData \nurl = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=\"\nresp = requests.get(url+\"csv\")\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -94,7 +103,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "covidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = covidTrackerData\n# covidData \nurl = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=csv\"\nresp = requests.get(url)\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]",
+        "peekOfCode": "covidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = covidTrackerData\n# covidData \nurl = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=\"\nresp = requests.get(url+\"csv\")\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -103,7 +112,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "dynamic[\"covidTracker\"] = covidTrackerData\n# covidData \nurl = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=csv\"\nresp = requests.get(url)\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\", \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]",
+        "peekOfCode": "dynamic[\"covidTracker\"] = covidTrackerData\n# covidData \nurl = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=\"\nresp = requests.get(url+\"csv\")\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -112,7 +121,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "url = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=csv\"\nresp = requests.get(url)\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\", \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4])) for i in range(1,len(values)//4)]",
+        "peekOfCode": "url = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=\"\nresp = requests.get(url+\"csv\")\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -121,7 +130,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "resp = requests.get(url)\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\", \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4])) for i in range(1,len(values)//4)]\ncovidData = dict(zip(keys, values))",
+        "peekOfCode": "resp = requests.get(url+\"csv\")\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -130,7 +139,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "data = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\", \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4])) for i in range(1,len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date",
+        "peekOfCode": "data = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -139,7 +148,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "data = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\", \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4])) for i in range(1,len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndynamic[\"covidData\"]  = covidData",
+        "peekOfCode": "data = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -148,7 +157,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "latestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\", \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4])) for i in range(1,len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:",
+        "peekOfCode": "latestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -157,7 +166,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "date = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\", \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4])) for i in range(1,len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))",
+        "peekOfCode": "date = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -166,7 +175,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "values = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\", \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4])) for i in range(1,len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter",
+        "peekOfCode": "values = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -175,7 +184,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "keys = [\"todayNewCases\", \"hospitalised\", \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4])) for i in range(1,len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter\ndynamic = {}",
+        "peekOfCode": "keys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)\ndf = df.iloc[3].tolist()",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -184,7 +193,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "subKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4])) for i in range(1,len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter\ndynamic = {}\ntestingCenterRes = requests.get(",
+        "peekOfCode": "subKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)\ndf = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -193,7 +202,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "values = [dict(zip(subKeys, values[i*4:(i+1)*4])) for i in range(1,len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter\ndynamic = {}\ntestingCenterRes = requests.get(\n    \"https://docs.google.com/spreadsheets/d/e/2PACX-1vReED3ftV6BZO96JnXcC9puD5jYQqDzHKRWd8C_Eab0Z-edLU0z60JRWi3j7MJuTYDROnkgWlcujVSk/pub?output=csv\")",
+        "peekOfCode": "values = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)\ndf = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -202,7 +211,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "covidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter\ndynamic = {}\ntestingCenterRes = requests.get(\n    \"https://docs.google.com/spreadsheets/d/e/2PACX-1vReED3ftV6BZO96JnXcC9puD5jYQqDzHKRWd8C_Eab0Z-edLU0z60JRWi3j7MJuTYDROnkgWlcujVSk/pub?output=csv\")\ntestingCenterData = csv.reader(io.StringIO(testingCenterRes.text))",
+        "peekOfCode": "covidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)\ndf = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -211,7 +220,79 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "covidData[\"lastUpdatedData\"] = date\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter\ndynamic = {}\ntestingCenterRes = requests.get(\n    \"https://docs.google.com/spreadsheets/d/e/2PACX-1vReED3ftV6BZO96JnXcC9puD5jYQqDzHKRWd8C_Eab0Z-edLU0z60JRWi3j7MJuTYDROnkgWlcujVSk/pub?output=csv\")\ntestingCenterData = csv.reader(io.StringIO(testingCenterRes.text))\nm = list(testingCenterData)[8:]",
+        "peekOfCode": "covidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)\ndf = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}",
+        "detail": "staticPages.main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "staticPages.main",
+        "description": "staticPages.main",
+        "peekOfCode": "df = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)\ndf = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [",
+        "detail": "staticPages.main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "staticPages.main",
+        "description": "staticPages.main",
+        "peekOfCode": "df = df.fillna(0)\ndf = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}",
+        "detail": "staticPages.main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "staticPages.main",
+        "description": "staticPages.main",
+        "peekOfCode": "df = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],",
+        "detail": "staticPages.main",
+        "documentation": {}
+    },
+    {
+        "label": "covidData[\"testStatistics\"]",
+        "kind": 5,
+        "importPath": "staticPages.main",
+        "description": "staticPages.main",
+        "peekOfCode": "covidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}",
+        "detail": "staticPages.main",
+        "documentation": {}
+    },
+    {
+        "label": "covidData[\"vitalStatistics\"]",
+        "kind": 5,
+        "importPath": "staticPages.main",
+        "description": "staticPages.main",
+        "peekOfCode": "covidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:",
+        "detail": "staticPages.main",
+        "documentation": {}
+    },
+    {
+        "label": "covidData[\"occupancy\"]",
+        "kind": 5,
+        "importPath": "staticPages.main",
+        "description": "staticPages.main",
+        "peekOfCode": "covidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter",
+        "detail": "staticPages.main",
+        "documentation": {}
+    },
+    {
+        "label": "covidData[\"covidVaccine\"]",
+        "kind": 5,
+        "importPath": "staticPages.main",
+        "description": "staticPages.main",
+        "peekOfCode": "covidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter\ndynamic = {}\ntestingCenterRes = requests.get(",
+        "detail": "staticPages.main",
+        "documentation": {}
+    },
+    {
+        "label": "covidData[\"covidTillDate\"]",
+        "kind": 5,
+        "importPath": "staticPages.main",
+        "description": "staticPages.main",
+        "peekOfCode": "covidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter\ndynamic = {}\ntestingCenterRes = requests.get(\n    \"https://docs.google.com/spreadsheets/d/e/2PACX-1vReED3ftV6BZO96JnXcC9puD5jYQqDzHKRWd8C_Eab0Z-edLU0z60JRWi3j7MJuTYDROnkgWlcujVSk/pub?output=csv\")\ntestingCenterData = csv.reader(io.StringIO(testingCenterRes.text))",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -303,6 +384,195 @@
         "description": "staticPages.main",
         "peekOfCode": "dynamic[\"bedAvailability\"] = bedAvailabilityData\nwith open(\"bedAvailability.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))",
         "detail": "staticPages.main",
+        "documentation": {}
+    },
+    {
+        "label": "dynamic",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "dynamic = {}\nurl = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=\"\nresp = requests.get(url+\"csv\")\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "url = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=\"\nresp = requests.get(url+\"csv\")\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "resp",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "resp = requests.get(url+\"csv\")\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "data = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "data = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "latestData",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "latestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "date = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "values",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "values = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "keys",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "keys = [\"todayNewCases\", \"hospitalised\",\n        \"homeIsolation\", \"totalRecovered\", \"totalDeath\"]\nsubKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)\ndf = df.iloc[3].tolist()",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "subKeys",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "subKeys = [\"pondicherry\", \"karaikal\", \"yanam\", \"mahe\"]\nvalues = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)\ndf = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "values",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "values = [dict(zip(subKeys, values[i*4:(i+1)*4]))\n          for i in range(1, len(values)//4)]\ncovidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)\ndf = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "covidData",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "covidData = dict(zip(keys, values))\ncovidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)\ndf = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "covidData[\"lastUpdatedData\"]",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "covidData[\"lastUpdatedData\"] = date\ndf = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)\ndf = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "df = pd.read_excel(url+\"xlsx\", engine='openpyxl', sheet_name=1)\ndf = df.fillna(0)\ndf = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "df = df.fillna(0)\ndf = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "df = df.iloc[3].tolist()\ncovidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "covidData[\"testStatistics\"]",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "covidData[\"testStatistics\"] = {\"todayTests\": latestData[1],\n                               \"cumTest\": latestData[33], \"cumNegative\": latestData[35]}\ncovidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "covidData[\"vitalStatistics\"]",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "covidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ndynamic[\"covidData\"]  = covidData\nprint(dynamic)",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "covidData[\"occupancy\"]",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "covidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ndynamic[\"covidData\"]  = covidData\nprint(dynamic)",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "covidData[\"covidVaccine\"]",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "covidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ndynamic[\"covidData\"]  = covidData\nprint(dynamic)",
+        "detail": "staticPages.test",
+        "documentation": {}
+    },
+    {
+        "label": "covidData[\"covidTillDate\"]",
+        "kind": 5,
+        "importPath": "staticPages.test",
+        "description": "staticPages.test",
+        "peekOfCode": "covidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ndynamic[\"covidData\"]  = covidData\nprint(dynamic)",
+        "detail": "staticPages.test",
         "documentation": {}
     }
 ]

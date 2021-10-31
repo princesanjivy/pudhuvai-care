@@ -1,1 +1,99 @@
-{"covidTracker": [{"district": "Mahe", "reported": "5342", "cured": "5208", "active": "92", "death": "42"}, {"district": "Pondicherry", "reported": "96870", "cured": "94817", "active": "593", "death": "1460"}, {"district": "Yanam", "reported": "6674", "cured": "6597", "active": "-30", "death": "107"}, {"district": "Karaikal", "reported": "15906", "cured": "15574", "active": "82", "death": "250"}], "covidData": {"todayNewCases": {"pondicherry": "34", "karaikal": "15", "yanam": "0", "mahe": "5"}, "hospitalised": {"pondicherry": "92", "karaikal": "23", "yanam": "8", "mahe": "18"}, "homeIsolation": {"pondicherry": "457", "karaikal": "213", "yanam": "8", "mahe": "48"}, "totalRecovered": {"pondicherry": "70", "karaikal": "30", "yanam": "0", "mahe": "9"}, "totalDeath": {"pondicherry": "1", "karaikal": "0", "yanam": "0", "mahe": "0"}, "lastUpdatedData": "20-09-2021"}}
+{
+    "covidTracker": [
+        {
+            "district": "Mahe",
+            "reported": "5365",
+            "cured": "5230",
+            "active": "93",
+            "death": "42"
+        },
+        {
+            "district": "Pondicherry",
+            "reported": "96996",
+            "cured": "94960",
+            "active": "575",
+            "death": "1461"
+        },
+        {
+            "district": "Yanam",
+            "reported": "6685",
+            "cured": "6601",
+            "active": "-23",
+            "death": "107"
+        },
+        {
+            "district": "Karaikal",
+            "reported": "15939",
+            "cured": "15616",
+            "active": "73",
+            "death": "250"
+        }
+    ],
+    "covidData": {
+        "todayNewCases": {
+            "pondicherry": "34",
+            "karaikal": "15",
+            "yanam": "0",
+            "mahe": "5"
+        },
+        "hospitalised": {
+            "pondicherry": "92",
+            "karaikal": "23",
+            "yanam": "8",
+            "mahe": "18"
+        },
+        "homeIsolation": {
+            "pondicherry": "457",
+            "karaikal": "213",
+            "yanam": "8",
+            "mahe": "48"
+        },
+        "totalRecovered": {
+            "pondicherry": "70",
+            "karaikal": "30",
+            "yanam": "0",
+            "mahe": "9"
+        },
+        "totalDeath": {
+            "pondicherry": "1",
+            "karaikal": "0",
+            "yanam": "0",
+            "mahe": "0"
+        },
+        "lastUpdatedData": "20-09-2021",
+        "testStatistics": {
+            "todayTests": "4069",
+            "cumTest": "1742033",
+            "cumNegative": "1477215"
+        },
+        "vitalStatistics": {
+            "testPositivity": "0.07",
+            "caseFatalityRate": "0.01",
+            "recoveryRate": "0.97"
+        },
+        "occupancy": {
+            "jipmer": "58",
+            "ghcd": "25",
+            "ccc": "9"
+        },
+        "covidVaccine": {
+            "firstDose": [
+                0,
+                0
+            ],
+            "secondDose": [
+                0,
+                0
+            ],
+            "total": [
+                4165,
+                912331
+            ]
+        },
+        "covidTillDate": {
+            "detected": "125517",
+            "recovered": "122818",
+            "death": "1832"
+        }
+    }
+}
