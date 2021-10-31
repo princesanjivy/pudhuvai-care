@@ -202,7 +202,7 @@
 
     <!-- statistics -->
     <br><br>
-    <!-- <div class="row">
+    <div class="row">
         <div class="leftcol">
             <table id="table-Teststatistics">
                 <th lang="en" id="table-head" colspan="2"><u>TEST STATISTICS</u>
@@ -210,19 +210,19 @@
                     <tr>
                         <td lang="en" id="" style="text-align: left;">TODAY TESTS
                             <td lang="ta" id="" style="text-align: left;">இன்று சோதனைகள்</td>
-                            <td id="" style="text-align: right;">6172</td>
+                            <td id="todayTests" style="text-align: right;">6172</td>
                     </tr>
                     <tr>
                         <td lang="en" id="" style="text-align: left;">CUM TESTED
                             <td lang="ta" id="" style="text-align: left;">கொரோனா தொற்று உறுதி</td>
-                            <td id="" style="text-align: right;">6172</td>
+                            <td id="cumTest" style="text-align: right;">6172</td>
                     </tr>
                     <tr>
                         <td lang="en" id="" style="text-align: left;">CUM NEGATIVE
                             <td lang="ta" id="" style="text-align: left;">கொரோனா தொற்று இல்லாதவர்கள்</td>
-                            <td id="" style="text-align: right;">6172</td>
+                            <td id="cumNegative" style="text-align: right;">6172</td>
                     </tr>
-
+    
             </table>
             <br><br>
             <table id="table-occupency">
@@ -231,19 +231,19 @@
                     <tr>
                         <td lang="en" id="" style="text-align: left;">JIPMER
                             <td lang="ta" id="" style="text-align: left;">ஜிப்மர்</td>
-                            <td id="" style="text-align: right;">6172</td>
+                            <td id="jipmer" style="text-align: right;">3517</td>
                     </tr>
                     <tr>
                         <td lang="en" id="" style="text-align: left;">IGMC
                             <td lang="ta" id="" style="text-align: left;">ஐ.ஜி.எம்.சி.</td>
-                            <td id="" style="text-align: right;">6172</td>
+                            <td id="ghcd" style="text-align: right;">6172</td>
                     </tr>
                     <tr>
                         <td lang="en" id="" style="text-align: left;">CCC
                             <td lang="ta" id="" style="text-align: left;">சிசிசி</td>
-                            <td id="" style="text-align: right;">6172</td>
+                            <td id="ccc" style="text-align: right;">6172</td>
                     </tr>
-
+    
             </table>
             <br><br>
             <table id="table-TillDate">
@@ -252,17 +252,17 @@
                     <tr>
                         <td lang="en" id="" style="text-align: left;">DETECTED
                             <td lang="ta" id="" style="text-align: left;">கண்டறியப்பட்டது</td>
-                            <td id="" style="text-align: right;">6172</td>
+                            <td id="detected" style="text-align: right;">6172</td>
                     </tr>
                     <tr>
                         <td lang="en" id="" style="text-align: left;">RECOVERED
                             <td lang="ta" id="" style="text-align: left;">மீட்டெடுக்கப்பட்டது</td>
-                            <td id="" style="text-align: right;">6172</td>
+                            <td id="recovered" style="text-align: right;">6172</td>
                     </tr>
                     <tr>
                         <td lang="en" id="" style="text-align: left;">DEATHS
                             <td lang="ta" id="" style="text-align: left;">உயிரிழப்புகள்</td>
-                            <td id="" style="text-align: right;">6172</td>
+                            <td id="death" style="text-align: right;">6172</td>
                     </tr>
             </table>
         </div>
@@ -275,17 +275,17 @@
                     <tr>
                         <td lang="en" id="" style="text-align: left;">Tested Positivity
                             <td lang="ta" id="" style="text-align: left;">சோதனை நேர்மறை</td>
-                            <td id="" style="text-align: left;">92%</td>
+                            <td id="testPositivity" style="text-align: left;">92%</td>
                     </tr>
                     <tr>
                         <td lang="en" id="" style="text-align: left;">Case Fatality Rate
                             <td lang="ta" id="" style="text-align: left;">நோயாளிகள் இறப்பு விகிதம்</td>
-                            <td id="" style="text-align: left;">92%</td>
+                            <td id="caseFatalityRate" style="text-align: left;">92%</td>
                     </tr>
                     <tr>
                         <td lang="en" id="" style="text-align: left;"><u>Recovery Rate</u>
                             <td lang="ta" id="" style="text-align: left;"><u>மீட்பு விகிதம்</u></td>
-                            <td id="" style="text-align: left;">92%</td>
+                            <td id="recoveryRate" style="text-align: left;">92%</td>
                     </tr>
             </table>
             <br><br>
@@ -293,36 +293,32 @@
                 <th lang="en" id="table-head" colspan="3"><u>COVID VACCINE</u>
                     <th lang="ta" id="table-head" colspan="3"><u>கோவிட் தடுப்பூசி</u></th>
                     <tr>
-                        <td lang="en" id="table-headb" style="text-align: centre; ">Health Care workers
-                            <td lang="ta" id="table-headb" style="text-align: center; ">சுகாதாரப் பணியாளர்கள்</td>
-                            <td lang="en" id="table-headb" style="text-align: center; ">FLW
-                                <td lang="ta" id="table-headb" style="text-align: center; ">முன்னணி தொழிலாளர்கள்</td>
-                                <td lang="en" id="table-headb" style="text-align: center; ">General Public
-                                    <td lang="ta" id="table-headb" style="text-align: center; ">பொது மக்கள்</td>
+                        <td lang="en" id="table-headb" style="text-align: centre; ">Dose</td>
+                            <td lang="ta" id="table-headb" style="text-align: center; ">Dose</td>
+                            <td lang="en" id="table-headb" style="text-align: center; ">Today</td>
+                                <td lang="ta" id="table-headb" style="text-align: center; ">Today</td>
+                                <td lang="en" id="table-headb" style="text-align: center; ">Cummulative</td>
+                                    <td lang="ta" id="table-headb" style="text-align: center; ">Cummulative</td>
                     </tr>
                     <tr>
-                        <td id="" style="text-align: center;">6172</td>
-                        <td id="" style="text-align: center;">6172</td>
-                        <td id="" style="text-align: center;">6172</td>
+                        <td id="" style="text-align: center;">First Dose</td>
+                        <td id="firstDoseToday" style="text-align: center;">6172</td>
+                        <td id="firstDoseCum" style="text-align: center;">6172</td>
                     </tr>
                     <tr>
-                        <td id="vdata" lang="en"><small>378689</small><small>(</small><small>145</small><small>  days</small><small>)</small>
-                            <td id="vdata" lang="ta"><small>378689</small><small>(</small><small>145</small><small>  நாள்கள்</small><small>)</small></td>
-                            <td id="vdata" lang="en"><small>378689</small><small>(</small><small>145</small><small>  days</small><small>)</small>
-                                <td id="vdata" lang="ta"><small>378689</small><small>(</small><small>145</small><small>  நாள்கள்</small><small>)</small></td>
-                                <td id="vdata" lang="en"><small>378689</small><small>(</small><small>145</small><small>  days</small><small>)</small>
-                                    <td id="vdata" lang="ta"><small>378689</small><small>(</small><small>145</small><small>  நாள்கள்</small><small>)</small></td>
+                        <td id="" style="text-align: center;">Second Dose</td>
+                        <td id="secondDoseToday" style="text-align: center;">6172</td>
+                        <td id="secondDoseCum" style="text-align: center;">6172</td>
                     </tr>
-                    <tr></tr>
                     <tr>
                         <td lang="en" id="" style="text-align: center; font-weight: bold;">Total
                             <td lang="ta" id="" style="text-align: center; font-weight: bold;">மொத்தம்</td>
-                            <td lang="en" id="" style="text-align: left;">637634<small>(</small><small>6074</small><small>-</small><small>Today</small><small>)</small><br><small style="color: grey;">(Including 2nd dose)</small></br>
-                                <td lang="ta" id="" style="text-align: left;">637634<small>(</small><small>6074</small><small>-</small><small>இன்று</small><small>)</small><br><small style="color: gray;">(2 வது டோஸ் உட்பட)</small></td>
+                            <td id="doseTotalToday" style="text-align: left;">637634</td>
+                            <td id="doseTotalCum" style="text-align: left;">637634</td>
                     </tr>
             </table>
         </div>
-    </div> -->
+    </div>
 
 
     <br><br>
@@ -343,7 +339,7 @@
         $('[lang]').hide(); // hide all lang attributes on start.
         $('[lang="en"]').show(); // show just Korean text (you can change it)
     </script>
-    <script src="lastUpdate.js" ></script>
+    <!-- <script src="lastUpdate.js" ></script> -->
     <script src="covidTracker.js" ></script>
 </body>
 

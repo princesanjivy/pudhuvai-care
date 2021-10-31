@@ -35,7 +35,6 @@ loadJSON(function (response) {
 
     <tr id="tracker-table">
         <th lang="en" id="tracker-table" rowspan="2"> <span lang="en">Today New Cases</span> </th>
-        <th class="td-red" lang="en" id="tracker-table" colspan="2">Active = #NUMBER </th>
         <th lang="en" id="tracker-table" rowspan="2">Today Recovered</th>
         <th lang="en" id="tracker-table" rowspan="2">Today Death</th>
     </tr>
@@ -66,12 +65,12 @@ loadJSON(function (response) {
       `</td>
                     <td id="tracker-table" style="color: green;font-size: 2vh;font-weight: bold;">
                         <p>` +
-      status[i].cured +
+      covidData.totalRecovered[status[i].district.toLowerCase()] +
       `</p>
                     </td>
                     <td id="tracker-table" style="color: green;font-size: 2vh;font-weight: bold;">
                         <p>` +
-      status[i].death +
+      covidData.totalDeath[status[i].district.toLowerCase()] +
       `</p>
                     </td>
             </tr>`;
@@ -79,4 +78,38 @@ loadJSON(function (response) {
   table += "</table>";
 
   document.getElementById("covidTrackerTable").innerHTML = table;
+
+  for (let i in covidData.occupancy) {
+    document.getElementById(i).innerHTML = covidData.occupancy[i];
+  }
+
+  for (let i in covidData.testStatistics) {
+    document.getElementById(i).innerHTML = covidData.testStatistics[i];
+  }
+
+  for (let i in covidData.vitalStatistics) {
+    document.getElementById(i).innerHTML = covidData.vitalStatistics[i];
+  }
+
+  for (let i in covidData.covidTillDate) {
+    document.getElementById(i).innerHTML = covidData.covidTillDate[i];
+  }
+
+  document.getElementById("firstDoseToday").innerHTML =
+    covidData.covidVaccine.firstDose[0];
+  document.getElementById("firstDoseCum").innerHTML =
+    covidData.covidVaccine.firstDose[1];
+
+  document.getElementById("secondDoseToday").innerHTML =
+    covidData.covidVaccine.secondDose[0];
+  document.getElementById("secondDoseCum").innerHTML =
+    covidData.covidVaccine.secondDose[1];
+
+  document.getElementById("doseTotalToday").innerHTML =
+    covidData.covidVaccine.total[0];
+  document.getElementById("doseTotalCum").innerHTML =
+    covidData.covidVaccine.total[1];
+
+  document.getElementById("lastUpdatedOn").innerHTML =
+    covidData.lastUpdatedData;
 });
