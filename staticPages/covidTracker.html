@@ -1,64 +1,101 @@
 <!----Aunthor: Ashok----->
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!-- language test -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="covid.css"> -->
 
-    <link rel="stylesheet" href="covid.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="covid.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <link rel="icon" href="images/flag.png" />
     <script src=".\script.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Covid_19 Tracker</title>
+  </head>
 
-</head>
-
-<body onload="Check_lang()">
-
+  <body onload="Check_lang()">
     <!-- header -->
     <div class="top-bar">
-        <small> புதுச்சேரி சுகாதார மற்றும் குடும்ப நல சேவைகள் துறை | Department of Health and Family Welfare Services Puducherry</small>
-        <a href="https://twitter.com/dms_puducherry" id="twitter"> <i class="fa fa-twitter"></i></a>
-        <a href="https://www.facebook.com/dmspuducherry.dmspuducherry" id="facebook"><i class="fa fa-facebook-f"></i></a>
-        <a href="https://www.youtube.com/channel/UClY1d7Cqxln0fZhfE45ZgWg?app=desktop" id="youtube"> <i class="fa fa-youtube-play"></i> </a>
-        <a href="https://www.instagram.com/dms_puducherry/" id="insta"><i class="fa fa-instagram"></i></a>
+      <small>
+        புதுச்சேரி சுகாதார மற்றும் குடும்ப நல சேவைகள் துறை | Department of
+        Health and Family Welfare Services Puducherry</small
+      >
+      <a href="https://twitter.com/dms_puducherry" id="twitter">
+        <i class="fa fa-twitter"></i
+      ></a>
+      <a
+        href="https://www.facebook.com/dmspuducherry.dmspuducherry"
+        id="facebook"
+        ><i class="fa fa-facebook-f"></i
+      ></a>
+      <a
+        href="https://www.youtube.com/channel/UClY1d7Cqxln0fZhfE45ZgWg?app=desktop"
+        id="youtube"
+      >
+        <i class="fa fa-youtube-play"></i>
+      </a>
+      <a href="https://www.instagram.com/dms_puducherry/" id="insta"
+        ><i class="fa fa-instagram"></i
+      ></a>
     </div>
 
     <div id="header-container">
-        <table class="header" style="margin-left:10%;">
-            <tr>
-                <td style="padding-right:0.5vmax;">
-                    <img src="images/emblem.jpg" alt="">
-                </td>
-                <td id="header-text">
-                    <div>
-                        <p style="padding-right:1vmax;">Department of <br> <b> Health and Family Welfare Services </b> <br> <span>Government of Puducherry</span></p>
-                    </div>
-                </td>
-                <td id="header-text">
-                    <div>
-                        <p style="text-align: center;border-left: 1px solid black; padding-left: 40px;"> நலவழித்துறை <br> புதுச்சேரி அரசு
-                        </p>
+      <table class="header" style="margin-left: 10%">
+        <tr>
+          <td style="padding-right: 0.5vmax">
+            <img src="images/emblem.jpg" alt="" />
+          </td>
+          <td id="header-text">
+            <div>
+              <p style="padding-right: 1vmax">
+                Department of <br />
+                <b> Health and Family Welfare Services </b> <br />
+                <span>Government of Puducherry</span>
+              </p>
+            </div>
+          </td>
+          <td id="header-text">
+            <div>
+              <p
+                style="
+                  text-align: center;
+                  border-left: 1px solid black;
+                  padding-left: 40px;
+                "
+              >
+                நலவழித்துறை <br />
+                புதுச்சேரி அரசு
+              </p>
+            </div>
+          </td>
+          <td id="header-text">
+            <img
+              src="images/gate.svg"
+              style="border-right: 1px solid black; padding-right: 40px"
+              alt=""
+            />
+          </td>
+        </tr>
+      </table>
 
-                    </div>
-                </td>
-                <td id="header-text">
-                    <img src="images/gate.svg" style="border-right: 1px solid black;padding-right:40px;" alt="">
-                </td>
-            </tr>
-        </table>
-
-        <div id="translation-links">
-            <h3> <a id="tamil" href="#ta" onclick="changeLangToTamil()">தமிழ் </a> | <a id="eng" href="#en" onclick="changeLangToEnglish()">ENGLISH</a> </h3>
-        </div>
+      <div id="translation-links">
+        <h3>
+          <a id="tamil" href="#ta" onclick="changeLangToTamil()">தமிழ் </a> |
+          <a id="eng" href="#en" onclick="changeLangToEnglish()">ENGLISH</a>
+        </h3>
+      </div>
     </div>
 
     <!-- <div class="title-card">
@@ -68,20 +105,33 @@
 </div> -->
 
     <div class="vector">
-        <h2 lang="en">
-            <a href="index.html"><img src="images/home.svg" style=" 
-    height:3.5%; width:3.5%;"></a> Covid-19 Tracker</h2>
-        <h2 lang="ta">
-            <a href="index.html"><img src="images/home.svg" style="
-    height:3.5%; width:3.5%;"></a> கோவிட்-19 புள்ளிவிவரங்கள்</h2>
-        <svg viewBox="0 0 500 50" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C3.38,-30.30 515.80,79.23 505.64,-17.48 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white;"></path></svg>
+      <h2 lang="en">
+        <a href="index.html"
+          ><img src="images/home.svg" style="height: 3.5%; width: 3.5%"
+        /></a>
+        Covid-19 Tracker
+      </h2>
+      <h2 lang="ta">
+        <a href="index.html"
+          ><img src="images/home.svg" style="height: 3.5%; width: 3.5%"
+        /></a>
+        கோவிட்-19 புள்ளிவிவரங்கள்
+      </h2>
+      <svg
+        viewBox="0 0 500 50"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M0.00,49.98 C3.38,-30.30 515.80,79.23 505.64,-17.48 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: white"
+        ></path>
+      </svg>
     </div>
     <!-- content -->
-    <center style="overflow-x: scroll;">
-
-
-        <p id="covidTrackerTable"></p>
-        <!-- <table id="table-content" style="overflow-x: scroll;">
+    <center style="overflow-x: scroll">
+      <p id="covidTrackerTable"></p>
+      <!-- <table id="table-content" style="overflow-x: scroll;">
             <tr style="border: none;">
                 <td style="border: none; text-align: center;">
                     <img id="covid-th" src="images/covid_th.jpg" alt="infected">
@@ -197,146 +247,187 @@
     </center>
 
     <!-- statistics -->
-    <br><br>
+    <br /><br />
     <div class="row">
-        <div class="leftcol">
-            <table id="table-Teststatistics">
-                <th lang="en" id="table-head" colspan="2"><u>TEST STATISTICS</u>
-                    <th lang="ta" id="table-head" colspan="2"><u>சோதனை புள்ளிவிவரங்கள்</u></th>
-                    <tr>
-                        <td lang="en" id="" style="text-align: left;">TODAY TESTS
-                            <td lang="ta" id="" style="text-align: left;">இன்று சோதனைகள்</td>
-                            <td id="todayTests" style="text-align: right;">6172</td>
-                    </tr>
-                    <tr>
-                        <td lang="en" id="" style="text-align: left;">CUM TESTED
-                            <td lang="ta" id="" style="text-align: left;">கொரோனா தொற்று உறுதி</td>
-                            <td id="cumTest" style="text-align: right;">6172</td>
-                    </tr>
-                    <tr>
-                        <td lang="en" id="" style="text-align: left;">CUM NEGATIVE
-                            <td lang="ta" id="" style="text-align: left;">கொரோனா தொற்று இல்லாதவர்கள்</td>
-                            <td id="cumNegative" style="text-align: right;">6172</td>
-                    </tr>
-    
-            </table>
-            <br><br>
-            <table id="table-occupency">
-                <th lang="en" id="table-head" colspan="2"><u>Occupency in Covid Hospital</u>
-                    <th lang="ta" id="table-head" colspan="2"><u>கோவிட் மருத்துவமனையில் ஆக்கிரமிப்பு</u></th>
-                    <tr>
-                        <td lang="en" id="" style="text-align: left;">JIPMER
-                            <td lang="ta" id="" style="text-align: left;">ஜிப்மர்</td>
-                            <td id="jipmer" style="text-align: right;">3517</td>
-                    </tr>
-                    <tr>
-                        <td lang="en" id="" style="text-align: left;">IGMC
-                            <td lang="ta" id="" style="text-align: left;">ஐ.ஜி.எம்.சி.</td>
-                            <td id="ghcd" style="text-align: right;">6172</td>
-                    </tr>
-                    <tr>
-                        <td lang="en" id="" style="text-align: left;">CCC
-                            <td lang="ta" id="" style="text-align: left;">சிசிசி</td>
-                            <td id="ccc" style="text-align: right;">6172</td>
-                    </tr>
-    
-            </table>
-            <br><br>
-            <table id="table-TillDate">
-                <th lang="en" id="table-head" colspan="2"><u>Covid Till Date</u>
-                    <th lang="ta" id="table-head" colspan="2"><u>இன்று வரை கோவிட்</u></th>
-                    <tr>
-                        <td lang="en" id="" style="text-align: left;">DETECTED
-                            <td lang="ta" id="" style="text-align: left;">கண்டறியப்பட்டது</td>
-                            <td id="detected" style="text-align: right;">6172</td>
-                    </tr>
-                    <tr>
-                        <td lang="en" id="" style="text-align: left;">RECOVERED
-                            <td lang="ta" id="" style="text-align: left;">மீட்டெடுக்கப்பட்டது</td>
-                            <td id="recovered" style="text-align: right;">6172</td>
-                    </tr>
-                    <tr>
-                        <td lang="en" id="" style="text-align: left;">DEATHS
-                            <td lang="ta" id="" style="text-align: left;">உயிரிழப்புகள்</td>
-                            <td id="death" style="text-align: right;">6172</td>
-                    </tr>
-            </table>
-        </div>
-        <br><br>
-        <div class="rightcol">
-            <table id="table-Vital">
-                <th lang="en" id="table-head" colspan="2"><u>VITAL STATISTICS</u>
-                    <th lang="ta" id="table-head" colspan="2"><u>
-                முக்கிய புள்ளிவிவரங்கள்</u></th>
-                    <tr>
-                        <td lang="en" id="" style="text-align: left;">Tested Positivity
-                            <td lang="ta" id="" style="text-align: left;">சோதனை நேர்மறை</td>
-                            <td id="testPositivity" style="text-align: left;">92%</td>
-                    </tr>
-                    <tr>
-                        <td lang="en" id="" style="text-align: left;">Case Fatality Rate
-                            <td lang="ta" id="" style="text-align: left;">நோயாளிகள் இறப்பு விகிதம்</td>
-                            <td id="caseFatalityRate" style="text-align: left;">92%</td>
-                    </tr>
-                    <tr>
-                        <td lang="en" id="" style="text-align: left;"><u>Recovery Rate</u>
-                            <td lang="ta" id="" style="text-align: left;"><u>மீட்பு விகிதம்</u></td>
-                            <td id="recoveryRate" style="text-align: left;">92%</td>
-                    </tr>
-            </table>
-            <br><br>
-            <table id="table-vaccine">
-                <th lang="en" id="table-head" colspan="3"><u>COVID VACCINE</u>
-                    <th lang="ta" id="table-head" colspan="3"><u>கோவிட் தடுப்பூசி</u></th>
-                    <tr>
-                        <td lang="en" id="table-headb" style="text-align: centre; ">Dose</td>
-                            <td lang="ta" id="table-headb" style="text-align: center; ">Dose</td>
-                            <td lang="en" id="table-headb" style="text-align: center; ">Today</td>
-                                <td lang="ta" id="table-headb" style="text-align: center; ">Today</td>
-                                <td lang="en" id="table-headb" style="text-align: center; ">Cummulative</td>
-                                    <td lang="ta" id="table-headb" style="text-align: center; ">Cummulative</td>
-                    </tr>
-                    <tr>
-                        <td id="" style="text-align: center;">First Dose</td>
-                        <td id="firstDoseToday" style="text-align: center;">6172</td>
-                        <td id="firstDoseCum" style="text-align: center;">6172</td>
-                    </tr>
-                    <tr>
-                        <td id="" style="text-align: center;">Second Dose</td>
-                        <td id="secondDoseToday" style="text-align: center;">6172</td>
-                        <td id="secondDoseCum" style="text-align: center;">6172</td>
-                    </tr>
-                    <tr>
-                        <td lang="en" id="" style="text-align: center; font-weight: bold;">Total
-                            <td lang="ta" id="" style="text-align: center; font-weight: bold;">மொத்தம்</td>
-                            <td id="doseTotalToday" style="text-align: left;">637634</td>
-                            <td id="doseTotalCum" style="text-align: left;">637634</td>
-                    </tr>
-            </table>
-        </div>
+      <div class="leftcol">
+        <table id="table-Teststatistics">
+          <th lang="en" id="table-head" colspan="2"><u>TEST STATISTICS</u></th>
+          <th lang="ta" id="table-head" colspan="2">
+            <u>சோதனை புள்ளிவிவரங்கள்</u>
+          </th>
+          <tr>
+            <td lang="en" id="" style="text-align: left">TODAY TESTS</td>
+            <td lang="ta" id="" style="text-align: left">இன்று சோதனைகள்</td>
+            <td id="todayTests" style="text-align: right">6172</td>
+          </tr>
+          <tr>
+            <td lang="en" id="" style="text-align: left">CUM TESTED</td>
+            <td lang="ta" id="" style="text-align: left">
+              கொரோனா தொற்று உறுதி
+            </td>
+            <td id="cumTest" style="text-align: right">6172</td>
+          </tr>
+          <tr>
+            <td lang="en" id="" style="text-align: left">CUM NEGATIVE</td>
+            <td lang="ta" id="" style="text-align: left">
+              கொரோனா தொற்று இல்லாதவர்கள்
+            </td>
+            <td id="cumNegative" style="text-align: right">6172</td>
+          </tr>
+        </table>
+        <br /><br />
+        <table id="table-occupency">
+          <th lang="en" id="table-head" colspan="2">
+            <u>Occupancy in Covid Hospital</u>
+          </th>
+          <th lang="ta" id="table-head" colspan="2">
+            <u>கோவிட் மருத்துவமனையில் ஆக்கிரமிப்பு</u>
+          </th>
+          <tr>
+            <td lang="en" id="" style="text-align: left">JIPMER</td>
+            <td lang="ta" id="" style="text-align: left">ஜிப்மர்</td>
+            <td id="jipmer" style="text-align: right">3517</td>
+          </tr>
+          <tr>
+            <td lang="en" id="" style="text-align: left">IGMC</td>
+            <td lang="ta" id="" style="text-align: left">ஐ.ஜி.எம்.சி.</td>
+            <td id="ghcd" style="text-align: right">6172</td>
+          </tr>
+          <tr>
+            <td lang="en" id="" style="text-align: left">CCC</td>
+            <td lang="ta" id="" style="text-align: left">சிசிசி</td>
+            <td id="ccc" style="text-align: right">6172</td>
+          </tr>
+        </table>
+        <br /><br />
+        <table id="table-TillDate">
+          <th lang="en" id="table-head" colspan="2"><u>Covid Till Date</u></th>
+          <th lang="ta" id="table-head" colspan="2"><u>இன்று வரை கோவிட்</u></th>
+          <tr>
+            <td lang="en" id="" style="text-align: left">DETECTED</td>
+            <td lang="ta" id="" style="text-align: left">கண்டறியப்பட்டது</td>
+            <td id="detected" style="text-align: right">6172</td>
+          </tr>
+          <tr>
+            <td lang="en" id="" style="text-align: left">RECOVERED</td>
+            <td lang="ta" id="" style="text-align: left">
+              மீட்டெடுக்கப்பட்டது
+            </td>
+            <td id="recovered" style="text-align: right">6172</td>
+          </tr>
+          <tr>
+            <td lang="en" id="" style="text-align: left">DEATHS</td>
+            <td lang="ta" id="" style="text-align: left">உயிரிழப்புகள்</td>
+            <td id="death" style="text-align: right">6172</td>
+          </tr>
+        </table>
+      </div>
+      <br /><br />
+      <div class="rightcol">
+        <table id="table-Vital">
+          <th lang="en" id="table-head" colspan="2"><u>VITAL STATISTICS</u></th>
+          <th lang="ta" id="table-head" colspan="2">
+            <u> முக்கிய புள்ளிவிவரங்கள்</u>
+          </th>
+          <tr>
+            <td lang="en" id="" style="text-align: left">Tested Positivity</td>
+            <td lang="ta" id="" style="text-align: left">சோதனை நேர்மறை</td>
+            <td id="testPositivity" style="text-align: left">92%</td>
+          </tr>
+          <tr>
+            <td lang="en" id="" style="text-align: left">Case Fatality Rate</td>
+            <td lang="ta" id="" style="text-align: left">
+              நோயாளிகள் இறப்பு விகிதம்
+            </td>
+            <td id="caseFatalityRate" style="text-align: left">92%</td>
+          </tr>
+          <tr>
+            <td lang="en" id="" style="text-align: left">
+              <u>Recovery Rate</u>
+            </td>
+            <td lang="ta" id="" style="text-align: left">
+              <u>மீட்பு விகிதம்</u>
+            </td>
+            <td id="recoveryRate" style="text-align: left">92%</td>
+          </tr>
+        </table>
+        <br /><br />
+        <table id="table-vaccine">
+          <th lang="en" id="table-head" colspan="3"><u>COVID VACCINE</u></th>
+          <th lang="ta" id="table-head" colspan="3"><u>கோவிட் தடுப்பூசி</u></th>
+          <tr>
+            <td lang="en" id="table-headb" style="text-align: centre">Dose</td>
+            <td lang="ta" id="table-headb" style="text-align: center">Dose</td>
+            <td lang="en" id="table-headb" style="text-align: center">Today</td>
+            <td lang="ta" id="table-headb" style="text-align: center">Today</td>
+            <td lang="en" id="table-headb" style="text-align: center">
+              Cummulative
+            </td>
+            <td lang="ta" id="table-headb" style="text-align: center">
+              Cummulative
+            </td>
+          </tr>
+          <tr>
+            <td id="" style="text-align: center">First Dose</td>
+            <td id="firstDoseToday" style="text-align: center">6172</td>
+            <td id="firstDoseCum" style="text-align: center">6172</td>
+          </tr>
+          <tr>
+            <td id="" style="text-align: center">Second Dose</td>
+            <td id="secondDoseToday" style="text-align: center">6172</td>
+            <td id="secondDoseCum" style="text-align: center">6172</td>
+          </tr>
+          <tr>
+            <td lang="en" id="" style="text-align: center; font-weight: bold">
+              Total
+            </td>
+            <td lang="ta" id="" style="text-align: center; font-weight: bold">
+              மொத்தம்
+            </td>
+            <td id="doseTotalToday" style="text-align: left">637634</td>
+            <td id="doseTotalCum" style="text-align: left">637634</td>
+          </tr>
+        </table>
+      </div>
     </div>
 
-
-    <br><br>
+    <br /><br />
     <!-- footer -->
 
     <h4 class="footertitle">Last Updated : <span id="lastUpdatedOn"></span></h4>
     <footer class="aboutus">
-        <a lang="en" class="footerlink" href="aboutus/k-aboutus.html">DEVELOPED AND MAINTAINED BY PEC</a>
-        <a lang="ta" class="footerlink" href="aboutus/k-aboutus.html"> பாண்டிச்சேரி பொறியியல் கல்லூரியால் உருவாக்கப்பட்டது மற்றும் பராமரிக்கப்படுகிறது</a>
-        <span class="spanhr">|</span>
-        <a lang="en" class="footerlink" href="https://healthdept.page.link/Feedback">FEEDBACK</a>
-        <a lang="ta" class="footerlink" href="https://healthdept.page.link/Feedback">கருத்து</a>
-
+      <a lang="en" class="footerlink" href="aboutus/k-aboutus.html"
+        >DEVELOPED AND MAINTAINED BY PEC</a
+      >
+      <a lang="ta" class="footerlink" href="aboutus/k-aboutus.html">
+        பாண்டிச்சேரி பொறியியல் கல்லூரியால் உருவாக்கப்பட்டது மற்றும்
+        பராமரிக்கப்படுகிறது</a
+      >
+      <span class="spanhr">|</span>
+      <a
+        lang="en"
+        class="footerlink"
+        href="https://healthdept.page.link/Feedback"
+        >FEEDBACK</a
+      >
+      <a
+        lang="ta"
+        class="footerlink"
+        href="https://healthdept.page.link/Feedback"
+        >கருத்து</a
+      >
     </footer>
 
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
     <script>
-        $('[lang]').hide(); // hide all lang attributes on start.
-        $('[lang="en"]').show(); // show just Korean text (you can change it)
+      $("[lang]").hide(); // hide all lang attributes on start.
+      $('[lang="en"]').show(); // show just Korean text (you can change it)
     </script>
     <!-- <script src="lastUpdate.js" ></script> -->
-    <script src="covidTracker.js" ></script>
-</body>
-
+    <script src="covidTracker.js"></script>
+  </body>
 </html>
