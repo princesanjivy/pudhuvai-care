@@ -55,6 +55,10 @@ loadJSON(function (response) {
       `</span></u> <br>
                         <p class="td-red" style="font-size: 2vh; font-weight: bold;">` +
       covidData.todayNewCases[status[i].district.toLowerCase()] +
+      `<br>` +
+      "(" +
+      covidData.detectedPositiveCase[status[i].district.toLowerCase()] +
+      ")" +
       `</p>
                     </p>
                     <td class="td-red" id="tracker-table" style="font-size: 2vh; font-weight: bold;">` +
@@ -88,7 +92,7 @@ loadJSON(function (response) {
   }
 
   for (let i in covidData.vitalStatistics) {
-    document.getElementById(i).innerHTML = covidData.vitalStatistics[i];
+    document.getElementById(i).innerHTML = covidData.vitalStatistics[i] + "%";
   }
 
   for (let i in covidData.covidTillDate) {
