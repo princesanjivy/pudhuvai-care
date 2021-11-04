@@ -19,13 +19,26 @@ with open("dynamic.json", "w") as f:
 # covidTracker
 dynamic = {}
 
-covidTrackerRes = requests.get(
-    "https://pycare-api.herokuapp.com/districtWiseReport")
-covidTrackerData = json.loads(covidTrackerRes.content)
+# covidTrackerRes = requests.get(
+#     "https://pycare-api.herokuapp.com/districtWiseReport")
+# covidTrackerData = json.loads(covidTrackerRes.content)
 
-dynamic["covidTracker"] = covidTrackerData
+dynamic["covidTracker"] = [
+    {
+        "district": "Pondicherry"
+    },
+    {
+        "district": "Karaikal"
+    },
+    {
+        "district": "Yanam"
+    },
+    {
+        "district": "Mahe"
+    }
+]
 
-# covidData 
+# covidData
 url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output="
 
 resp = requests.get(url+"csv")
@@ -66,7 +79,10 @@ covidData["covidVaccine"] = {"firstDose": [df[12], df[15]], "secondDose": [
 covidData["covidTillDate"] = {"detected": latestData[36],
                               "recovered": latestData[46], "death": latestData[51]}
 
-dynamic["covidData"]  = covidData
+covidData["detectedPositiveCase"] = {"pondicherry": latestData[37],
+                                     "karaikal": latestData[38], "yanam": latestData[39], "mahe": latestData[40]}
+
+dynamic["covidData"] = covidData
 
 with open("covidTracker.json", "w") as f:
     f.write(json.dumps(dynamic))

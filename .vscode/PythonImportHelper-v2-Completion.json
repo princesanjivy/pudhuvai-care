@@ -49,7 +49,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "dynamic = {}\n# lastUpdatedOn\nstatusRes = requests.get(\"https://pycare-api.herokuapp.com/status\")\nstatusData = json.loads(statusRes.content)\ndynamic[\"lastUpdatedOn\"] = statusData[0][\"lastUpdatedOn\"]\nwith open(\"dynamic.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# covidTracker\ndynamic = {}\ncovidTrackerRes = requests.get(",
+        "peekOfCode": "dynamic = {}\n# lastUpdatedOn\nstatusRes = requests.get(\"https://pycare-api.herokuapp.com/status\")\nstatusData = json.loads(statusRes.content)\ndynamic[\"lastUpdatedOn\"] = statusData[0][\"lastUpdatedOn\"]\nwith open(\"dynamic.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# covidTracker\ndynamic = {}\n# covidTrackerRes = requests.get(",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -58,7 +58,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "statusRes = requests.get(\"https://pycare-api.herokuapp.com/status\")\nstatusData = json.loads(statusRes.content)\ndynamic[\"lastUpdatedOn\"] = statusData[0][\"lastUpdatedOn\"]\nwith open(\"dynamic.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# covidTracker\ndynamic = {}\ncovidTrackerRes = requests.get(\n    \"https://pycare-api.herokuapp.com/districtWiseReport\")\ncovidTrackerData = json.loads(covidTrackerRes.content)",
+        "peekOfCode": "statusRes = requests.get(\"https://pycare-api.herokuapp.com/status\")\nstatusData = json.loads(statusRes.content)\ndynamic[\"lastUpdatedOn\"] = statusData[0][\"lastUpdatedOn\"]\nwith open(\"dynamic.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# covidTracker\ndynamic = {}\n# covidTrackerRes = requests.get(\n#     \"https://pycare-api.herokuapp.com/districtWiseReport\")\n# covidTrackerData = json.loads(covidTrackerRes.content)",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -67,7 +67,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "statusData = json.loads(statusRes.content)\ndynamic[\"lastUpdatedOn\"] = statusData[0][\"lastUpdatedOn\"]\nwith open(\"dynamic.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# covidTracker\ndynamic = {}\ncovidTrackerRes = requests.get(\n    \"https://pycare-api.herokuapp.com/districtWiseReport\")\ncovidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = covidTrackerData",
+        "peekOfCode": "statusData = json.loads(statusRes.content)\ndynamic[\"lastUpdatedOn\"] = statusData[0][\"lastUpdatedOn\"]\nwith open(\"dynamic.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# covidTracker\ndynamic = {}\n# covidTrackerRes = requests.get(\n#     \"https://pycare-api.herokuapp.com/districtWiseReport\")\n# covidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = [",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -76,7 +76,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "dynamic[\"lastUpdatedOn\"] = statusData[0][\"lastUpdatedOn\"]\nwith open(\"dynamic.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# covidTracker\ndynamic = {}\ncovidTrackerRes = requests.get(\n    \"https://pycare-api.herokuapp.com/districtWiseReport\")\ncovidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = covidTrackerData\n# covidData ",
+        "peekOfCode": "dynamic[\"lastUpdatedOn\"] = statusData[0][\"lastUpdatedOn\"]\nwith open(\"dynamic.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# covidTracker\ndynamic = {}\n# covidTrackerRes = requests.get(\n#     \"https://pycare-api.herokuapp.com/districtWiseReport\")\n# covidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = [\n    {",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -85,25 +85,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "dynamic = {}\ncovidTrackerRes = requests.get(\n    \"https://pycare-api.herokuapp.com/districtWiseReport\")\ncovidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = covidTrackerData\n# covidData \nurl = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=\"\nresp = requests.get(url+\"csv\")\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)",
-        "detail": "staticPages.main",
-        "documentation": {}
-    },
-    {
-        "label": "covidTrackerRes",
-        "kind": 5,
-        "importPath": "staticPages.main",
-        "description": "staticPages.main",
-        "peekOfCode": "covidTrackerRes = requests.get(\n    \"https://pycare-api.herokuapp.com/districtWiseReport\")\ncovidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = covidTrackerData\n# covidData \nurl = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=\"\nresp = requests.get(url+\"csv\")\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]",
-        "detail": "staticPages.main",
-        "documentation": {}
-    },
-    {
-        "label": "covidTrackerData",
-        "kind": 5,
-        "importPath": "staticPages.main",
-        "description": "staticPages.main",
-        "peekOfCode": "covidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = covidTrackerData\n# covidData \nurl = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=\"\nresp = requests.get(url+\"csv\")\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]",
+        "peekOfCode": "dynamic = {}\n# covidTrackerRes = requests.get(\n#     \"https://pycare-api.herokuapp.com/districtWiseReport\")\n# covidTrackerData = json.loads(covidTrackerRes.content)\ndynamic[\"covidTracker\"] = [\n    {\n        \"district\": \"Pondicherry\"\n    },\n    {\n        \"district\": \"Karaikal\"",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -112,7 +94,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "dynamic[\"covidTracker\"] = covidTrackerData\n# covidData \nurl = \"https://docs.google.com/spreadsheets/d/e/2PACX-1vRJswyu1sF0hRdRIi8qFTXbUKqGQbV76bs6jNKUAX50ZdYmna0K-gf-TfZngyOVmHR6FcbQ7lwr_FIQ/pub?output=\"\nresp = requests.get(url+\"csv\")\ndata = csv.reader(io.StringIO(resp.text))\ndata = list(data)\nlatestData = data[4]\ndate = latestData[0]\nvalues = latestData[1:25]\nkeys = [\"todayNewCases\", \"hospitalised\",",
+        "peekOfCode": "dynamic[\"covidTracker\"] = [\n    {\n        \"district\": \"Pondicherry\"\n    },\n    {\n        \"district\": \"Karaikal\"\n    },\n    {\n        \"district\": \"Yanam\"\n    },",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -265,7 +247,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "covidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:",
+        "peekOfCode": "covidData[\"vitalStatistics\"] = {\"testPositivity\": latestData[56][:4],\n                                \"caseFatalityRate\": latestData[57][:4], \"recoveryRate\": latestData[58][:4]}\ncovidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ncovidData[\"detectedPositiveCase\"] = {\"pondicherry\": latestData[37],\n                                     \"karaikal\": latestData[38], \"yanam\": latestData[39], \"mahe\": latestData[40]}",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -274,7 +256,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "covidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter",
+        "peekOfCode": "covidData[\"occupancy\"] = {\"jipmer\": latestData[2],\n                          \"ghcd\": latestData[3], \"ccc\": latestData[4]}\ncovidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ncovidData[\"detectedPositiveCase\"] = {\"pondicherry\": latestData[37],\n                                     \"karaikal\": latestData[38], \"yanam\": latestData[39], \"mahe\": latestData[40]}\ndynamic[\"covidData\"] = covidData\nwith open(\"covidTracker.json\", \"w\") as f:",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -283,7 +265,7 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "covidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter\ndynamic = {}\ntestingCenterRes = requests.get(",
+        "peekOfCode": "covidData[\"covidVaccine\"] = {\"firstDose\": [df[12], df[15]], \"secondDose\": [\n    df[13], df[16]], \"total\": [df[14], df[17]]}\ncovidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ncovidData[\"detectedPositiveCase\"] = {\"pondicherry\": latestData[37],\n                                     \"karaikal\": latestData[38], \"yanam\": latestData[39], \"mahe\": latestData[40]}\ndynamic[\"covidData\"] = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter",
         "detail": "staticPages.main",
         "documentation": {}
     },
@@ -292,7 +274,25 @@
         "kind": 5,
         "importPath": "staticPages.main",
         "description": "staticPages.main",
-        "peekOfCode": "covidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ndynamic[\"covidData\"]  = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter\ndynamic = {}\ntestingCenterRes = requests.get(\n    \"https://docs.google.com/spreadsheets/d/e/2PACX-1vReED3ftV6BZO96JnXcC9puD5jYQqDzHKRWd8C_Eab0Z-edLU0z60JRWi3j7MJuTYDROnkgWlcujVSk/pub?output=csv\")\ntestingCenterData = csv.reader(io.StringIO(testingCenterRes.text))",
+        "peekOfCode": "covidData[\"covidTillDate\"] = {\"detected\": latestData[36],\n                              \"recovered\": latestData[46], \"death\": latestData[51]}\ncovidData[\"detectedPositiveCase\"] = {\"pondicherry\": latestData[37],\n                                     \"karaikal\": latestData[38], \"yanam\": latestData[39], \"mahe\": latestData[40]}\ndynamic[\"covidData\"] = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter\ndynamic = {}\ntestingCenterRes = requests.get(",
+        "detail": "staticPages.main",
+        "documentation": {}
+    },
+    {
+        "label": "covidData[\"detectedPositiveCase\"]",
+        "kind": 5,
+        "importPath": "staticPages.main",
+        "description": "staticPages.main",
+        "peekOfCode": "covidData[\"detectedPositiveCase\"] = {\"pondicherry\": latestData[37],\n                                     \"karaikal\": latestData[38], \"yanam\": latestData[39], \"mahe\": latestData[40]}\ndynamic[\"covidData\"] = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter\ndynamic = {}\ntestingCenterRes = requests.get(\n    \"https://docs.google.com/spreadsheets/d/e/2PACX-1vReED3ftV6BZO96JnXcC9puD5jYQqDzHKRWd8C_Eab0Z-edLU0z60JRWi3j7MJuTYDROnkgWlcujVSk/pub?output=csv\")\ntestingCenterData = csv.reader(io.StringIO(testingCenterRes.text))",
+        "detail": "staticPages.main",
+        "documentation": {}
+    },
+    {
+        "label": "dynamic[\"covidData\"]",
+        "kind": 5,
+        "importPath": "staticPages.main",
+        "description": "staticPages.main",
+        "peekOfCode": "dynamic[\"covidData\"] = covidData\nwith open(\"covidTracker.json\", \"w\") as f:\n    f.write(json.dumps(dynamic))\n# testingCenter\ndynamic = {}\ntestingCenterRes = requests.get(\n    \"https://docs.google.com/spreadsheets/d/e/2PACX-1vReED3ftV6BZO96JnXcC9puD5jYQqDzHKRWd8C_Eab0Z-edLU0z60JRWi3j7MJuTYDROnkgWlcujVSk/pub?output=csv\")\ntestingCenterData = csv.reader(io.StringIO(testingCenterRes.text))\nm = list(testingCenterData)[8:]\ntestingCenterData = []",
         "detail": "staticPages.main",
         "documentation": {}
     },
